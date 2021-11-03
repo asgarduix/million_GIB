@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>公會時數明細</span>
+            <div>
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item5_0502_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info tableList">
+                <p class="title"><img src="../img/ico_profile.svg" />公會時數</p>
+                <div>
+                    <table class="list guild">
+                        <thead>
+                            <tr>
+                                <th>業務中心</th>
+                                <th>事業部</th>
+                                <th>姓名</th>
+                                <th>壽險初登日／產險標準日</th>
+                                <th>時數</th>
+                                <th>第一年</th>
+                                <th>第二年</th>
+                                <th>第三年</th>
+                                <th>第四年</th>
+                                <th>第五年</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">壽險</td>
+                                <td rowspan="2">群安</td>
+                                <td rowspan="2">羅致翔</td>
+                                <td rowspan="2">2013/10/20</td>
+                                <td>應訓</td>
+                                <td>30</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>實訓</td>
+                                <td>30</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>8</td>
+                                <td class="text_Red">6*</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_records.svg"/ > 公會時數明細
+        </a>
+                </div>
+                <div id="item1" class="tabContent list">
+                    <table class="autoWidth">
+                        <thead>
+                            <tr>
+                                <th>課程類別</th>
+                                <th>課程編號</th>
+                                <th>課程名稱</th>
+                                <th>講師姓名</th>
+                                <th>課程開始日</th>
+                                <th>上課地點</th>
+                                <th>課程屬性</th>
+                                <th>出席率</th>
+                                <th>時數類別</th>
+                                <th>公會時數</th>
+                                <th>出席</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>早會</td>
+                                <td>123456750</td>
+                                <td>壽險從業人員公民與道德概論二</td>
+                                <td>劉亦菲</td>
+                                <td>2017/4/23</td>
+                                <td>台北訓練中心</td>
+                                <td>法規要求</td>
+                                <td>Y</td>
+                                <td>洗錢防治</td>
+                                <td>2</td>
+                                <td>出席</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

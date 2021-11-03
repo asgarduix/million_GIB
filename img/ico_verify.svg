@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_verify</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico_verify" fill="#FFFFFF">
+            <path d="M4.67803976,8.66554682 L4.67803976,7.64007808 L9.17803976,7.64007808 L9.17803976,8.66554682 L4.67803976,8.66554682 Z M4.67803976,6.66554682 L4.67803976,5.64007808 L10.6780398,5.64007808 L10.6780398,6.66554682 L4.67803976,6.66554682 Z M4.67803976,10.6655468 L4.67803976,9.64007808 L7.70803973,9.64007808 L7.70803973,10.6655468 L4.67803976,10.6655468 Z M4.67803976,12.6655468 L4.67803976,11.6400781 L9.71215903,11.6400781 L9.71215903,12.6655468 L4.67803976,12.6655468 Z" id="ico_basic-info"></path>
+            <path d="M11.5104076,4.71751442 L13.5104076,4.71751442 L13.5104076,9.9246212 L11.5104076,9.9246212 L11.5104076,4.71751442 Z M11.5104076,10.4246212 L13.5104076,10.4246212 L12.5104076,11.9246212 L11.5104076,10.4246212 Z" id="Combined-Shape" transform="translate(12.510408, 8.321068) rotate(-315.000000) translate(-12.510408, -8.321068) "></path>
+        </g>
+    </g>
+</svg>

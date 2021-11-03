@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            客戶編號 000101088
+            <div>
+                <img src="../img/btn_edit_big.svg" onclick="javascript:location.href='customer_edit.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='customer_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />客戶基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>客戶姓名</td>
+                            <td> <span>王大明</span> </td>
+                            <td>身分證號</td>
+                            <td> <span>A123456789</span> </td>
+                            <td>性別</td>
+                            <td> <span>男性</span> </td>
+                        </tr>
+                        <tr>
+                            <td>客戶生日</td>
+                            <td> <span>1978-12-10</span> </td>
+                            <td>客戶屬性</td>
+                            <td> <span>一般</span> </td>
+                            <td>客戶等級</td>
+                            <td> <span>A級</span> </td>
+                        </tr>
+                        <tr class="bold">
+                            <td>通訊資訊</td>
+                            <td colspan="5">
+                                <hr/> </td>
+                        </tr>
+                        <tr>
+                            <td>戶籍地址</td>
+                            <td colspan="3" class="address">
+                                <span>241 新北市三重區新民街11弄166號3樓</span>
+                                <span>02-12345678</span>
+                            </td>
+                            <td>手機號碼1</td>
+                            <td> <span>02-12345678</span> </td>
+                        </tr>
+                        <tr>
+                            <td>住所地址</td>
+                            <td colspan="3" class="address">
+                                <span>241 新北市三重區新民街11弄166號3樓</span>
+                                <span>02-12345678</span>
+                            </td>
+                            <td>手機號碼2</td>
+                            <td> <span>0912345678</span> </td>
+                        </tr>
+                        <tr>
+                            <td>公司地址</td>
+                            <td colspan="3" class="address">
+                                <span>241 新北市三重區新民街11弄166號3樓</span>
+                                <span>02-12345678</span>
+                            </td>
+                            <td>Email</td>
+                            <td> <span>aa@aa.com.tw</span> </td>
+                        </tr>
+                        <tr>
+                            <td>聯絡地址1</td>
+                            <td colspan="3" class="address">
+                                <span>241 新北市三重區新民街11弄166號3樓</span>
+                            </td>
+                            <td rowspan="2" style="vertical-align: top;">傳真號碼</td>
+                            <td rowspan="2"> <span></span> </td>
+                        </tr>
+                        <tr>
+                            <td>聯絡地址2</td>
+                            <td colspan="3" class="address">
+                                <span>241 新北市三重區新民街11弄166號3樓</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>公司名稱</td>
+                            <td> <span></span> </td>
+                            <td>職稱</td>
+                            <td> <span>一般職員</span> </td>
+                            <td>公司網站</td>
+                            <td> <span></span> </td>
+                        </tr>
+                        <tr class="bold">
+                            <td>客服資訊</td>
+                            <td colspan="5">
+                                <hr/> </td>
+                        </tr>
+                        <tr>
+                            <td>客服人員</td>
+                            <td> <span>李筱惠</span> </td>
+                            <td>最近一次
+                                <br/>O2O業務員</td>
+                            <td> <span>某業務員</span> </td>
+                        </tr>
+                        <tr>
+                            <td>建立日期</td>
+                            <td> <span>2017/1/12</span> </td>
+                            <td>修改人員</td>
+                            <td> <span>李筱惠</span> </td>
+                            <td>修改日期</td>
+                            <td> <span>2017/3/11</span> </td>
+                        </tr>
+                        <tr class="bold">
+                            <td>聯絡人資訊</td>
+                            <td colspan="5">
+                                <hr/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>姓名</td>
+                            <td> <span>王小明</span> </td>
+                            <td>身分證號</td>
+                            <td> <span>A123456789</span> </td>
+                            <td>性別</td>
+                            <td> <span>男性</span> </td>
+                        </tr>
+                        <tr>
+                            <td>生日</td>
+                            <td> <span>1978/12/10</span> </td>
+                            <td>與客戶關係</td>
+                            <td> <span>兄弟姊妹</span> </td>
+                            <td>手機</td>
+                            <td> <span>0913338000</span> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_record.svg"/ > 案件紀錄
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item2')">
+          <img src="../img/ico_profile.svg"/ > 客戶保單
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item3')">
+          <img src="../img/ico_relative.svg"/ > 關係人設定
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item4')">
+          <img src="../img/ico_rtv_case.svg"/ > 關係人案件
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item5')">
+          <img src="../img/ico_rtv_policy.svg"/ > 關係人保單
+        </a>
+                </div>
+                <div id="item1" class="tabContent list tab_BBlue left_3">
+                    <button>新增案件</button>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>案件來源</th>
+                                <th>案件類別</th>
+                                <th>案件名稱</th>
+                                <th>新契約階段</th>
+                                <th>續保階段</th>
+                                <th>聯絡人</th>
+                                <th>聯絡人電話</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>網路來源</td>
+                                <td>1220160614</td>
+                                <td>華南產險-李曉慧-李曉慧</td>
+                                <td>諮詢階段</td>
+                                <td>放棄(不續保)</td>
+                                <td>柳小榮</td>
+                                <td>0911888999</td>
+                            </tr>
+                            <tr>
+                                <td>網路來源</td>
+                                <td>1220160614</td>
+                                <td>華南產險-李曉慧-李曉慧</td>
+                                <td>諮詢階段</td>
+                                <td>尚未處理</td>
+                                <td>柳小榮</td>
+                                <td>0911888999</td>
+                            </tr>
+                            <tr>
+                                <td>網路來源</td>
+                                <td>1220160614</td>
+                                <td>華南產險-李曉慧-李曉慧</td>
+                                <td>諮詢階段</td>
+                                <td>尚未處理</td>
+                                <td>柳小榮</td>
+                                <td>0911888999</td>
+                            </tr>
+                            <tr>
+                                <td colspan="7" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item2" class="tabContent list left_4">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>保單號碼</th>
+                                <th>要保人</th>
+                                <th>被保人</th>
+                                <th>商品名稱</th>
+                                <th>保險公司</th>
+                                <th>生效日</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>00181726272</td>
+                                <td>李曉慧</td>
+                                <td>李曉慧</td>
+                                <td>華南-霹哩啪拉金元寶</td>
+                                <td>華南產險</td>
+                                <td>2017/1/12</td>
+                            </tr>
+                            <tr>
+                                <td>00181726272</td>
+                                <td>李曉慧</td>
+                                <td>李曉慧</td>
+                                <td>華南-霹哩啪拉金元寶</td>
+                                <td>華南產險</td>
+                                <td>2017/1/12</td>
+                            </tr>
+                            <tr>
+                                <td>00181726272</td>
+                                <td>李曉慧</td>
+                                <td>李曉慧</td>
+                                <td>華南-霹哩啪拉金元寶</td>
+                                <td>華南產險</td>
+                                <td>2017/1/12</td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item3" class="tabContent block">
+                    <ul>
+                        <span>建立關係</span>
+                        <li>第一步：</li>
+                        <li>
+                            <button><span>挑選關係人</span></button>
+                            <span>關係人姓名</span
+          </li>
+          <li>第二步：</li>
+          <li>
+            <select>
+              <option hidden>選擇關係</option>
+              <option>朋友</option>
+              <option>兄弟姊妹</option>
+            </select>
+            <button><span>建立關係清單</span></button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <span>關係人清單</span>
+                        <li>
+                            <span>朋友－陳美美</span>
+                            <img src="../img/btn_clear.svg">
+                        </li>
+                        <li>
+                            <span>兄弟姊妹-李小靜</span>
+                            <img src="../img/btn_clear.svg">
+                        </li>
+                        <li>
+                            <span>兄弟姊妹-李小薇</span>
+                            <img src="../img/btn_clear.svg">
+                        </li>
+                        <li>
+                            <span>兄弟姊妹-李小明</span>
+                            <img src="../img/btn_clear.svg">
+                        </li>
+                        <li>
+                            <span>兄弟姊妹-李小明</span>
+                            <img src="../img/btn_clear.svg">
+                        </li>
+                        <li>
+                            <span>兄弟姊妹-李小明</span>
+                            <img src="../img/btn_clear.svg">
+                        </li>
+                        <li>
+                            <span>兄弟姊妹-李小明</span>
+                            <img src="../img/btn_clear.svg">
+                        </li>
+                    </ul>
+                </div>
+                <div id="item4" class="tabContent list left_3">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>案件來源</th>
+                                <th>案件類別</th>
+                                <th>案件名稱</th>
+                                <th>關係人</th>
+                                <th>與客戶關係</th>
+                                <th>新契約階段</th>
+                                <th>續保階段</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>網路來源</td>
+                                <td>新契約</td>
+                                <td>華南產險-李小靜-李小靜</td>
+                                <td>李小靜</td>
+                                <td>本人</td>
+                                <td>諮詢階段(追蹤中)</td>
+                                <td>放棄(不續保)</td>
+                            </tr>
+                            <tr onclick="openPopup('link')">
+                                <td>網路來源</td>
+                                <td>續保</td>
+                                <td>華南產險-李小靜-李小靜</td>
+                                <td>李小靜</td>
+                                <td>本人</td>
+                                <td>諮詢階段(追蹤中)</td>
+                                <td>自動續保</td>
+                            </tr>
+                            <tr onclick="openPopup('link')">
+                                <td>網路來源</td>
+                                <td>新契約</td>
+                                <td>華南產險-李小靜-李小靜</td>
+                                <td>李小靜</td>
+                                <td>本人</td>
+                                <td>諮詢階段(追蹤中)</td>
+                                <td>放棄(不續保)</td>
+                            </tr>
+                            <tr>
+                                <td colspan="7" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item5" class="tabContent list left_5">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>保單號碼</th>
+                                <th>要保人</th>
+                                <th>被保人</th>
+                                <th>與客戶關係</th>
+                                <th>商品名稱</th>
+                                <th>保險公司</th>
+                                <th>生效日</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>00181726272</td>
+                                <td>李曉慧</td>
+                                <td>李曉慧</td>
+                                <td>朋友</td>
+                                <td>華南-霹哩啪拉金元寶</td>
+                                <td>華南產險</td>
+                                <td>2017/1/12</td>
+                            </tr>
+                            <tr>
+                                <td>00181726272</td>
+                                <td>李曉慧</td>
+                                <td>李曉慧</td>
+                                <td>朋友</td>
+                                <td>華南-霹哩啪拉金元寶</td>
+                                <td>華南產險</td>
+                                <td>2017/1/12</td>
+                            </tr>
+                            <tr>
+                                <td>00181726272</td>
+                                <td>李曉慧</td>
+                                <td>李曉慧</td>
+                                <td>朋友</td>
+                                <td>華南-霹哩啪拉金元寶</td>
+                                <td>華南產險</td>
+                                <td>2017/1/12</td>
+                            </tr>
+                            <tr>
+                                <td colspan="7" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+        <div id="link" class="popup">
+            <img src="../img/btn_clear.svg" class="close" onclick="openPopup('link')" />
+            <p>連至公勝系統查詢保單資料</p>
+            <div>
+                <button>確定</button>
+            </div>
+        </div>
+        <div id="bg"></div>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+
+
+var isPopup = false;
+
+function openPopup(name) {
+    var popup = document.getElementById(name);
+    var modal = document.getElementById('bg');
+    if (isPopup == true) {
+        popup.style.display = "none";
+        modal.style.display = "none";
+    } else {
+        popup.style.display = "block";
+        modal.style.display = "block";
+    }
+    isPopup = !isPopup;
+};
+</script>
+
+</html>

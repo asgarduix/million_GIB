@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            S4857293423
+            <div>
+                <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item5_0201_detail.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item5_0101_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info tableList">
+                <p class="title"><img src="../img/ico_profile.svg" />課程設定</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>課程類別一</td>
+                            <td>
+                                <select>
+                                    <option>早會課程</option>
+                                </select>
+                            </td>
+                            <td>課程類別二</td>
+                            <td>
+                                <select>
+                                    <option>通識課程</option>
+                                </select>
+                            </td>
+                            <td>課程屬性</td>
+                            <td>
+                                <select>
+                                    <option>一般</option>
+                                    <option>法規要求</option>
+                                    <option>公司要求</option>
+                                    <option>自由報名</option>
+                                    <option>要求出席</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>課程名稱</td>
+                            <td colspan="3">
+                                <input type="text" /> </td>
+                            <td>列入出席率</td>
+                            <td>
+                                <select>
+                                    <option>是</option>
+                                    <option>否</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>課程開始日</td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>課程開始時間</td>
+                            <td>
+                                <select>
+                                    <option>9:00</option>
+                                    <option>9:30</option>
+                                    <option>10:00</option>
+                                    <option>10:30</option>
+                                </select>
+                            </td>
+                            <td>公會時數</td>
+                            <td>
+                                <input type="text" /> </td>
+                        </tr>
+                        <tr>
+                            <td>課程結束日</td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>課程結束時間</td>
+                            <td>
+                                <select>
+                                    <option>15:00</option>
+                                    <option>15:30</option>
+                                    <option>16:00</option>
+                                    <option>16:30</option>
+                                </select>
+                            </td>
+                            <td>公會時數類別</td>
+                            <td>
+                                <label>
+                                    <input type="checkbox" /> 產險　</label>
+                                <label>
+                                    <input type="checkbox" /> 壽險　</label>
+                                <br/>
+                                <label>
+                                    <input type="checkbox" /> 投資型　</label>
+                                <label>
+                                    <input type="checkbox" /> 洗錢防治　</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>上課地點</td>
+                            <td colspan="3">
+                                <label style="width: 50%">
+                                    <input type="radio" name="address" /> 業務中心訓練教室
+                                    <select style="width: 45%">
+                                        <option>台北</option>
+                                        <option>台中</option>
+                                        <option>高雄</option>
+                                    </select>
+                                </label>
+                                <label style="width: 49%">
+                                    <input type="radio" name="address" /> 其他地點
+                                    <input type="text" style="width: 65%" />
+                                </label>
+                            </td>
+                            <td>加碼/百分比</td>
+                            <td>
+                                <!-- 兩者連動顯示，當沒勾選時 input為disabled -->
+                                <input type="checkbox" checked/>
+                                <input type="text" style="width: calc(100% - 30px)" placeholder="請輸入百分比數值" value="0" />
+                            </td>
+                        </tr>
+                        <tr class="textarea">
+                            <td>課程說明介紹</td>
+                            <td colspan="5">
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="verTop">附件上傳</td>
+                            <td colspan="5">
+                                <img src="../img/doc_attach.svg" />
+                                <ul style="display:inline-block;vertical-align:top">
+                                    <li><a>螢幕快照 2017-04-26 上午11.32.02.png</a><img src="../img/btn_clear.svg" /></li>
+                                    <li><a>螢幕快照 2017-04-26 上午11.32.02.png</a><img src="../img/btn_clear.svg" /></li>
+                                    <li><a>螢幕快照 2017-04-26 上午11.32.02.png</a><img src="../img/btn_clear.svg" /></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="verTop">
+                            <td>講師設定</td>
+                            <td colspan="5">
+                                <table class="list lastAddbtn autoWidth" style="display: inline-block;vertical-align: top;margin:0;width:100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>姓名</th>
+                                            <th>身分證號</th>
+                                            <th>事業部</th>
+                                            <th>業務中心</th>
+                                            <th>認定時數</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="create">
+                                            <td>
+                                                <div class="input-group reload">
+                                                    <input type="text" class="form-control" value="">
+                                                    <span class="input-group-addon">
+                          <img src="../img/ico_reload.svg"/>
+                        </span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-group reload">
+                                                    <input type="text" class="form-control" value="">
+                                                    <span class="input-group-addon">
+                          <img src="../img/ico_reload.svg"/>
+                        </span>
+                                                </div>
+                                            </td>
+                                            <td> <span></spsn> </td>
+                    <td> <span></spsn> </td>
+                    <td> <input type="text"/> </td>
+                    <td><img src="../img/btn_add new benefit.svg"/></td>
+                  </tr>
+                  <tr>
+                    <td>王小明</td>
+                    <td>A12345678</td>
+                    <td>威英</td>
+                    <td>台北</td>
+                    <td>10</td>
+                    <td>
+                      <img src="../img/btn delete.svg"/>
+                      <i class="fa fa-pencil"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr class="bold">
+            <td>報名方式</td>
+            <td colspan="5"> <hr/> </td>
+          </tr>
+          <tr>
+            <td>線上報名</td>
+            <td>
+              <select>
+                <option>是</option>
+                <option>否</option>
+              </select>
+            </td>
+            <!-- 使用multiple select  參考：https://www.npmjs.com/package/angular-multiple-select -->
+            <td>報名資格<br/>(職階)</td>
+            <td> <input type="text"/> </td>
+            <td>報名資格<br/>(組織)</td>
+            <td>
+              <input type="text" style="width:90%"/>
+              <i class="fa fa-pencil icon_Blue" style="margin-left:2%"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>名額限制</td>
+            <td>
+              <label><input type="radio" name="limit"/> 無　</label>
+              <label><input type="radio" name="limit"/> 總額限制
+                <input type="text" style="width:40%"/>
+                人
+              </label>
+            </td>
+            <td>報名起日</td>
+            <td> <input type="text" class="date"/> </td>
+            <td>報名迄日</td>
+            <td> <input type="text" class="date"/> </td>
+          </tr>
+          <tr class="bold">
+            <td>課程費用與<br/>其他提醒</td>
+            <td colspan="5"> <hr/> </td>
+          </tr>
+          <tr>
+            <td>課程收費</td>
+            <td>
+              <label style="width: 28%"><input type="radio" name="pay"/> 否　</label>
+              <label style="width: 70%"><input type="radio" name="pay"/> 是　<input type="text" style="width: 55%" />　</label>
+            </td>
+            <td>繳費期限</td>
+            <td> <input type="text" class="date"/> </td>
+            <td>費用專案別</td>
+            <td>
+              <label><input type="radio" name="pay1"/> 否　</label>
+              <label><input type="radio" name="pay1"/> 是　</label>
+            </td>
+          </tr>
+          <tr class="verTop">
+            <td>費用專案別<br/>設定</td>
+            <td colspan="5">
+              <table class="list lastAddbtn autoWidth left_last3" style="display: inline-block;vertical-align: top;margin:0;width:100%;">
+                <thead>
+                  <tr>
+                    <th>組合說明</th>
+                    <th>費用</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="create">
+                    <td style="width: 20% !important"> <input type="text"> </td>
+                    <td> <input type="text"> </td>
+                    <td><img src="../img/btn_add new benefit.svg"/></td>
+                  </tr>
+                  <tr>
+                    <td>A.單人房/附餐/搭遊覽車</td>
+                    <td>2,200</td>
+                    <td>
+                      <img src="../img/btn delete.svg"/>
+                      <i class="fa fa-pencil"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>A.單人房/不附餐/搭遊覽車</td>
+                    <td>2,000</td>
+                    <td>
+                      <img src="../img/btn delete.svg"/>
+                      <i class="fa fa-pencil"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>備註詢問</td>
+            <td colspan="5"> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td colspan="6">
+              <input type="checkbox"/><span>發布課程</span>
+                                                <input type="checkbox" /><span>註銷課程</span>
+                                            </td>
+                                        </tr>
+                                </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+</script>
+
+</html>

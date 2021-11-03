@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_record</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-317.000000, -685.000000)" id="ico_record" fill="#FFFFFF">
+            <g transform="translate(317.000000, 685.000000)">
+                <path d="M5,14.2546874 L5,4 L13.3901988,4 L13.3901988,14.2546874 L5,14.2546874 Z M5.83901988,13.2037499 L12.5511789,13.2037499 L12.5511789,5.02546874 L5.83901988,5.02546874 L5.83901988,13.2037499 Z M6.67803976,11.6655468 L6.67803976,10.6400781 L11.712159,10.6400781 L11.712159,11.6655468 L6.67803976,11.6655468 Z M6.67803976,9.66554682 L6.67803976,8.64007808 L11.712159,8.64007808 L11.712159,9.66554682 L6.67803976,9.66554682 Z M6.67803976,7.66554682 L6.67803976,6.64007808 L11.712159,6.64007808 L11.712159,7.66554682 L6.67803976,7.66554682 Z" id="ico_basic-info"></path>
+            </g>
+        </g>
+    </g>
+</svg>

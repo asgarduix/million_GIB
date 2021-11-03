@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            組織人事資料維護
+            <div>
+                <img src="../img/btn_edit_big.svg" onclick="javascript:location.href='item1_0203_edit.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item1_0201_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />事業部基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>事業部代碼</td>
+                            <td> <span>RD2</span> </td>
+                            <td>事業部名稱</td>
+                            <td> <span>大名</span> </td>
+                            <td>內設/外設</td>
+                            <td> <span>外設</span> </td>
+                        </tr>
+                        <tr>
+                            <td>成立日期</td>
+                            <td> <span>2016/4/12</span> </td>
+                            <td>結束日期</td>
+                            <td> <span>2017/4/15</span> </td>
+                            <td>註銷</td>
+                            <td> <i class="fa fa-check-square-o"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>業務中心</td>
+                            <td> <span>北區</span> </td>
+                            <td>區域</td>
+                            <td> <span>北區</span> </td>
+                            <td>停佣</td>
+                            <td> <i class="fa fa-check-square-o"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>事業部
+                                <br/>負責人</td>
+                            <td> <span>王大頭</span> </td>
+                            <td>事業部
+                                <br/>負責人職稱</td>
+                            <td> <span>71 負責人</span> </td>
+                        </tr>
+                        <tr>
+                            <td>推薦事業部</td>
+                            <td> <span>AK 愛加倍</span> </td>
+                            <td>推薦人</td>
+                            <td>
+                                <span>A12345678</span> /
+                                <span>汪星人</span>
+                            </td>
+                            <td>引薦人</td>
+                            <td>
+                                <span>B12345678</span> /
+                                <span>陳雅琪</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>地址</td>
+                            <td colspan="3" class="address"> <span>237 新北市中和區新民街11號4樓</span> </td>
+                        </tr>
+                        <tr>
+                            <td>備註說明</td>
+                            <td colspan="3"> <span>備註備註備註備註備註備註備註備註</span> </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="5"> <span>事業部佣金照發、事業部歸直轄</span> </td>
+                        </tr>
+                        <tr class="line">
+                            <td colspan="6">
+                                <hr/>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="autoWidth">
+                        <tr>
+                            <td>建檔人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>建檔日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                            <td>修改人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>修改日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_premium.svg"/ > 負責人固定扣款項目設定
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item2')">
+          <img src="../img/ico_records.svg"/ > 負責人異動歷程
+        </a>
+                </div>
+                <div id="item1" class="tabContent list lastAddbtn left_last1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>類別</th>
+                                <th>項目名稱</th>
+                                <th>代碼</th>
+                                <th>起始年月</th>
+                                <th>結束年月</th>
+                                <th>金額</th>
+                                <th>扣款備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>壽佣</td>
+                                <td>獎金</td>
+                                <td>Z01</td>
+                                <td>201604</td>
+                                <td>201707</td>
+                                <td>2,000</td>
+                                <td>備註備註備註</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item2" class="tabContent list lastAddbtn">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>異動次別</th>
+                                <th>負責人身分證號</th>
+                                <th>負責人姓名</th>
+                                <th>異動生效日</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>A12345678</td>
+                                <td>王筱方</td>
+                                <td>2016/04/13</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

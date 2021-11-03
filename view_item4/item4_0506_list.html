@@ -1,0 +1,1559 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md bg-inverse fixed-top">
+        <div class="navbar-header">
+            <img src="../img/goldennet_logo.svg" onclick="javascript:location.href='../index.html'" />
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">行政系統</li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    Tony Chuang
+                </li>
+                <li class="nav-item" onclick="javascript:location.href='../login.html'">
+                    登出 <img src="../img/btn_logout.svg" />
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <aside>
+        <ul class="sidebar-nav">
+            <li>
+                <img src="../img/ico_admin.svg" />
+                <a>人事行政</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                    <li>
+                        <a href="../view_item1/item1_1301_list.html">報聘申請名單</a>
+                    </li>
+                    <li>
+                        <a href="../view_item1/item1_1701_list.html">人事登錄檔匯入</a>
+                    </li>
+                    <li>
+                        <a href="../view_item1/item1_0201_list.html">組織資料維護</a>
+                    </li>
+                    <li>
+                        <a href="../view_item1/item1_0101_list.html">個人人事資料</a>
+                    </li>
+                    <li>
+                        <a>人事組織資料異動</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item1/item1_1801_list.html">輔導人異動</a>
+                            </li>
+                            <li>
+                                <a href="../view_item1/item1_1802_list.html">事業部異動</a>
+                            </li>
+                            <li>
+                                <a href="../view_item1/item1_1803_list.html">融通名單管理</a>
+                            </li>
+                            <li>
+                                <a href="../view_item1/item1_1804_list.html">人事異動查詢及報表</a>
+                            </li>
+                            <li>
+                                <a href="../view_item1/item1_1805_list.html">事業部一般變動查詢</a>
+                            </li>
+                            <li>
+                                <a href="../view_item1/item1_1806_list.html">事業部基扣變動查詢</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>個人晉升業績</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item1/item1_0901_list.html">個人舊業績查詢</a>
+                            </li>
+                            <li>
+                                <a href="../view_item1/item1_1001_list.html">晉升業績查詢</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>事業部晉升業績</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item1/item1_1101_list.html">事業部舊業績查詢</a>
+                            </li>
+                            <li>
+                                <a href="../view_item1/item1_1201_list.html">晉升業績查詢</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../view_item1/item1_0401_list.html">團保作業</a>
+                    </li>
+                    <li>
+                        <a>人事月結作業</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item1/item1_1401_list.html">每月結算</a>
+                            </li>
+                            <li>
+                                <a href="../view_item1/item1_1402_list.html">人事月結報表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../view_item1/item1_1501_list.html">組織圖</a>
+                    </li>
+                    <li>
+                        <a href="../view_item1/item1_1601_list.html">不考核人員設定</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../img/icon_policy.svg" />
+                <a>保單行政</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                    <li>
+                        <a href="../view_item2/item2_0101_list.html">保險公司設定</a>
+                    </li>
+                    <li>
+                        <a href="../view_item2/item2_0201_list.html">送件代號設定</a>
+                    </li>
+                    <li>
+                        <a href="../view_item2/item2_0301_list.html">商品險種設定</a>
+                    </li>
+                    <li>
+                        <a href="../view_item2/item2_0401_list.html">客戶管理</a>
+                    </li>
+                    <li>
+                        <a>保單管理</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item2/item2_0501_list.html">保單清單</a>
+                            </li>
+                            <li>
+                                <a href="../view_item2/item2_0503_list.html">保服通知匯入作業</a>
+                            </li>
+                            <li>
+                                <a href="../view_item2/item2_0504_list.html">保單異動重整作業</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>保單變更作業</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item4/item4_0301_list.html">保單整批變更</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../view_item2/item2_0701_list.html">保服追蹤紀錄作業</a>
+                    </li>
+                    <li>
+                        <a href="../view_item2/item2_0601_list.html">p1保險公司設定</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../img/icon_deliver.svg" />
+                <a>送件管理</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                    <li>
+                        <a href="#" onclick="window.open('../view_insurance/life_insurance_add.html')">新增壽險保單</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="window.open('../view_insurance/property_insurance_add.html')">新增產險保單</a>
+                    </li>
+                    <li>
+                        <a href="../view_item3/item3_0101_list.html">送件作業</a>
+                    </li>
+                    <li>
+                        <a href="../view_item3/item3_0201_list.html">送件報表</a>
+                    </li>
+                    <li>
+                        <a href="../view_item3/item3_0301_list.html">出單及回條管理</a>
+                    </li>
+                    <li>
+                        <a href="../view_item3/item3_0401_list.html">壽險保單簽收表</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="clicked">
+                <img src="../img/ico_commisson.svg" />
+                <a>薪資計算</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                    <li>
+                        <a>代理檔管理</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item4/item4_0101_list.html">原始代理檔匯入管理</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0103_list.html">公勝代理檔合計總表</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0104_list.html">公勝代理檔檢核作業</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0105_list.html">公勝代理檔檢核報表</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0102_list.html">公勝代理檔明細管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>扣款設定</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item8/item8_0201_list.html">法定扣款設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_item8/item8_0601_list.html">其他加扣款</a>
+                            </li>
+                            <li>
+                                <a href="../view_item8/item8_0701_list.html">每月扣款明細</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>一般佣金計算作業</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item4/item4_0504_list.html">當期佣金計算</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0501_list.html">薪資及佣金明細表查詢</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0502_list.html">佣金明細查詢</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0506_list.html">佣金查詢報表</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0505_list.html">當期佣金關帳作業</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>一般佣金檢核報表</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item4/item4_1201_list.html">發佣率檢查</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1202_list.html">獎金項目檢核作業</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1204_list.html">重複發佣檢核</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1205_list.html">人員停佣件</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1206_list.html">追佣檢核事業部</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1207_list.html">追佣檢核經手人</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1208_list.html">註銷件保單檢查</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1209_list.html">EDI 資料檢查</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>策盟佣金計算作業</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item4/item4_0504_list.html">當期佣金計算</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0501_list.html">薪資及佣金明細表查詢</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0502_list.html">佣金明細查詢</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0506_list.html">佣金查詢報表</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_0505_list.html">當期佣金關帳作業</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>策盟佣金檢核報表</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item4/item4_1201_list.html">發佣率檢查</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1202_list.html">獎金項目檢核作業</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1204_list.html">重複發佣檢核</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1205_list.html">人員停佣件</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1206_list.html">追佣檢核事業部</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1207_list.html">追佣檢核經手人</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1208_list.html">註銷件保單檢查</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1209_list.html">EDI 資料檢查</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../view_item4/item4_0901_list.html">佣金率維護</a>
+                    </li>
+                    <li>
+                        <a>佣金相關設定</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item4/item4_1001_list.html">佣金工作年月設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1002_list.html">獎金項目名稱設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1003_list.html">各職級及發放率設定</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>年終獎金率設定</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item4/item4_1101_list.html">一般年終率設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1102_list.html">特殊商品年終設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1103_list.html">年終獎金出席發放率</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>繼續率設定</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item4/item4_1004_list.html">整體繼續率設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1005_list.html">特殊商品繼續率設定</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../view_item4/item4_0201_list.html">繼續率預況表</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../img/ico_training.svg" />
+                <a>教育訓練</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                    <li>
+                        <a href="../view_item5/item5_0101_list.html">課程管理</a>
+                    </li>
+                    <li>
+                        <a onclick="window.open('../view_item5/item5_0201_add.html')">新增課程</a>
+                    </li>
+                    <li>
+                        <a href="../view_item5/item5_0301_list.html">講師時數</a>
+                    </li>
+                    <li>
+                        <a>學習護照</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item5/item5_0501_list.html">上課紀錄查詢</a>
+                            </li>
+                            <li>
+                                <a href="../view_item5/item5_0502_list.html">出席率查詢</a>
+                            </li>
+                            <li>
+                                <a href="../view_item5/item5_0504_list.html">公會時數查詢</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>模擬測驗</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item5/item5_0601_list.html">題庫上傳與維護</a>
+                            </li>
+                            <li>
+                                <a href="../view_item5/item5_0602_list.html">測驗記錄查詢</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../view_item5/item5_0701_list.html">課程報到</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../img/ico_source.svg" />
+                <a>銷售支援</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                    <li>
+                        <a href="../view_item6/item6_0101_list.html">公文文件管理</a>
+                    </li>
+                    <li>
+                        <a>行銷支援文件管理</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item6/item6_0201_list.html">文件表格管理</a>
+                            </li>
+                            <li>
+                                <a href="../view_item6/item6_0202_detail.html">保險支援專區</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../view_item6/item6_0301_list.html">推薦商品</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../img/ico_manage.svg" />
+                <a>業績競賽</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                    <li>
+                        <a href="">業績目標設定</a>
+                    </li>
+                    <li>
+                        <a href="">競賽業績計算</a>
+                    </li>
+                    <li>
+                        <a href="">每日受理速報</a>
+                    </li>
+                    <li>
+                        <a href="../view_item6/item6_0601_list.html">單位業績查詢</a>
+                    </li>
+                    <li>
+                        <a href="../view_item6/item6_0701_list.html">個人業績查詢</a>
+                    </li>
+                    <li>
+                        <a href="../view_item6/item6_0801_list.html">個人保單業績查詢</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../img/ico_mngform.svg" />
+                <a>申請單查詢</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                    <li>
+                        <a href="../view_item7/item7_0101_list.html">電子業務聯繫管理</a>
+                    </li>
+                    <li>
+                        <a href="../view_item7/item7_0201_list.html">請假單管理</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../img/ico_jkk.svg" />
+                <a>會計作業</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                    <li>
+                        <a>二代健保扣款設定</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item8/item8_0401_list.html">二代健保作業</a>
+                            </li>
+                            <li>
+                                <a href="../view_item8/item8_0402_list.html">異動資料處理查詢</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>會計報表</a>
+                        <ul>
+                            <li>
+                                <a>代還款統計表</a>
+                            </li>
+                            <li>
+                                <a href="../view_item8/item8_0801_list.html">EDI 報表及檔案</a>
+                            </li>
+                            <li>
+                                <a>前期欠款結算檔</a>
+                            </li>
+                            <li>
+                                <a href="../view_item4/item4_1301_list.html">發票科目檔</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>扣繳憑單作業</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../img/ico_crm.svg" />
+                <a>電商行政</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                    <li>
+                        <a href="../view_CRM/todo_list.html">待辦事項</a>
+                    </li>
+                    <li>
+                        <a>案件管理</a>
+                        <ul>
+                            <li>
+                                <a href="../view_CRM/case_list.html">案件清單</a>
+                            </li>
+                            <li>
+                                <a href="../view_CRM/caseDuplicate_list.html">重複客戶案件</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../view_CRM/customer_list.html">客戶管理</a>
+                    </li>
+                    <li>
+                        <a>派員管理</a>
+                        <ul>
+                            <li>
+                                <a href="../view_CRM/assign_list.html">派員清單</a>
+                            </li>
+                            <li>
+                                <a href="../view_CRM/assignSetting_detail.html">派員設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_CRM/area_list.html">服務事業部查詢</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>續保管理</a>
+                        <ul>
+                            <li>
+                                <a href="../view_CRM/renewal_list.html">續保清單</a>
+                            </li>
+                            <li>
+                                <a href="../view_CRM/renewal_task.html">續保作業</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>報表管理</a>
+                        <ul>
+                            <li>
+                                <a href="../view_CRM/report.html">派員件統計報表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>其他項目</a>
+                        <ul>
+                            <li>
+                                <a href="../view_CRM/form_list.html">網路表單管理</a>
+                            </li>
+                            <li>
+                                <a href="../view_CRM/upload_list.html">上傳文件管理</a>
+                            </li>
+                            <li>
+                                <a href="../view_CRM/other_list.html">下拉選單維護</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img src="../img/ico_setting.svg" />
+                <a>系統管理</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                    <li>
+                        <a href="../view_item9/item9_0101_list.html">代理檔格式設定</a>
+                    </li>
+                    <li>
+                        <a>系統登入管控設定</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item9/item9_0501_list.html">IP設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_item9/item9_0502_list.html">VIP權限設定</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>系統帳號權限設定</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item9/item9_0901_list.html">群組管理</a>
+                            </li>
+                            <li>
+                                <a href="../view_item9/item9_0902_list.html">人員管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../view_item9/item9_0201_list.html">保服通知格式設定</a>
+                    </li>
+                    <li>
+                        <a href="../view_item9/item9_0301_list.html">簡訊管理功能</a>
+                    </li>
+                    <li>
+                        <a>設定檔設定</a>
+                        <ul>
+                            <li>
+                                <a href="../view_item9/item9_0601_list.html">外幣幣別種類設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_item9/item9_0701_list.html">外幣每月匯率設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_item9/item9_0801_list.html">外幣受理業績重計算</a>
+                            </li>
+                            <li>
+                                <a href="../view_item9/item9_0401_list.html">稅務身分別對應檔</a>
+                            </li>
+                            <li>
+                                <a href="../view_item9/item9_0403_list.html">扣繳憑單公司設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_item9/item9_0402_list.html">所得類別維護設定</a>
+                            </li>
+                            <li>
+                                <a href="../view_item9/item9_0404_list.html">所得子類別維護設定</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul style="height:240px;"></ul>
+    </aside>
+    <section>
+        <img src="../img/btn home.svg" class="icon_BBrown" />
+        <ul>
+            <li>薪資計算</li>
+            <li>佣金計算作業</li>
+            <li>佣金查詢報表</li>
+        </ul>
+    </section>
+    <article>
+        <div class="searchBar">
+            <div class="bars">
+                <div class="bar">
+                    <select>
+                        <option></option>
+                        <option>區部</option>
+                        <option>業務中心</option>
+                        <option>事業部</option>
+                        <option>身分證號</option>
+                        <option>姓名</option>
+                        <option>保單號碼</option>
+                    </select>
+                    <select>
+                        <option></option>
+                    </select>
+                    <img src="../img/ico_and.svg" />
+                    <button>查詢</button>
+                </div>
+            </div>
+            <div class="bars">
+                <div class="bar">
+                    <select>
+                        <option></option>
+                        <option>區部</option>
+                        <option>業務中心</option>
+                        <option>事業部</option>
+                        <option>身分證號</option>
+                        <option>姓名</option>
+                        <option>保單號碼</option>
+                    </select>
+                    <input type="text">
+                    <img src="../img/ico_and.svg" />
+                </div>
+            </div>
+            <div class="bars">
+                <div class="bar">
+                    　佣金類別：
+                    <select>
+                        <option></option>
+                        <option>產險</option>
+                        <option>壽險</option>
+                        <option>服津</option>
+                        <option>年終獎金</option>
+                        <option>繼續率獎金</option>
+                    </select>
+                </div>
+            </div>
+            <div class="bars">
+                <div class="bar">
+                    　佣金年月：
+                    <input type="text" class="date"> ~
+                    <input type="text" class="date">
+                </div>
+            </div>
+            <div class="bars">
+                <div class="bar">
+                    代理檔類別：
+                    <label><input type="radio" name="a" /> 正式查詢　</label>
+                    <label><input type="radio" name="a" /> 關帳後重跑查詢　</label>
+                </div>
+            </div>
+            <div class="bars">
+                <div class="bar">
+                    　　制度別：
+                    <label><input type="radio" name="a" /> 一般　</label>
+                    <label><input type="radio" name="a" /> 策盟　</label>
+                </div>
+            </div>
+            <div class="bars">
+                <div class="bar">
+                    　報表名稱：
+                    <select class="select_action_1" onchange="select_action_1();">
+                        <option value="0"></option>
+                        <option value="1">1.單位主管營運績效佣金表</option>
+                        <option value="2">2.繼續率統計表-業務員/負責人-13/25個月</option>
+                        <option value="3">3.業務員月佣統計表</option>
+                        <option value="4">4.保險公司發佣統計表</option>
+                        <option value="5">5.受理發佣差異表(本月應發未發明細表)</option>
+                        <option value="6">6.各佣獎名稱金額統計</option>
+                        <option value="7">7.請款明細表</option>
+                        <option value="8">8.業務員實動率統計表</option>
+                        <option value="9">9.各項佣獎金額報表</option>
+                        <option value="10">10.業務行政代辦費沖銷作法</option>
+                        <option value="11">11.保單發佣明細表</option>
+                        <option value="12">12.O2O發佣明細</option>
+                        <option value="13">13.共招件發佣明細</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="funcBtn">
+            <button class="icon_BBrown icon_download">匯出</button>
+        </div>
+        <div class="pager">
+            共 56 筆　每頁筆數
+            <select>
+                <option>10筆</option>
+                <option>20筆</option>
+                <option>30筆</option>
+                <option>40筆</option>
+                <option>50筆</option>
+            </select>
+            <input type="text" value="6"> /12
+            <i class="glyphicon glyphicon-chevron-left "></i>
+            <i class="glyphicon glyphicon-chevron-right disable"></i>
+        </div>
+        <div class="list_content select_script no1" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>序號</th>
+                        <th>單位</th>
+                        <th>主管</th>
+                        <th>FYC</th>
+                        <th>佔率</th>
+                        <th>目標</th>
+                        <th>達成率</th>
+                        <th>獎勵業績</th>
+                        <th>長年比</th>
+                        <th>去年同期</th>
+                        <th>成長率</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no2" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>業務中心</th>
+                        <th>事業部</th>
+                        <th>姓名</th>
+                        <th>報聘日</th>
+                        <th>13個月應收保費</th>
+                        <th>13個月實收保費</th>
+                        <th>13個月繼續率</th>
+                        <th>25個月應收保費</th>
+                        <th>25個月實收保費</th>
+                        <th>25個月繼續率</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no3" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>月份</th>
+                        <th>ID</th>
+                        <th>姓名</th>
+                        <th>壽險FYC</th>
+                        <th>壽險業績</th>
+                        <th>產專FYC</th>
+                        <th>產專業績</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no4" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>保險公司</th>
+                        <th>首期保費</th>
+                        <th>首期原始代理費</th>
+                        <th>首期FYC</th>
+                        <th>首期佣金</th>
+                        <th>首佣比例</th>
+                        <th>續期保費</th>
+                        <th>續期FYC</th>
+                        <th>續期比例</th>
+                        <th>服津保費</th>
+                        <th>服津FYC</th>
+                        <th>服津佣金</th>
+                        <th>服津比例</th>
+                        <th>其他獎勵金FYC</th>
+                        <th>其他獎勵金</th>
+                        <th>其他獎勵金比例</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>
+                            <span onclick="openPopup('report_detail')" style="text-decoration:underline;">10,000</span>
+                        </td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no5" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>受理月份</th>
+                        <th>來佣月份</th>
+                        <th>保險公司</th>
+                        <th>保單號碼</th>
+                        <th>繳別</th>
+                        <th>被保人</th>
+                        <th>受理日</th>
+                        <th>生效日</th>
+                        <th>出單日</th>
+                        <th>保戶簽收日</th>
+                        <th>經手人繳回日</th>
+                        <th>經手人姓名</th>
+                        <th>事業部</th>
+                        <th>業務中心</th>
+                        <th>註銷</th>
+                        <th>審核</th>
+                        <th>備註</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no6" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>來佣月份</th>
+                        <th>首年佣金</th>
+                        <th>續年佣金</th>
+                        <th>個人服津</th>
+                        <th>組織服津</th>
+                        <th>主管服津</th>
+                        <th>首年輔導佣金</th>
+                        <th>平階增員佣金</th>
+                        <th>低增高佣金</th>
+                        <th>介紹獎金</th>
+                        <th>保險公司獎勵金</th>
+                        <th>組織續佣</th>
+                        <th>營運績效佣金</th>
+                        <th>保險公司加扣款</th>
+                        <th>全額獎勵金</th>
+                        <th>92%獎勵金</th>
+                        <th>95%獎勵金</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no7" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>標題</th>
+                        <th>標題</th>
+                        <th>標題</th>
+                        <th>標題</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no8" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>區部</th>
+                        <th>業務中心</th>
+                        <th>事業部</th>
+                        <th>業務員姓名</th>
+                        <th>職階</th>
+                        <th>報聘日</th>
+                        <th>離職日</th>
+                        <th>年累計應達FYC</th>
+                        <th>受理累計FYC</th>
+                        <th>核發累計FYC</th>
+                        <th>受理未核發累計FYC +核發累計FYC</th>
+                        <th>實動率獎金</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no9" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>保險公司<br>保單號碼</th>
+                        <th>保費<br>代理費</th>
+                        <th>首年佣金<br>輔導佣金</th>
+                        <th>平階佣金<br>平階佣金（扣）</th>
+                        <th>低增高佣金<br>低增高佣金（扣）</th>
+                        <th>介紹佣金<br>介紹佣金（扣）</th>
+                        <th>續年佣金<br>營運佣金</th>
+                        <th>組織佣金<br>組織續佣</th>
+                        <th>個人服務津貼<br>組織服務津貼</th>
+                        <th>其他</th>
+                        <th>發佣合計<br>剩餘未發佣金</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no10" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>標題</th>
+                        <th>標題</th>
+                        <th>標題</th>
+                        <th>標題</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no11" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>保險公司<br>保單號碼</th>
+                        <th>保費<br>代理費</th>
+                        <th>首年佣金<br>輔導佣金</th>
+                        <th>平階佣金<br>平階佣金（扣）</th>
+                        <th>低增高佣金<br>低增高佣金（扣）</th>
+                        <th>介紹佣金<br>介紹佣金（扣）</th>
+                        <th>續年佣金<br>營運佣金</th>
+                        <th>組織佣金<br>組織續佣</th>
+                        <th>個人服務津貼<br>組織服務津貼</th>
+                        <th>其他</th>
+                        <th>發佣合計<br>剩餘未發佣金</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no12" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>保險公司</th>
+                        <th>保單號碼</th>
+                        <th>獎金科目名稱</th>
+                        <th>經手人姓名</th>
+                        <th>經手人ID</th>
+                        <th>保單生效日期</th>
+                        <th>商品代碼</th>
+                        <th>被保人</th>
+                        <th>年期</th>
+                        <th>繳別</th>
+                        <th>年度</th>
+                        <th>繳次</th>
+                        <th>幣別</th>
+                        <th>保費</th>
+                        <th>原始代理費</th>
+                        <th>計佣代理費</th>
+                        <th>佣金</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_content select_script no13" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>保險公司</th>
+                        <th>保單號碼</th>
+                        <th>獎金科目名稱</th>
+                        <th>經手人姓名</th>
+                        <th>經手人ID</th>
+                        <th>保單生效日期</th>
+                        <th>商品代碼</th>
+                        <th>被保人</th>
+                        <th>年期</th>
+                        <th>繳別</th>
+                        <th>年度</th>
+                        <th>繳次</th>
+                        <th>幣別</th>
+                        <th>保費</th>
+                        <th>原始代理費</th>
+                        <th>計佣代理費</th>
+                        <th>佣金</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                        <td>值</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="report_detail" class="popup reportDetail">
+            <img src="../img/btn_clear.svg" class="close" onclick="openPopup('report_detail')" />
+            <section>
+                其他
+            </section>
+            <div>
+                <table class="list">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>CM1</th>
+                            <th>CM2</th>
+                            <th>CM3</th>
+                            <th>CM4</th>
+                            <th>CM5</th>
+                            <th>CM6</th>
+                            <th>CM7</th>
+                            <th>CM8</th>
+                            <th>CM9</th>
+                            <th>CM10</th>
+                            <th>CM11</th>
+                            <th>CM12</th>
+                            <th>CM13</th>
+                            <th>CM14</th>
+                            <th>CM15</th>
+                            <th>CM16</th>
+                            <th>CM17</th>
+                            <th>CM18</th>
+                            <th>CM19</th>
+                            <th>CM20</th>
+                            <th>CM21</th>
+                            <th>合計</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>95%獎勵金</th>
+                            <th>全額獎勵金</th>
+                            <th>全球定額津貼</th>
+                            <th>營運獎金</th>
+                            <th>92%獎勵金</th>
+                            <th>依制度獎勵金</th>
+                            <th>公司獎勵金</th>
+                            <th>安達行政管理費</th>
+                            <th>安聯服務津貼(繼續率)</th>
+                            <th>分潤獎金</th>
+                            <th>全球(國華)轉帳津貼</th>
+                            <th>台壽高額績效獎金</th>
+                            <th>台壽營運專案績效獎金</th>
+                            <th>台壽投資型營運獎金</th>
+                            <th>季績效</th>
+                            <th>其他獎金</th>
+                            <th>新安東京傷害險服務獎金</th>
+                            <th>產險行政處理費</th>
+                            <th>台產服務費用</th>
+                            <th>GOGO保佣金</th>
+                            <th>台壽續保獎金</th>
+                            <th>合計</th>
+                        </tr>
+                    </thead>
+                    <tbody style="white-space:nowrap;">
+                        <tr>
+                            <td>總公司</td>
+                            <td>1,974,885.00</td>
+                            <td>1.08</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>1,974,886.08</td>
+                        </tr>
+                        <tr>
+                            <td>策盟商</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1,974,885.00</td>
+                            <td>1.08</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>1,974,886.08</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+    <div id="alert" class="popup">
+        <img src="../img/btn_saved.svg" />儲存完畢!
+    </div>
+    <div id="bg"></div>
+    <div id="bg1"></div>
+    <div id="bg2"></div>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    var sidebar = $('.sidebar-nav > li');
+
+    sidebar.hover(function(_this) {
+        _this.target.classList.add("hover");
+    });
+
+    sidebar.mouseleave(function(_this) {
+        _this.target.classList.remove("hover");
+    });
+
+    sidebar.click(function(_this) {
+        console.log(_this);
+        var temp = _this.currentTarget.classList;
+        console.log(temp);
+        if (temp.length <= 1) {
+            temp.add("clicked");
+        } else {
+            temp.remove("clicked");
+        }
+    });
+});
+
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+
+var tempPopup;
+var isPopup = false;
+
+function openPopup(name) {
+    isPopup = !isPopup;
+    if (tempPopup != undefined && name != tempPopup) {
+        var popup = document.getElementById(tempPopup);
+        var modal = document.getElementById('bg');
+        var modal2 = document.getElementById('bg2');
+        var popup1 = document.getElementById(name);
+        var modal1 = document.getElementById('bg1');
+        popup.style.display = "none";
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        popup1.style.display = "block";
+        modal1.style.display = "block";
+    } else if (tempPopup != undefined && name == 'alert') {
+        var popup = document.getElementById(tempPopup);
+        var modal = document.getElementById('bg1');
+        var modal2 = document.getElementById('bg2');
+        var popup1 = document.getElementById(name);
+        var modal1 = document.getElementById('bg2');
+        popup.style.display = "block";
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        popup1.style.display = "block";
+        modal1.style.display = "block";
+    } else {
+        var popup = document.getElementById(name);
+        var modal = document.getElementById('bg');
+        var modal1 = document.getElementById('bg1');
+        var modal2 = document.getElementById('bg2');
+        if (isPopup == false) {
+            popup.style.display = "none";
+            modal.style.display = "none";
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+        } else {
+            popup.style.display = "block";
+            modal.style.display = "block";
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+        }
+    }
+    tempPopup = name;
+};
+
+function editCase(bool, num) {};
+
+$(document).ready(function() {
+    $("#bg").click(function() {
+        var popup = document.getElementById(tempPopup);
+        var modal = document.getElementById('bg');
+        popup.style.display = "none";
+        modal.style.display = "none";
+    });
+});
+
+function changeOption(val) {
+    console.log(val.value);
+    if (val.value == 'B') {
+        $('.optionB').prop('disabled', false);
+    } else {
+        $('.optionB').prop('disabled', true);
+    }
+}
+
+
+//select 下拉選單觸發事件
+function select_action_1() {
+    var selectValue = $(".select_action_1").val();
+    if (selectValue) {
+        $(".select_script").hide();
+    }
+    if (selectValue == 1) {
+        $(".select_script.no1").show();
+    }
+    if (selectValue == 2) {
+        $(".select_script.no2").show();
+    }
+    if (selectValue == 3) {
+        $(".select_script.no3").show();
+    }
+    if (selectValue == 4) {
+        $(".select_script.no4").show();
+    }
+    if (selectValue == 5) {
+        $(".select_script.no5").show();
+    }
+    if (selectValue == 6) {
+        $(".select_script.no6").show();
+    }
+    if (selectValue == 7) {
+        $(".select_script.no7").show();
+    }
+    if (selectValue == 8) {
+        $(".select_script.no8").show();
+    }
+    if (selectValue == 9) {
+        $(".select_script.no9").show();
+    }
+    if (selectValue == 10) {
+        $(".select_script.no10").show();
+    }
+    if (selectValue == 11) {
+        $(".select_script.no11").show();
+    }
+    if (selectValue == 12) {
+        $(".select_script.no12").show();
+    }
+    if (selectValue == 13) {
+        $(".select_script.no13").show();
+    }
+    if (selectValue == 14) {
+        $(".select_script.no14").show();
+    }
+    if (selectValue == 15) {
+        $(".select_script.no15").show();
+    }
+    if (selectValue == 16) {
+        $(".select_script.no16").show();
+    }
+    if (selectValue == 17) {
+        $(".select_script.no17").show();
+    }
+    if (selectValue == 18) {
+        $(".select_script.no18").show();
+    }
+    if (selectValue == 19) {
+        $(".select_script.no19").show();
+    }
+}
+</script>
+
+</html>

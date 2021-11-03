@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Ico_reload</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-222.000000, -785.000000)" id="Ico_reload" fill="#07C5ED">
+            <path d="M236.497779,795.013324 C236.227736,797.700223 233.875777,799.689012 231.181361,799.508827 C228.486944,799.328642 226.420738,797.044394 226.510864,794.345464 C226.60099,791.646534 228.81498,789.505216 231.515414,789.505182 L231.515414,792.008883 L236.522816,789.004441 L231.515414,786 L231.515414,788.002961 C227.984582,787.999843 225.094978,790.812072 225.002285,794.341689 C224.909593,797.871306 227.64761,800.831324 231.173739,801.013531 C234.699868,801.195738 237.728396,798.533696 238,795.013324 L236.497779,795.013324 Z"></path>
+        </g>
+    </g>
+</svg>

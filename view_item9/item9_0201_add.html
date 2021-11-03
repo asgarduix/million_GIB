@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+
+    <section>
+    <span id="edit">系統代碼：</span>
+    <span id="add">保服通知格式檔類別：</span>
+    <select onChange="changeOption()">
+      <option></option>
+      <option>XLS</option>
+      <option>CSV</option>
+      <option>TXT</option>
+    </select>
+    <button class="inline-btn" onclick="changeView()">確定</button>
+    <div>
+      <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item9_0201_detail.html'"/>
+      <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item9_0201_list.html'"/>
+    </div>
+  </section>
+
+  <article>
+    <div class="basic_info tableList">
+      <p class="title"><img src="../img/ico_profile.svg"/>保服通知格式檔設定</p>
+      <div>
+        <table>
+          <tr>
+            <td>IScode</td>
+            <td> <span>1</span> </td>
+            <td>檔案名稱<span class="text_Red">*</span></td>
+            <td>
+              <input type="text" value="" class="subBig">
+              <span>.csv</span>
+            </td>
+            <td>建立日期</td>
+            <td> <span>2017/1/23</span> </td>
+          </tr>
+          <tr>
+            <td>保險公司<span class="text_Red">*</span></td>
+            <td>
+              <select>
+                <option>富邦人壽</option>
+              </select>
+            </td>
+            <td>分隔符號設定</td>
+            <td> <input type="text" value=","/> </td>
+            <td>啟用</td>
+            <td>
+              <select>
+                <option>啟用</option>
+                <option>停用</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>通知類別</td>
+            <td>
+              <select>
+                <option>繳費異常</option>
+                <option>催告或墊繳</option>
+                <option>停效</option>
+                <option>其他異常</option>
+              </select>
+            </td> 
+            <td>繳別類型</td>
+            <td>
+              <select>
+                <option>一般</option>
+              </select>
+            </td>
+            <td class="left pointer"> <span>繳別對照表</span> </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>CKC</td>
+            <td> <input type="text"/> </td>
+            <td>特別處理</td>
+            <td>
+              <select>
+                <option></option>
+              </select>
+            </td>
+          </tr>
+          <tr> 
+            <td>備註</td>
+            <td colspan="3"> <input type="text"/> </td>
+          </tr>
+        </table>
+        <table class="list autoWidth">
+          <tr>
+            <th>編號</th>
+            <th>欄位名稱</th>
+            <th>預設值</th>
+            <th>欄位數</th>
+            <th>欄位格式化設定</th>
+            <th>截取起始碼數</th>
+            <th>欄位長度</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>保單號碼</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>保單日期</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>經手人身分證號</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>經手人姓名</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>要保人身分證號</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>要保人姓名</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>被保人身分證號</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>被保人姓名</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>幣別</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>繳別</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>繳款方式</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>保費</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>內容</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>通知日</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>墊繳開始日</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>墊繳結束日</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>應繳日</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>停效日</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>催告日</td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+            <td> <input type="text"/> </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </article>
+
+
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+  $('article').hide();
+  $('#edit').hide();
+  $('section select').show();
+  $('#add').show();
+
+  function changeView() {
+    $('article').show();
+    $('#edit').show();
+    $('section select').hide();
+    $('section button').hide();
+    $('#add').hide();
+  }
+</script>
+</html>

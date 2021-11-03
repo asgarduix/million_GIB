@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_multmenu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-258.000000, -786.000000)" id="ico_multmenu" fill="#07C5ED">
+            <path d="M267,791 C265.895431,791 265,790.104569 265,789 C265,787.895431 265.895431,787 267,787 C268.104569,787 269,787.895431 269,789 C269,790.104569 268.104569,791 267,791 Z M267,797 C265.895431,797 265,796.104569 265,795 C265,793.895431 265.895431,793 267,793 C268.104569,793 269,793.895431 269,795 C269,796.104569 268.104569,797 267,797 Z M267,803 C265.895431,803 265,802.104569 265,801 C265,799.895431 265.895431,799 267,799 C268.104569,799 269,799.895431 269,801 C269,802.104569 268.104569,803 267,803 Z"></path>
+        </g>
+    </g>
+</svg>

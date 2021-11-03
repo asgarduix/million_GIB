@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>代理檔編號：</span>
+            <div>
+                <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item4_0102_detail.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item4_0102_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />代理檔明細基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>代理檔類別</td>
+                            <td>
+                                <select>
+                                    <option>壽險佣金</option>
+                                </select>
+                            </td>
+                            <td>格式名稱</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>保險公司</td>
+                            <td>
+                                <select>
+                                    <option>A9-2 安達產物-進件寶</option>
+                                </select>
+                            </td>
+                            <td>保單號碼</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>保單生效日</td>
+                            <td>
+                                <input type="text" value="" class="date" /> </td>
+                        </tr>
+                        <tr>
+                            <td>資料來源</td>
+                            <td>
+                                <select>
+                                    <option>人工輸入</option>
+                                </select>
+                            </td>
+                            <td>險種代碼</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>繼續率年月</td>
+                            <td>
+                                <input type="text" value="" class="date" /> </td>
+                        </tr>
+                        <tr>
+                            <td>送件代號</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>保單類別</td>
+                            <td>
+                                <select>
+                                    <option>策盟保單</option>
+                                </select>
+                            </td>
+                            <td>策盟狀態</td>
+                            <td>
+                                <select>
+                                    <option>A</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>來佣年月</td>
+                            <td><input type="text" value="" class="date" /> </td>
+                            <td>發佣年月</td>
+                            <td><input type="text" value="" class="date" /> </td>
+                            <td>發佣狀態</td>
+                            <td><span>本月來佣本月發佣</span></td>
+                        </tr>
+                        <tr>
+                            <td>業務員身分證號</td>
+                            <td><input type="text" value="" class="date" /> </td>
+                            <td>業務員姓名</td>
+                            <td><input type="text" value="" class="date" /> </td>
+                            <td>Main<br>主附約代碼</td>
+                            <td><input type="text" value=""/> </td>
+                        </tr>
+                        <tr>
+                            <td>經手人1身分證號</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control" value="">
+                                    <span class="input-group-addon">
+                  <img src="../img/ico_reload.svg" />
+                </span>
+                                </div>
+                            </td>
+                            <td>經手人1姓名</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>繳別</td>
+                            <td>
+                                <select>
+                                    <option></option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>經手人2身分證號</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control" value="">
+                                    <span class="input-group-addon">
+                  <img src="../img/ico_reload.svg" />
+                </span>
+                                </div>
+                            </td>
+                            <td>經手人2姓名</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>繳次</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>要保人身分證號</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control" value="">
+                                    <span class="input-group-addon">
+                  <img src="../img/ico_reload.svg" />
+                </span>
+                                </div>
+                            </td>
+                            <td>要保人姓名</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>年度</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>被保人身分證號</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control" value="">
+                                    <span class="input-group-addon">
+                  <img src="../img/ico_reload.svg" />
+                </span>
+                                </div>
+                            </td>
+                            <td>被保人姓名</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>年期</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>原幣幣別</td>
+                            <td>
+                                <select>
+                                    <option></option>
+                                </select>
+                            </td>
+                            <td>保額</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>保險公司加扣款</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>實收主約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>佣金率</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>實收主約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>服務津貼</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>SFYP
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>SFYC
+                                <br/>實收附約佣金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>SRV
+                                <br/>應收主約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>SRV7
+                                <br/>應收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>P1
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>P2
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>P3
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>P4
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>P5
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>P6
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>P7
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>P8
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>P9
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>P10
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>P11
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>P12
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>P13
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>P14
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>P15
+                                <br/>實收附約保費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>B1
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>B2
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>B3
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>B4
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>B5
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>B6
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>B7
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>B8
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>B9
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>B10
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>B11
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>B12
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>B13
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>B14
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>B15
+                                <br/>附約代理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>CM1
+                                <br/>95%獎勵金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM2
+                                <br/>全額獎勵金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM3
+                                <br/>全球定額津貼</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>CM4
+                                <br/>營運獎金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM5
+                                <br/>92%獎勵金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM6
+                                <br/>依制度獎勵金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>CM7
+                                <br/>公司獎勵金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM8
+                                <br/>安達行政管理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM9
+                                <br/>安聯服務津貼(繼續率)</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>CM10
+                                <br/>分潤獎金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM11
+                                <br/>全球(國華)轉帳津貼</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM12
+                                <br/>台壽高額績效獎金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>CM13
+                                <br/>台壽營運專案績效獎金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM14
+                                <br/>台壽投資型營運獎金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM15
+                                <br/>季績效</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>CM16
+                                <br/>其他獎金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM17
+                                <br/>新安東京傷害險服務獎金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM18
+                                <br/>產險行政處理費</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>CM19
+                                <br/>台產服務費用</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM20
+                                <br/>GOGO保佣金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>CM21
+                                <br/>台壽續保獎金</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr>
+                            <td>Mark1</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>Mark2</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>Mark3</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr class="textarea">
+                            <td>Remark1 代理檔備註</td>
+                            <td colspan="3">
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                        <tr class="textarea">
+                            <td>Remark2 特別處理備註</td>
+                            <td colspan="3">
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </article>
+        <div id="invoice_add" class="popup invoice">
+            <img src="../img/btn_clear.svg" class="close" onclick="openPopup('invoice_add')" />
+            <section>
+                發票登錄
+                <div>
+                    <img src="../img/btn_cancel_big.svg" onclick="openPopup('invoice_add')" />
+                    <img src="../img/btn_unsave.svg" onclick="editCase(false);openPopup('alert')" />
+                </div>
+            </section>
+            <div>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>編號</th>
+                                <th>發票號碼</th>
+                                <th>發票金額</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span>1</span>
+                                </td>
+                                <td>
+                                    <span>ABC68789003</span>
+                                    <input type="text" value="ABC68789003" />
+                                </td>
+                                <td>
+                                    <span>1,000</span>
+                                    <input type="text" value="1,000" />
+                                </td>
+                                <td>
+                                    <img src="../img/btn delete.svg" />
+                                    <i class="fa fa-pencil" onclick="editCase(true, 1)"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>2</span>
+                                </td>
+                                <td>
+                                    <span>ABC68789003</span>
+                                    <input type="text" value="ABC68789003" />
+                                </td>
+                                <td>
+                                    <span>1,000</span>
+                                    <input type="text" value="1,000" />
+                                </td>
+                                <td>
+                                    <img src="../img/btn delete.svg" />
+                                    <i class="fa fa-pencil" onclick="editCase(true, 2)"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>3</span>
+                                </td>
+                                <td>
+                                    <span>ABC68789003</span>
+                                    <input type="text" value="ABC68789003" />
+                                </td>
+                                <td>
+                                    <span>1,000</span>
+                                    <input type="text" value="1,000" />
+                                </td>
+                                <td>
+                                    <img src="../img/btn delete.svg" />
+                                    <i class="fa fa-pencil" onclick="editCase(true, 3)"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>4</span>
+                                </td>
+                                <td>
+                                    <span>ABC68789003</span>
+                                    <input type="text" value="ABC68789003" />
+                                </td>
+                                <td>
+                                    <span>1,000</span>
+                                    <input type="text" value="1,000" />
+                                </td>
+                                <td>
+                                    <img src="../img/btn delete.svg" />
+                                    <i class="fa fa-pencil" onclick="editCase(true, 4)"></i>
+                                </td>
+                            </tr>
+                            <tr class="create">
+                                <td>5</td>
+                                <td>
+                                    <input type="text" value="" />
+                                </td>
+                                <td>
+                                    <input type="text" value="" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr class="create">
+                                <td>6</td>
+                                <td>
+                                    <input type="text" value="" />
+                                </td>
+                                <td>
+                                    <input type="text" value="" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr class="create">
+                                <td>7</td>
+                                <td>
+                                    <input type="text" value="" />
+                                </td>
+                                <td>
+                                    <input type="text" value="" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr class="create">
+                                <td>8</td>
+                                <td>
+                                    <input type="text" value="" />
+                                </td>
+                                <td>
+                                    <input type="text" value="" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr class="create">
+                                <td>9</td>
+                                <td>
+                                    <input type="text" value="" />
+                                </td>
+                                <td>
+                                    <input type="text" value="" />
+                                </td>
+                                <td>
+                                    <img src="../img/btn_addnew.svg" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="bg"></div>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+
+var tempPopup;
+var isPopup = false;
+
+function openPopup(name) {
+    isPopup = !isPopup;
+    if (tempPopup != undefined && name != tempPopup) {
+        var popup = document.getElementById(tempPopup);
+        var modal = document.getElementById('bg');
+        var modal2 = document.getElementById('bg2');
+        var popup1 = document.getElementById(name);
+        var modal1 = document.getElementById('bg1');
+        popup.style.display = "none";
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        popup1.style.display = "block";
+        modal1.style.display = "block";
+    } else if (tempPopup != undefined && name == 'alert') {
+        var popup = document.getElementById(tempPopup);
+        var modal = document.getElementById('bg1');
+        var modal2 = document.getElementById('bg2');
+        var popup1 = document.getElementById(name);
+        var modal1 = document.getElementById('bg2');
+        popup.style.display = "block";
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        popup1.style.display = "block";
+        modal1.style.display = "block";
+    } else {
+        var popup = document.getElementById(name);
+        var modal = document.getElementById('bg');
+        var modal1 = document.getElementById('bg1');
+        var modal2 = document.getElementById('bg2');
+        if (isPopup == false) {
+            popup.style.display = "none";
+            modal.style.display = "none";
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+        } else {
+            popup.style.display = "block";
+            modal.style.display = "block";
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+        }
+    }
+    tempPopup = name;
+};
+
+function editCase(bool, num) {};
+
+$(document).ready(function() {
+    $("#bg").click(function() {
+        var popup = document.getElementById(tempPopup);
+        var modal = document.getElementById('bg');
+        popup.style.display = "none";
+        modal.style.display = "none";
+    });
+});
+</script>
+
+</html>

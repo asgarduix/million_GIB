@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>btn_clear</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-203.000000, -741.000000)" id="btn_clear" fill="#FF5B34">
+            <path d="M214.111508,752.111508 L210.278175,752.111508 L210.278175,755.444841 L214.111508,755.444841 L214.111508,759.278175 L217.444841,759.278175 L217.444841,755.444841 L221.278175,755.444841 L221.278175,752.111508 L217.444841,752.111508 L217.444841,748.278175 L214.111508,748.278175 L214.111508,752.111508 Z" transform="translate(215.778175, 753.778175) rotate(-315.000000) translate(-215.778175, -753.778175) "></path>
+        </g>
+    </g>
+</svg>

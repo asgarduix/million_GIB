@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md bg-inverse fixed-top">
+        <div class="navbar-header">
+            <img src="../img/goldennet_logo.svg" onclick="javascript:location.href='../index.html'" />
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">電銷行政專區</li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    Tony Chuang
+                </li>
+                <li class="nav-item" onclick="javascript:location.href='../login.html'">
+                    登出 <img src="../img/btn_logout.svg" />
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <aside>
+        <ul class="sidebar-nav">
+            <li>
+                <img src="../img/ico_crm.svg" />
+                <a>電商行政</a>
+                <i class="fa fa-sort-desc clicked"></i>
+                <ul>
+                    <li>
+                        <a href="todo_list.html">待辦事項</a>
+                    </li>
+                    <li>
+                        <a>案件管理</a>
+                        <ul>
+                            <li>
+                                <a href="case_list.html">案件清單</a>
+                            </li>
+                            <li>
+                                <a href="caseDuplicate_list.html">重複客戶案件</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="customer_list.html">客戶管理</a>
+                    </li>
+                    <li>
+                        <a>派員管理</a>
+                        <ul>
+                            <li>
+                                <a href="assign_list.html">派員清單</a>
+                            </li>
+                            <li>
+                                <a href="assignSetting_detail.html">派員設定</a>
+                            </li>
+                            <li>
+                                <a href="area_list.html">服務事業部查詢</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>續保管理</a>
+                        <ul>
+                            <li>
+                                <a href="renewal_list.html">續保清單</a>
+                            </li>
+                            <li>
+                                <a href="renewal_task.html">續保作業</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>報表管理</a>
+                        <ul>
+                            <li>
+                                <a href="report.html">派員件統計報表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>其他項目</a>
+                        <ul>
+                            <li>
+                                <a href="form_list.html">網路表單管理</a>
+                            </li>
+                            <li>
+                                <a href="upload_list.html">上傳文件管理</a>
+                            </li>
+                            <li>
+                                <a href="other_list.html">下拉選單維護</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+        <section>
+            <img src="../img/btn home.svg" class="icon_BBrown" />
+            <ul>
+                <li>電商行政</li>
+                <li>派員管理</li>
+                <li>派員設定</li>
+            </ul>
+        </section>
+        <article>
+            <div class="mainBtns">
+                <img src="../img/btn_unsave.svg" onclick="javascript:location.href='assignSetting_detail.html'" />
+            </div>
+            <div class="searchBar">
+                <div class="bars">
+                    <div class="bar">
+                        請選擇設定項目
+                        <select>
+                            <option>業務中心</option>
+                            <option>事業部</option>
+                            <option>業務員</option>
+                        </select>
+                        <button>查詢</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pager">
+                共 56 筆　每頁筆數
+                <select>
+                    <option>10筆</option>
+                    <option>20筆</option>
+                    <option>30筆</option>
+                    <option>40筆</option>
+                    <option>50筆</option>
+                </select>
+                <input type="text" value="6" /> /12
+                <i class="glyphicon glyphicon-chevron-left "></i>
+                <i class="glyphicon glyphicon-chevron-right disable"></i>
+            </div>
+            <div class="list_content lastAddbtn">
+                <table class="left_last4 left_last2" id="item1">
+                    <thead>
+                        <tr>
+                            <th>名稱 <i class="fa fa-sort-desc"><i> </th>
+            <th>代碼</th>
+            <th>備註</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tr_BBlue create">
+            <td> <input type="text"> </td>
+            <td> <input type="text"> </td>
+            <td class="textarea"> <input type="text"> </td>
+            <td><img src="../img/btn_add new benefit.svg"></td>
+          </tr>
+          <tr>
+            <td>台北一區</td>
+            <td>TP01</td>
+            <td>備註備註備註備註備註備註備註備註備註備註備註</td>
+            <td>
+              <img src="../img/btn delete.svg">
+              <i class="fa fa-pencil"></i>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>台北二區</td>
+                            <td>TP02</td>
+                            <td>備註備註備註備註備註備註備註備註備註備註備註</td>
+                            <td>
+                                <img src="../img/btn delete.svg">
+                                <i class="fa fa-pencil"></i>
+                            </td>
+                        </tr>
+                        </tbody>
+                </table>
+                <table class="left_last4 left_last2" id="item2">
+                    <thead>
+                        <tr>
+                            <th>名稱 <i class="fa fa-sort-desc"><i> </th>
+            <th>代碼</th>
+            <th>備註</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tr_BBlue create">
+            <td> <input type="text"> </td>
+            <td> <input type="text"> </td>
+            <td class="textarea"> <input type="text"> </td>
+            <td><img src="../img/btn_add new benefit.svg"></td>
+          </tr>
+          <tr>
+            <td><div class="underline" onclick="window.open('assign_detail.html')">群英</div></td>
+            <td>Keiro</td>
+            <td>備註備註備註備註備註備註備註備註備註備註備註</td>
+            <td>
+              <img src="../img/btn delete.svg">
+              <i class="fa fa-pencil"></i>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="underline" onclick="window.open('assign_detail.html')">群美</div>
+                            </td>
+                            <td>Keyeo</td>
+                            <td>備註備註備註備註備註備註備註備註備註備註備註</td>
+                            <td>
+                                <img src="../img/btn delete.svg">
+                                <i class="fa fa-pencil"></i>
+                            </td>
+                        </tr>
+                        </tbody>
+                </table>
+                <table class="left_last3" id="item3">
+                    <thead>
+                        <tr>
+                            <th>姓名<i class="fa fa-sort-desc"><i> </th>
+            <th>身分證號</th>
+            <th>電話</th>
+            <th>Email</th>
+            <th>所屬事業部</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tr_BBlue create">
+            <td> <input type="text"> </td>
+            <td> <input type="text"> </td>
+            <td> <input type="text"> </td>
+            <td> <input type="text"> </td>
+            <td>
+              <select>
+                <option>群英</option>
+                <option>群美</option>
+              </select>
+            </td>
+            <td><img src="../img/btn_add new benefit.svg"></td>
+          </tr>
+          <tr>
+            <td>張雯淇</td>
+            <td>F123456789</td>
+            <td>29864739</td>
+            <td>moommoom@gmail.com</td>
+            <td>群英</td>
+            <td>
+              <img src="../img/btn delete.svg">
+              <i class="fa fa-pencil"></i>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>方芳舫</td>
+                            <td>A123456789</td>
+                            <td>29864732</td>
+                            <td>moommaam@gmail.com</td>
+                            <td>群美</td>
+                            <td>
+                                <img src="../img/btn delete.svg">
+                                <i class="fa fa-pencil"></i>
+                            </td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+</script>
+
+</html>

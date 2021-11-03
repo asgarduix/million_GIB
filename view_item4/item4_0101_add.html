@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>代理檔管理</span>
+            <div>
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item4_0101_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />代理檔基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>來佣年月</td>
+                            <td colspan="3">
+                                <input type="text" class="date optionB" disabled="disabled">
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>代理檔類別</td>
+                            <td colspan="3">
+                                <select onChange="changeOption(this);">
+                                    <option value="A">產險</option>
+                                    <option value="A">壽險</option>
+                                    <option value="A">服津</option>
+                                    <option value="B">繼續率獎金</option>
+                                    <option value="B">年終獎金</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>保險公司</td>
+                            <td colspan="3">
+                                <select>
+                                    <option></option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>格式名稱</td>
+                            <td colspan="3">
+                                <select>
+                                    <option></option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>匯入檔案</td>
+                            <td colspan="3">
+                                <input type="text" class="subBig" disabled="disabled" />
+                                <i class="fa"><span>瀏覽</span></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>計算年度</td>
+                            <td colspan="3">
+                                <input type="text" class="date optionB" disabled="disabled">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <button class="inline-btn" onclick="javascript:location.href='item4_0101_edit.html'">匯入</button>
+                            </td>
+                        </tr>
+                        <tr class="error">
+                            <td colspan="5">
+                                <div>匯入失敗</div>
+                                <p>
+                                    資料第5筆 截取"12被保人姓名資料"錯誤
+                                    <br/> 資料第5筆 截取"12被保人姓名資料"錯誤
+                                    <br/> 資料第5筆 截取"12被保人姓名資料"錯誤
+                                    <br/>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function changeOption(val) {
+    console.log(val.value);
+    if (val.value == 'B') {
+        $('.optionB').prop('disabled', false);
+    } else {
+        $('.optionB').prop('disabled', true);
+    }
+}
+</script>
+
+</html>

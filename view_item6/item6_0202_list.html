@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>保險支援專區預覽</span>
+        </section>
+        <article>
+            <br/>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+                        <img src="../img/ico_record.svg"/ > 產險
+                    </a>
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item2')">
+                      <img src="../img/ico_record.svg"/ > 壽險
+                    </a>
+                </div>
+                <div id="item1" class="tabContent list left_2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>保險公司logo</th>
+                                <th>保險公司簡稱</th>
+                                <th>線上服務</th>
+                                <th>新契約</th>
+                                <th>契變</th>
+                                <th>理賠</th>
+                                <th>契變</th>
+                                <th>理賠</th>
+                                <th>行銷支援文件</th>
+                                <th>建議書/試算表</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="../img/fubon.jpg" /></td>
+                                <td>富邦人壽</td>
+                                <td>
+                                    <div class="underline">經代專區</div>
+                                    <div class="underline">旅平險線上投保</div>
+                                </td>
+                                <td> <img src="../img/open_folder.svg" /> </td>
+                                <td> <img src="../img/open_folder.svg" /> </td>
+                                <td> <img src="../img/open_folder.svg" /> </td>
+                                <td> <img src="../img/open_folder.svg" /> </td>
+                                <td> <img src="../img/open_folder.svg" /> </td>
+                                <td> <img src="../img/open_folder_open.svg" /> </td>
+                                <td> <img src="../img/open_folder.svg" /> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" class="subTable table_BWhite">
+                                    <table class="left_last1 left_last2 left_last3">
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-file-o"></i>
+                                                <span>01_個人保險理賠金申請書(填寫說明).pdf</span>
+                                            </td>
+                                            <td>
+                                                <i class="fa fa-file-o"></i>
+                                                <span>02_個人保險理賠金申請書(填寫說明).pdf</span>
+                                            </td>
+                                            <td>
+                                                <i class="fa fa-file-o"></i>
+                                                <span>03_個人保險理賠金申請書(填寫說明).pdf</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item2" class="tabContent list left_2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>保險公司logo</th>
+                                <th>保險公司簡稱</th>
+                                <th>線上服務</th>
+                                <th>新契約</th>
+                                <th>契變</th>
+                                <th>理賠</th>
+                                <th>行銷支援文件</th>
+                                <th>建議書/試算表</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="../img/hncb.jpg" /></td>
+                                <td>華南產險</td>
+                                <td>
+                                    <div class="underline">經代專區</div>
+                                    <div class="underline">旅平險線上投保</div>
+                                </td>
+                                <td> <img src="../img/open_folder.svg" /> </td>
+                                <td> <img src="../img/open_folder.svg" /> </td>
+                                <td> <img src="../img/open_folder.svg" /> </td>
+                                <td> <img src="../img/open_folder_open.svg" /> </td>
+                                <td> <img src="../img/open_folder.svg" /> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="8" class="subTable table_BWhite">
+                                    <table class="left_last1 left_last2 left_last3">
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-file-o"></i>
+                                                <span>01_個人保險理賠金申請書(填寫說明).pdf</span>
+                                            </td>
+                                            <td>
+                                                <i class="fa fa-file-o"></i>
+                                                <span>02_個人保險理賠金申請書(填寫說明).pdf</span>
+                                            </td>
+                                            <td>
+                                                <i class="fa fa-file-o"></i>
+                                                <span>03_個人保險理賠金申請書(填寫說明).pdf</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

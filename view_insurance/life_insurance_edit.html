@@ -1,0 +1,1256 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body class="insurance_edit">
+    <section>
+        <span>保單編號：XXFU06201130A001</span>
+        <div>
+            <!-- <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item2_0501_detail.html'"/> -->
+            <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item2_0501_list.html'" />
+        </div>
+    </section>
+    <article>
+        <div class="basic_info">
+            <p class="title"><img src="../img/ico_profile.svg" />壽險保單基本資料</p>
+            <div>
+                <table class="insuranceTable">
+                    <tbody>
+                        <tr>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label><span>保險公司</span></label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <select>
+                                            <option hidden>請選擇</option>
+                                            <option selected>保誠人壽</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>保單號碼</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="123456789012-01">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>受理日</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="2020/11/27">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5 dateTd">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>生效日</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" class="date" value="2020/11/27">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>無效狀態</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" id="invalidState01" name="invalidState" checked>
+                                                <label for="invalidState01">註銷</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="invalidState02" name="invalidState">
+                                                <label for="invalidState02">不予承保</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="invalidState03" name="invalidState">
+                                                <label for="invalidState03">解約</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="invalidState04" name="invalidState">
+                                                <label for="invalidState04">契撤</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- <td class="field-5 multipleTd">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>出單日</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <ul>
+                                            <li><input type="text" class="date" value="2020/11/27"></li>
+                                            <li><input type="checkbox" id="billingDate01" name="billingDate" checked><label for="billingDate01">不推播</label></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td> -->
+                            <td class="field-5 multipleTd dateThunderBtn">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>出單日</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <ul>
+                                            <li>
+                                                <div class="thunderInputBtn">
+                                                    <div class="thunderInput"><input type="text" value="2020/11/27"></div>
+                                                    <div class="thunderBtn unflash"><button><img src="../img/icon_flash.svg"></button></div>
+                                                </div>
+                                            </li>
+                                            <li><input type="checkbox" id="billingDate01" name="billingDate" checked><label for="billingDate01">不推播</label></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5 dateTd">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>應簽回日</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" class="date" value="2020/11/27">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5 dateTd">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>客戶簽收日</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" class="date" value="2020/11/27">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5 multipleTd dateThunderBtn">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>經手人撤回日</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <div class="thunderInputBtn">
+                                            <div class="thunderInput"><input type="text" value="2020/11/27"></div>
+                                            <div class="thunderBtn unflash"><button><img src="../img/icon_flash.svg"></button></div>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5 dateTd">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>要保書申請日</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="2020/11/27" disabled class="disabledValue">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>要保人身分證號</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <div class="input-group reload">
+                                            <input type="text" class="form-control" value="A123456789">
+                                            <span class="input-group-addon">
+                                                <img src="../img/ico_member.svg" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>要保人姓名</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="安恩在[123]">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>要保人行動電話</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="0999123456">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">&nbsp;</td>
+                            <td class="field-5">&nbsp;</td>
+                            <td class="field-5 multipleTd">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label><span>主約被保人身分證號</span></label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <ul class="noWordBreakList">
+                                            <li>
+                                                <div class="input-group reload">
+                                                    <input type="text" class="form-control" value="F246813579">
+                                                    <span class="input-group-addon">
+                                                        <img src="../img/ico_member.svg" />
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li><button>同要保人</button></li>
+                                        </ul>
+                                        <!-- <span><input type="checkbox" id="insured01" name="billingDate"><label for="insured01">同要保人</label></span> -->
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>主約被保人姓名</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="安恩在[123]">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>主約被保人行動電話</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="0999123456">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">&nbsp;</td>
+                            <td class="field-5">&nbsp;</td>
+                            <td class="field-45">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>保單通訊地址</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <ul class="noWordBreakList">
+                                            <li class="addressZip">
+                                                <input type="text" placeholder="郵遞區號" value="100">
+                                            </li>
+                                            <li class="addressCity">
+                                                <select>
+                                                    <option selected>台北市</option>
+                                                    <option>新北市</option>
+                                                    <option>桃園市</option>
+                                                </select>
+                                            </li>
+                                            <li class="addressArea">
+                                                <select>
+                                                    <option selected>中正區</option>
+                                                    <option>信義區</option>
+                                                    <option>中山區</option>
+                                                </select>
+                                            </li>
+                                            <li class="addressText">
+                                                <input type="text" value="北平東路30號">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>保單聯絡電話</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="0999123456">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label><span>繳別</span></label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <select>
+                                            <option disabled hidden>請選擇</option>
+                                            <option selected>繳別01</option>
+                                            <option>繳別02</option>
+                                            <option>繳別03</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label><span>首期繳費方式</span></label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <select>
+                                            <option disabled hidden>請選擇</option>
+                                            <option selected>金融機構轉帳</option>
+                                            <option>信用卡繳費</option>
+                                            <option>信用卡繳費</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label><span>續期繳費方式</span></label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <select>
+                                            <optiondisabled hidden>請選擇</option>
+                                                <option selected>金融機構轉帳</option>
+                                                <option>自行繳納</option>
+                                                <option>信用卡繳費</option>
+                                                <option>壽險規劃師收取</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label><span>新契約狀態</span></label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <select>
+                                            <option disabled hidden>請選擇</option>
+                                            <option selected>受理中</option>
+                                            <option>照會中</option>
+                                            <option>已出單</option>
+                                            <option>已結案</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label><span>保險公司保單狀態</span></label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="受理中" disabled class="disabledValue">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label><span>原幣幣別</span></label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <select>
+                                            <option disabled hidden>請選擇</option>
+                                            <option selected>NTD</option>
+                                            <option>USD</option>
+                                            <option>AUD</option>
+                                            <option>RMB</option>
+                                            <option>NZD</option>
+                                            <option>ZAR</option>
+                                            <option>JYP</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>原幣保費</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="8,800">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>台幣合計保費</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="8,800" disabled class="disabledValue">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>合計FYC</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <input type="text" value="1,548" disabled class="disabledValue">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label><span>通路別</span></label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <select>
+                                            <option disabled hidden>請選擇</option>
+                                            <option selected>通路別01</option>
+                                            <option>通路別02</option>
+                                            <option>通路別03</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label><span>送件業務中心</span></label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <select>
+                                            <option disabled hidden>請選擇</option>
+                                            <option selected>台北</option>
+                                            <option>台中</option>
+                                            <option>高雄</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>原始經手人1</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <div class="input-group reload originalDealerField">
+                                            <input type="text" class="form-control" value="方芳芳[345]">
+                                            <span class="input-group-addon">
+                                                <img src="../img/ico_member.svg" />
+                                            </span>
+                                        </div>
+                                        <div class="originalDealerField">
+                                            <input type="text" value="55%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>原始經手人2</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <div class="input-group reload originalDealerField">
+                                            <input type="text" class="form-control" value="陳美莉[789]">
+                                            <span class="input-group-addon">
+                                                <img src="../img/ico_member.svg" />
+                                            </span>
+                                        </div>
+                                        <div class="originalDealerField">
+                                            <input type="text" value="45%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-5">&nbsp;</td>
+                            <td class="field-5">&nbsp;</td>
+                            <td class="field-53">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>備註說明</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <textarea rows="3">此案為續保件</textarea>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="field-53">
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>系統備註</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <textarea rows="3" disabled class="disabledValue">由公勝IT處理系統備註塞字</textarea>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="insuranceTable_item">
+                                    <div class="insuranceTable_title">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                    <div class="insuranceTable_field">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="insuranceType01" name="insuranceType" checked>
+                                                <label for="insuranceType01">分析報告</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="insuranceType02" name="insuranceType" checked>
+                                                <label for="insuranceType02">公勝個資</label>
+                                            </li>
+                                            <li class="disabledOption">
+                                                <input type="checkbox" id="insuranceType03" name="insuranceType">
+                                                <label for="insuranceType03">續保件</label>
+                                            </li>
+                                            <li class="disabledOption">
+                                                <input type="checkbox" id="insuranceType10" name="insuranceType">
+                                                <label for="insuranceType10">自動續保件</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="insuranceType04" name="insuranceType">
+                                                <label for="insuranceType04">電銷件</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="insuranceType05" name="insuranceType">
+                                                <label for="insuranceType05">O2O件</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="insuranceType06" name="insuranceType">
+                                                <label for="insuranceType06">非公勝件</label>
+                                            </li>
+                                            <li class="disabledOption">
+                                                <input type="checkbox" id="insuranceType07" name="insuranceType" checked>
+                                                <label for="insuranceType07">共招件確認</label>
+                                            </li>
+                                            <li class="disabledOption">
+                                                <input type="checkbox" id="insuranceType08" name="insuranceType" disabled>
+                                                <label for="insuranceType08" class="disabledValue">已發佣</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="insuranceType09" name="insuranceType">
+                                                <label for="insuranceType09">不發佣</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="formSendBtnField"><button>存檔後送件</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="autoWidth">
+                    <tr>
+                        <td>建檔人員</td>
+                        <td> <span>方芳芳</span> </td>
+                        <td>建檔日期</td>
+                        <td> <span>2015/01/12</span> </td>
+                        <td>修改人員</td>
+                        <td> <span>方芳芳</span> </td>
+                        <td>修改日期</td>
+                        <td> <span>2015/03/18</span> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tab_info">
+            <div class="tab">
+                <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+                    <img src="../img/ico_record.svg" /> 保障內容
+                </a>
+                <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item2')">
+                    <img src="../img/ico_agent.svg" /> 業務人員
+                </a>
+                <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item3')">
+                    <img src="../img/ico_relative.svg" /> 受益人
+                </a>
+                <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item4')">
+                    <img src="../img/ico_customer1.svg" /> 送件紀錄
+                </a>
+                <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item5')">
+                    <img src="../img/ico_records.svg" /> 保服通知
+                </a>
+                <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item6')">
+                    <img src="../img/ico_agent.svg" /> 發佣紀錄
+                </a>
+                <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item7')">
+                    <img src="../img/ico_premium.svg" /> 計佣欄位
+                </a>
+                <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item8')">
+                    <img src="../img/ico_record.svg" /> 檢附文件
+                </a>
+            </div>
+            <div id="item1" class="tabContent list lastAddbtn left_1 left_last2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>商品名稱</th>
+                            <th>年期</th>
+                            <th>保額/單位<br />保費</th>
+                            <th>佣金率<br />預估FYC</th>
+                            <th>與要保人關係<br />被保人姓名</th>
+                            <th>被保人身分證號<br />被保人生日</th>
+                            <th>備註</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <div class="tabSearch">
+                                    <input type="text" placeholder="&#xF002; 請輸入關鍵字" class="empty">
+                                </div>
+                                <select>
+                                    <option disabled hidden>請選擇</option>
+                                    <option selected>GPA保誠-團體保險</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" value="12">
+                            </td>
+                            <td>
+                                <input type="text" style="width: 48%;" value="12">
+                                <select style="width: 48%;">
+                                    <option disabled hidden>請選擇</option>
+                                    <option>元</option>
+                                    <option>百元</option>
+                                    <option selected>萬</option>
+                                    <option>單位</option>
+                                    <option>計畫</option>
+                                    <option>方案</option>
+                                </select>
+                                <input type="text" value="5,000">
+                            </td>
+                            <td>
+                                <input type="text" value="15%">
+                                <input type="text" value="750">
+                            </td>
+                            <td>
+                                <select>
+                                    <option selected>本人</option>
+                                    <option>配偶</option>
+                                    <option>子女</option>
+                                    <option>父母</option>
+                                </select>
+                                <input type="text" value="安恩在">
+                            </td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control" value="A123456789">
+                                    <span class="input-group-addon">
+                                        <img src="../img/ico_member.svg" />
+                                    </span>
+                                </div>
+                                <input type="text" class="date" value="1992/4/5">
+                            </td>
+                            <td class="textarea">
+                                <textarea>vip客戶需注意</textarea>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <div class="tabSearch">
+                                    <input type="text" placeholder="&#xF002; 請輸入關鍵字" class="empty">
+                                </div>
+                                <select>
+                                    <option disabled hidden>請選擇</option>
+                                    <option selected>GPAA保誠-人身億外傷害保險附約</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" value="12">
+                            </td>
+                            <td>
+                                <input type="text" style="width: 48%;" value="5">
+                                <select style="width: 48%;">
+                                    <option disabled hidden>請選擇</option>
+                                    <option>元</option>
+                                    <option>百元</option>
+                                    <option selected>萬</option>
+                                    <option>單位</option>
+                                    <option>計畫</option>
+                                    <option>方案</option>
+                                </select>
+                                <input type="text" value="3,800">
+                            </td>
+                            <td>
+                                <input type="text" value="21%">
+                                <input type="text" value="798">
+                            </td>
+                            <td>
+                                <select>
+                                    <option selected>本人</option>
+                                    <option>配偶</option>
+                                    <option>子女</option>
+                                    <option>父母</option>
+                                </select>
+                                <input type="text" value="安恩在">
+                            </td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control" value="A123456789">
+                                    <span class="input-group-addon">
+                                        <img src="../img/ico_member.svg" />
+                                    </span>
+                                </div>
+                                <input type="text" class="date" value="1992/4/5">
+                            </td>
+                            <td class="textarea">
+                                <textarea>vip客戶需注意</textarea>
+                            </td>
+                            <td><img src="../img/btn_add new benefit.svg"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="item2" class="tabContent list lastAddbtn left_last4">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>目前經手人</th>
+                            <th>身分證號<br />姓名</th>
+                            <th>比例%<br />職階</th>
+                            <th>業務中心<br />事業部</th>
+                            <th>世襲</th>
+                            <th>備註</th>
+                            <th>註銷</th>
+                            <th>修改人員<br />修改日期</th>
+                            <!-- <th>操作</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr_BBlue create">
+                            <td><input type="text" /></td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                        <img src="../img/ico_member.svg" />
+                                    </span>
+                                </div>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                                <input type="text">
+                            </td>
+                            <td>
+                                <select>
+                                    <option></option>
+                                </select>
+                                <select>
+                                    <option></option>
+                                </select>
+                            </td>
+                            <td> <input type="checkbox" disabled> </td>
+                            <td class="textarea"> <textarea></textarea> </td>
+                            <td> <input type="checkbox"> </td>
+                            <td>
+                                <div>方芳芳</div>
+                                <div>2015/03/18</div>
+                            </td>
+                            <!-- <td> <img src="../img/btn_add new benefit.svg"> </td> -->
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <div>A234561789</div>
+                                <div>陳美莉</div>
+                            </td>
+                            <td>
+                                <div>45%</div>
+                                <div>61資深經理</div>
+                            </td>
+                            <td>
+                                <div>台北FU06</div>
+                                <div>FJ8 好加在</div>
+                            </td>
+                            <td><i class="fa fa-check-square-o text_Black"></i></td>
+                            <td class="textarea">備著文字備著文字備著文字備著文字備著文字備著文字備著文字</td>
+                            <td><i class="fa fa-check-square-o text_Black"></i></td>
+                            <td>
+                                <div>陳美莉</div>
+                                <div>2015/03/18</div>
+                            </td>
+                            <!-- <td><i class="fa fa-pencil"></i></td> -->
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>服務人員身分證號<br />姓名</th>
+                            <th>職階</th>
+                            <th>業務中心<br />事業部</th>
+                            <th>備註</th>
+                            <th>註銷</th>
+                            <th>修改人員<br />修改日期</th>
+                            <!-- <th>操作</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                        <img src="../img/ico_member.svg" />
+                                    </span>
+                                </div>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <select>
+                                    <option></option>
+                                </select>
+                                <select>
+                                    <option></option>
+                                </select>
+                            </td>
+                            <td class="textarea"> <textarea></textarea> </td>
+                            <td> <input type="checkbox"> </td>
+                            <td>
+                                <div>方芳芳</div>
+                                <div>2015/01/12</div>
+                            </td>
+                            <!-- <td> <img src="../img/btn_add new benefit.svg"> </td> -->
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>B123456789</div>
+                                <div>葉悟原</div>
+                            </td>
+                            <td>
+                                <div>21主任</div>
+                            </td>
+                            <td>
+                                <div>台北FU06</div>
+                                <div>FJ8 好加在</div>
+                            </td>
+                            <td class="textarea">備著文字備著文字備著文字備著文字備著文字備著文字備著文字</td>
+                            <td><i class="fa fa-check-square-o text_Black"></i></td>
+                            <td>
+                                <div>方芳芳</div>
+                                <div>2015/01/12</div>
+                            </td>
+                            <!-- <td><i class="fa fa-pencil"></i></td> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="item3" class="tabContent list lastAddbtn left_last2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>受益種類</th>
+                            <th>順序</th>
+                            <th>被保人身分證號<br />受益人身分證號</th>
+                            <th>受益人姓名<br />與被保人關係</th>
+                            <th>受益比例</th>
+                            <th>給付方式</th>
+                            <th>備註</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>身故受益人</option>
+                                    <option>滿期金受益人</option>
+                                    <option>生存金受益人</option>
+                                    <option>祝壽金受益人</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                        <img src="../img/ico_member.svg" />
+                                    </span>
+                                </div>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                        <img src="../img/ico_member.svg" />
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                <input type="text">
+                                <select>
+                                    <option>本人</option>
+                                    <option>配偶</option>
+                                    <option>子女</option>
+                                    <option>父母</option>
+                                    <option>法定繼承人</option>
+                                    <option>兄弟姊妹</option>
+                                    <option>其他</option>
+                                </select>
+                            </td>
+                            <td> <input type="text"> </td>
+                            <td>
+                                <select>
+                                    <option>順序 1</option>
+                                    <option>順序 2</option>
+                                    <option>順序 3</option>
+                                    <option>順序 4</option>
+                                    <option>順序 5</option>
+                                    <option>均分</option>
+                                    <option>比例</option>
+                                    <option>法定</option>
+                                </select>
+                            </td>
+                            <td class="textarea"> <textarea></textarea> </td>
+                            <td> <img src="../img/btn_add new benefit.svg"> </td>
+                        </tr>
+                        <tr>
+                            <td>滿期金受益人</td>
+                            <td>2</td>
+                            <td>
+                                <div>A123456789</div>
+                                <div>F123456789</div>
+                            </td>
+                            <td>
+                                <div>葉悟原</div>
+                                <div>兄弟姊妹</div>
+                            </td>
+                            <td>100%</td>
+                            <td>均分</td>
+                            <td class="textarea">備著文字備著文字備著文字備著文字備著文字備著文字備著文字</td>
+                            <td>
+                                <img src="../img/btn delete.svg" />
+                                <i class="fa fa-pencil"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="item4" class="tabContent list lastAddbtn left_last2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>送件日<br />送件類別</th>
+                            <th>編號</th>
+                            <th>送件人<br />被保人</th>
+                            <th>是否有照會</th>
+                            <th>業務員<br />處理狀態</th>
+                            <th>結案狀態</th>
+                            <th>結案日期<br />結案金額</th>
+                            <th>結案備註</th>
+                            <th>修改日期<br />修改人員</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>2017/4/23</div>
+                                <div>新契約送件</div>
+                            </td>
+                            <td>123456699928</td>
+                            <td>
+                                <div>方晴[123]</div>
+                                <div>陳曉慧</div>
+                            </td>
+                            <td></td>
+                            <td>已處理</td>
+                            <td></td>
+                            <td>
+                                <div>2017/5/2</div>
+                                <div>5,500</div>
+                            </td>
+                            <td>備註備註備註備註備註備註備註</td>
+                            <td>
+                                <div>2017/5/2</div>
+                                <div>陳莉莉</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>2017/4/23</div>
+                                <div>新契約送件</div>
+                            </td>
+                            <td>123456699928</td>
+                            <td>
+                                <div>方晴[123]</div>
+                                <div>陳曉慧</div>
+                            </td>
+                            <td>
+                                <div class="underline">Y</div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div>2017/5/2</div>
+                                <div>5,500</div>
+                            </td>
+                            <td>備註備註備註備註備註備註備註</td>
+                            <td>
+                                <div>2017/5/2</div>
+                                <div>陳莉莉</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>2017/4/23</div>
+                                <div>新契約送件</div>
+                            </td>
+                            <td>123456699928</td>
+                            <td>
+                                <div>方晴[123]</div>
+                                <div>陳曉慧</div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div>2017/5/2</div>
+                                <div>5,500</div>
+                            </td>
+                            <td>備註備註備註備註備註備註備註</td>
+                            <td>
+                                <div>2017/5/2</div>
+                                <div>陳莉莉</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="item5" class="tabContent list lastAddbtn left_last4">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>通知日<br />通知類別</th>
+                            <th>內容<br />保費</th>
+                            <th>應繳日<br />停效日</th>
+                            <th>催告日<br />完成日</th>
+                            <th>墊繳開始日<br />墊繳結束日</th>
+                            <th>備註</th>
+                            <th>業務員<br />處理狀態</th>
+                            <th>建立日期<br />建立人員</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <div><input type="text" class="date" /></div>
+                                <div>
+                                    <select>
+                                        <option>繳費異常</option>
+                                        <option>催告墊繳</option>
+                                        <option>停效</option>
+                                        <option>其他異常</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
+                                <div><input type="text" /></div>
+                                <div><input type="text" /></div>
+                            </td>
+                            <td>
+                                <div><input type="text" class="date" /></div>
+                                <div><input type="text" class="date" /></div>
+                            </td>
+                            <td>
+                                <div><input type="text" class="date" /></div>
+                                <div><input type="text" class="date" /></div>
+                            </td>
+                            <td>
+                                <div><input type="text" class="date" /></div>
+                                <div><input type="text" class="date" /></div>
+                            </td>
+                            <td><input type="text" /></td>
+                            <td>
+                                <select>
+                                    <option>未處理</option>
+                                    <option>已處理</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div>2015/01/12</div>
+                                <div>陳曉慧</div>
+                            </td>
+                            <td><img src="../img/btn_add new benefit.svg"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>2015/01/12</div>
+                                <div>催告墊繳</div>
+                            </td>
+                            <td>
+                                <div>催告墊繳</div>
+                                <div>5,000元</div>
+                            </td>
+                            <td>
+                                <div>2015/01/12</div>
+                                <div>2015/01/12</div>
+                            </td>
+                            <td>
+                                <div>2015/01/12</div>
+                                <div>2015/01/12</div>
+                            </td>
+                            <td>
+                                <div>2015/01/12</div>
+                                <div>2015/01/12</div>
+                            </td>
+                            <td>vip客戶需注意</td>
+                            <td>已處理</td>
+                            <td>
+                                <div>2015/01/12</div>
+                                <div>陳曉慧</div>
+                            </td>
+                            <td>
+                                <img src="../img/btn delete.svg" />
+                                <i class="fa fa-pencil"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="item6" class="tabContent list left_2 left_3">
+                <table class="autoWidth">
+                    <thead>
+                        <tr>
+                            <th>發佣年月</th>
+                            <th>獎金代碼名稱</th>
+                            <th>商品代碼</th>
+                            <th>事業部</th>
+                            <th>被保人</th>
+                            <th>繳別</th>
+                            <th>年度<br>繳次</th>
+                            <th>保費<br>FYC</th>
+                            <th>職階率<br>佣金</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>201711</td>
+                            <td>101首年佣金</td>
+                            <td>ED01蘇黎世六年定期年好XXXXXXX</td>
+                            <td>群英</td>
+                            <td>陳婷婷</td>
+                            <td>一般</td>
+                            <td>
+                                <div>1</div>
+                                <div>1</div>
+                            </td>
+                            <td>
+                                <div>20,000</div>
+                                <div>8,000</div>
+                            </td>
+                            <td>
+                                <div>50%</div>
+                                <div>4,000</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="item7" class="tabContent list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>資料日期</th>
+                            <th>首期發佣年月</th>
+                            <th>業務中心/事業部</th>
+                            <th>輔導人姓名</th>
+                            <th>輔導人職階</th>
+                            <th>經手人</th>
+                            <th>受理FYP</th>
+                            <th>受理FYC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2017/4/23</td>
+                            <td>2017/04</td>
+                            <td>TP台北/01永安</td>
+                            <td>陳曉明[456]</td>
+                            <td>41襄理</td>
+                            <td>張小春[123] 31區襄理</td>
+                            <td>234,599</td>
+                            <td>224,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="item8" class="tabContent list lastAddbtn tab_BBlue left_last3">
+                <table>
+                    <button>新增附件</button>
+                    <thead>
+                        <tr>
+                            <th>檔案類別</th>
+                            <th>檔案名稱</th>
+                            <th>上傳日期</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="text_Red">無資料</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

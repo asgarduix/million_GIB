@@ -1,0 +1,1356 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <section>
+        <span id="edit">組織人事資料</span>
+        <span id="add">新增組織：</span>
+        <select onChange="changeOption(this)">
+            <option value="3">事業部</option>
+            <option value="2">體系</option>
+            <option value="1">業務中心</option>
+            <!--
+            <option value="4">法人事務所</option>
+            <option value="5">策盟</option>-->
+        </select>
+        <button class="inline-btn" onclick="changeView()">確定</button>
+        <div>
+            <img src="../img/btn_unsave.svg" onclick="linkDetailView()" />
+            <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item1_0201_list.html'" />
+        </div>
+    </section>
+    <article>
+        <div class="basic_info item1">
+            <p class="title"><img src="../img/ico_profile.svg" />業務中心基本資料</p>
+            <div>
+                <table>
+                    <tr>
+                        <td>業務中心代碼</td>
+                        <td>
+                            <input type="text" /> </td>
+                        <td>業務中心名稱</td>
+                        <td>
+                            <input type="text" /> </td>
+                        <td>區域</td>
+                        <td>
+                            <select>
+                                <option>北區</option>
+                                <option>中區</option>
+                                <option>南區</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>成立日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>結束日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>註銷</td>
+                        <td> <i class="fa fa-check-square-o"></i> </td>
+                    </tr>
+                    <tr>
+                        <td>行政主管</td>
+                        <td>
+                            <input type="text" style="width:49%" placeholder="身分證號" /> /
+                            <input type="text" style="width:40%" placeholder="姓名" />
+                        </td>
+                        <td>稱謂</td>
+                        <td>
+                            <input type="text" /> </td>
+                        <td>手機號碼</td>
+                        <td>
+                            <input type="text" /> </td>
+                    </tr>
+                    <tr>
+                        <td>電話/傳真</td>
+                        <td>
+                            <input type="text" style="width:48%" />
+                            <input type="text" style="width:48%" />
+                        </td>
+                        <td>公務機簡碼</td>
+                        <td>
+                            <input type="text" placeholder="四位數簡碼" /> </td>
+                        <td>公務手機號碼</td>
+                        <td>
+                            <input type="text" /> </td>
+                    </tr>
+                    <tr>
+                        <td>產險簽署人</td>
+                        <td>
+                            <input type="text" style="width:49%;text-align:center" placeholder="身分證號" /> /
+                            <input type="text" style="width:40%;text-align:center" placeholder="姓名" />
+                        </td>
+                        <td>壽險簽署人</td>
+                        <td>
+                            <input type="text" style="width:49%;text-align:center" placeholder="身分證號" /> /
+                            <input type="text" style="width:40%;text-align:center" placeholder="姓名" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td colspan="3" class="address">
+                            <input type="text" style="width: 10%" />
+                            <input type="text" style="width: 89%" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>備註說明</td>
+                        <td colspan="3">
+                            <input type="text" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="basic_info item2">
+            <p class="title"><img src="../img/ico_profile.svg" />體系基本資料</p>
+            <div>
+                <table>
+                    <tr>
+                        <td>體系名稱</td>
+                        <td>
+                            <input type="text" /> </td>
+                    </tr>
+                    <tr>
+                        <td>體系主管
+                            <br/>事業部</td>
+                        <td>
+                            <select>
+                                <option>AK 愛加倍</option>
+                                <option>AP 多佳</option>
+                                <option>BD 曙光</option>
+                                <option>GD 祥韻</option>
+                            </select>
+                        </td>
+                        <td>體系主管</td>
+                        <td> <span></span> </td>
+                        <td>體系主管職稱</td>
+                        <td> <span></span> </td>
+                    </tr>
+                    <tr>
+                        <td>成立日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>結束日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                    </tr>
+                    <tr>
+                        <td>備註說明</td>
+                        <td colspan="3">
+                            <input type="text" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="basic_info item3">
+            <p class="title"><img src="../img/ico_profile.svg" />事業部/事務所基本資料</p>
+            <div>
+                <table>
+                    <tr>
+                        <td>類別</td>
+                        <td colspan="5"> <span>事業部</span> </td>
+                    </tr>
+                    <tr>
+                        <td>代碼</td>
+                        <td>
+                            <input type="text" /> </td>
+                        <td>中文名稱</td>
+                        <td>
+                            <input type="text" /> </td>
+                        <td>
+                            內設/外設
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="set" /> 內設　</label>
+                            <label>
+                                <input type="radio" name="set" /> 外設　</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>成立日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>結束日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>註銷</td>
+                        <td> <i class="fa fa-square-o"></i> </td>
+                    </tr>
+                    <tr>
+                        <td>業務中心</td>
+                        <td>
+                            <select>
+                                <option>北區</option>
+                                <option>中區</option>
+                                <option>南區</option>
+                            </select>
+                        </td>
+                        <td>區域</td>
+                        <td>
+                            <select>
+                                <option>北區</option>
+                                <option>中區</option>
+                                <option>南區</option>
+                            </select>
+                        </td>
+                        <td>停佣</td>
+                        <td>
+                            <input type="checkbox" /> </td>
+                    </tr>
+                    <tr>
+                        <td>負責人身分證號</td>
+                        <td>
+                            <div class="input-group reload">
+                                <input type="text" class="form-control" value="">
+                                <span class="input-group-addon">
+                                  <img src="../img/ico_member.svg" />
+                                </span>
+                            </div>
+                        </td>
+                        <td>負責人姓名</td>
+                        <td>
+                            <div class="input-group reload">
+                                <input type="text" class="form-control" value="">
+                                <span class="input-group-addon">
+                                  <img src="../img/ico_member.svg" />
+                                </span>
+                            </div>
+                        </td>
+                        <td>負責人職稱</td>
+                        <td> <span>71 負責人</span> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            推薦事業部
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <select>
+                                <option>AK 愛加倍</option>
+                                <option>AP 多佳</option>
+                                <option>BD 曙光</option>
+                                <option>GD 祥韻</option>
+                            </select>
+                        </td>
+                        <td>
+                            推薦人
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <span>A12345678</span> /
+                            <span>汪星人</span>
+                        </td>
+                        <td>
+                            引薦人
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <input type="text" style="width:49%;text-align:center" placeholder="身分證號" /> /
+                            <span>陳雅琪</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td colspan="3" class="address">
+                            <input type="text" style="width: 10%" value="237" />
+                            <input type="text" style="width: 89%" value="新北市中和區新民街11號4樓" />
+                        </td>
+                        <td>
+                            業績歸屬事業部
+                            <br/>
+                            <t>(事業部免填)</t>
+                        </td>
+                        <td>
+                            <select>
+                                <option>AK 愛加倍</option>
+                                <option>AP 多佳</option>
+                                <option>BD 曙光</option>
+                                <option>GD 祥韻</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>備註說明</td>
+                        <td colspan="3">
+                            <input type="text" value="備註備註備註備註備註備註備註備註" />
+                        </td>
+                        <td>策盟</td>
+                        <td><i class="fa fa-square-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="5">
+                            <label>
+                                <input type="radio" name="a" /> 事業部佣金照發　</label>
+                            <label>
+                                <input type="radio" name="a" /> 事業部歸直轄　</label>
+                            <t>(事務所免填)</t>
+                        </td>
+                    </tr>
+                    <tr class="line">
+                        <td colspan="6">
+                            <hr/>
+                        </td>
+                    </tr>
+                </table>
+                <table class="autoWidth">
+                    <tr>
+                        <td>建檔人員</td>
+                        <td> <span>方芳芳</span> </td>
+                        <td>建檔日期</td>
+                        <td> <span>2015/01/12</span> </td>
+                        <td>修改人員</td>
+                        <td> <span>方芳芳</span> </td>
+                        <td>修改日期</td>
+                        <td> <span>2015/01/12</span> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tab_info item3">
+            <div class="funcBtn">
+                <button>帶入組合項目</button>
+            </div>
+            <div class="tab">
+                <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item3')">
+                  <img src="../img/ico_premium.svg"/ > 負責人固定扣款項目設定
+                </a>
+                <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item3_2')">
+                  <img src="../img/ico_records.svg"/ > 負責人異動歷程
+                </a>
+            </div>
+            <div id="item3" class="tabContent list lastAddbtn tab_BBlue left_last2 item3">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="8">固定扣款項目</th>
+                        </tr>
+                        <tr>
+                            <th>類別</th>
+                            <th>項目名稱</th>
+                            <th>代碼</th>
+                            <th>起始年月</th>
+                            <th>結束年月</th>
+                            <th>金額</th>
+                            <th>扣款備註</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td> <img src="../img/btn_add new benefit.svg"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="item3_2" class="tabContent list lastAddbtn">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>異動次別</th>
+                            <th>負責人身分證號</th>
+                            <th>負責人姓名</th>
+                            <th>異動生效日</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A12345678</td>
+                            <td>王筱方</td>
+                            <td>2016/04/13</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--
+        <div class="basic_info item4">
+            <p class="title"><img src="../img/ico_profile.svg" />法人事務所基本資料</p>
+            <div>
+                <table>
+                    <tr>
+                        <td>類別</td>
+                        <td colspan="5"> <span>法人事務所</span> </td>
+                    </tr>
+                    <tr>
+                        <td>代碼</td>
+                        <td>
+                            <input type="text" /> </td>
+                        <td>中文名稱</td>
+                        <td>
+                            <input type="text" /> </td>
+                        <td>
+                            內設/外設
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="set" /> 內設　</label>
+                            <label>
+                                <input type="radio" name="set" /> 外設　</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>成立日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>結束日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>註銷</td>
+                        <td> <i class="fa fa-square-o"></i> </td>
+                    </tr>
+                    <tr>
+                        <td>業務中心</td>
+                        <td>
+                            <select>
+                                <option>北區</option>
+                                <option>中區</option>
+                                <option>南區</option>
+                            </select>
+                        </td>
+                        <td>區域</td>
+                        <td>
+                            <select>
+                                <option>北區</option>
+                                <option>中區</option>
+                                <option>南區</option>
+                            </select>
+                        </td>
+                        <td>停佣</td>
+                        <td>
+                            <input type="checkbox" /> </td>
+                    </tr>
+                    <tr>
+                        <td>負責人身分證號</td>
+                        <td>
+                            <div class="input-group reload">
+                                <input type="text" class="form-control" value="">
+                                <span class="input-group-addon">
+                                  <img src="../img/ico_member.svg" />
+                                </span>
+                            </div>
+                        </td>
+                        <td>負責人姓名</td>
+                        <td>
+                            <div class="input-group reload">
+                                <input type="text" class="form-control" value="">
+                                <span class="input-group-addon">
+                                  <img src="../img/ico_member.svg" />
+                                </span>
+                            </div>
+                        </td>
+                        <td>負責人職稱</td>
+                        <td> <span>71 負責人</span> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            推薦事業部
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <select>
+                                <option>AK 愛加倍</option>
+                                <option>AP 多佳</option>
+                                <option>BD 曙光</option>
+                                <option>GD 祥韻</option>
+                            </select>
+                        </td>
+                        <td>
+                            推薦人
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <span>A12345678</span> /
+                            <span>汪星人</span>
+                        </td>
+                        <td>
+                            引薦人
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <input type="text" style="width:49%;text-align:center" placeholder="身分證號" /> /
+                            <span>陳雅琪</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td colspan="3" class="address">
+                            <input type="text" style="width: 10%" value="237" />
+                            <input type="text" style="width: 89%" value="新北市中和區新民街11號4樓" />
+                        </td>
+                        <td>
+                            業績歸屬事業部
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <select>
+                                <option>AK 愛加倍</option>
+                                <option>AP 多佳</option>
+                                <option>BD 曙光</option>
+                                <option>GD 祥韻</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>備註說明</td>
+                        <td colspan="3">
+                            <input type="text" value="備註備註備註備註備註備註備註備註" />
+                        </td>
+                        <td>策盟</td>
+                        <td><i class="fa fa-square-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="5">
+                            <label>
+                                <input type="radio" name="a" /> 事業部佣金照發　</label>
+                            <label>
+                                <input type="radio" name="a" /> 事業部歸直轄　</label>
+                            <t>(事務所免填)</t>
+                        </td>
+                    </tr>
+                    <tr class="line">
+                        <td colspan="6">
+                            <hr/>
+                        </td>
+                    </tr>
+                </table>
+                <table class="autoWidth">
+                    <tr>
+                        <td>建檔人員</td>
+                        <td> <span>方芳芳</span> </td>
+                        <td>建檔日期</td>
+                        <td> <span>2015/01/12</span> </td>
+                        <td>修改人員</td>
+                        <td> <span>方芳芳</span> </td>
+                        <td>修改日期</td>
+                        <td> <span>2015/01/12</span> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tab_info item4">
+            <div class="funcBtn">
+                <button>帶入組合項目</button>
+            </div>
+            <div class="tab">
+                <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item4')">
+                  <img src="../img/ico_premium.svg"/ > 負責人固定扣款項目設定
+                </a>
+                <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item4_2')">
+                  <img src="../img/ico_records.svg"/ > 負責人異動歷程
+                </a>
+            </div>
+            <div id="item4" class="tabContent list lastAddbtn tab_BBlue left_last2 item4">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="8">固定扣款項目</th>
+                        </tr>
+                        <tr>
+                            <th>類別</th>
+                            <th>項目名稱</th>
+                            <th>代碼</th>
+                            <th>起始年月</th>
+                            <th>結束年月</th>
+                            <th>金額</th>
+                            <th>扣款備註</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td> <img src="../img/btn_add new benefit.svg"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">費率設定項目
+                                <t>(事業部免填)</t>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>代理費費率</th>
+                            <th>發票後費率</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="item4_2" class="tabContent list lastAddbtn">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>異動次別</th>
+                            <th>負責人身分證號</th>
+                            <th>負責人姓名</th>
+                            <th>異動生效日</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A12345678</td>
+                            <td>王筱方</td>
+                            <td>2016/04/13</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="basic_info item5">
+            <p class="title"><img src="../img/ico_profile.svg" />策盟基本資料</p>
+            <div>
+                <table>
+                    <tr>
+                        <td>類別</td>
+                        <td colspan="5"> <span>策盟</span> </td>
+                    </tr>
+                    <tr>
+                        <td>代碼</td>
+                        <td>
+                            <input type="text" /> </td>
+                        <td>中文名稱</td>
+                        <td>
+                            <input type="text" /> </td>
+                        <td>
+                            內設/外設
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="set" /> 內設　</label>
+                            <label>
+                                <input type="radio" name="set" /> 外設　</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>成立日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>結束日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>註銷</td>
+                        <td> <i class="fa fa-square-o"></i> </td>
+                    </tr>
+                    <tr>
+                        <td>業務中心</td>
+                        <td>
+                            <select>
+                                <option>北區</option>
+                                <option>中區</option>
+                                <option>南區</option>
+                            </select>
+                        </td>
+                        <td>區域</td>
+                        <td>
+                            <select>
+                                <option>北區</option>
+                                <option>中區</option>
+                                <option>南區</option>
+                            </select>
+                        </td>
+                        <td>停佣</td>
+                        <td>
+                            <input type="checkbox" /> </td>
+                    </tr>
+                    <tr>
+                        <td>負責人身分證號</td>
+                        <td>
+                            <div class="input-group reload">
+                                <input type="text" class="form-control" value="">
+                                <span class="input-group-addon">
+                                  <img src="../img/ico_member.svg" />
+                                </span>
+                            </div>
+                        </td>
+                        <td>負責人姓名</td>
+                        <td>
+                            <div class="input-group reload">
+                                <input type="text" class="form-control" value="">
+                                <span class="input-group-addon">
+                                  <img src="../img/ico_member.svg" />
+                                </span>
+                            </div>
+                        </td>
+                        <td>負責人職稱</td>
+                        <td> <span>71 負責人</span> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            推薦事業部
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <select>
+                                <option>AK 愛加倍</option>
+                                <option>AP 多佳</option>
+                                <option>BD 曙光</option>
+                                <option>GD 祥韻</option>
+                            </select>
+                        </td>
+                        <td>
+                            推薦人
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <span>A12345678</span> /
+                            <span>汪星人</span>
+                        </td>
+                        <td>
+                            引薦人
+                            <br/>
+                            <t>(事務所免填)</t>
+                        </td>
+                        <td>
+                            <input type="text" style="width:49%;text-align:center" placeholder="身分證號" /> /
+                            <span>陳雅琪</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td colspan="3" class="address">
+                            <input type="text" style="width: 10%" value="237" />
+                            <input type="text" style="width: 89%" value="新北市中和區新民街11號4樓" />
+                        </td>
+                        <td>
+                            業績歸屬事業部
+                            <br/>
+                            <t>(事業部免填)</t>
+                        </td>
+                        <td>
+                            <select>
+                                <option>AK 愛加倍</option>
+                                <option>AP 多佳</option>
+                                <option>BD 曙光</option>
+                                <option>GD 祥韻</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>備註說明</td>
+                        <td colspan="3">
+                            <input type="text" value="備註備註備註備註備註備註備註備註" />
+                        </td>
+                        <td>策盟</td>
+                        <td><i class="fa fa-square-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="5">
+                            <label>
+                                <input type="radio" name="a" /> 事業部佣金照發　</label>
+                            <label>
+                                <input type="radio" name="a" /> 事業部歸直轄　</label>
+                            <t>(事務所免填)</t>
+                        </td>
+                    </tr>
+                    <tr class="line">
+                        <td colspan="6">
+                            <hr/>
+                        </td>
+                    </tr>
+                </table>
+                <table class="autoWidth">
+                    <tr>
+                        <td>建檔人員</td>
+                        <td> <span>方芳芳</span> </td>
+                        <td>建檔日期</td>
+                        <td> <span>2015/01/12</span> </td>
+                        <td>修改人員</td>
+                        <td> <span>方芳芳</span> </td>
+                        <td>修改日期</td>
+                        <td> <span>2015/01/12</span> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tab_info item5">
+            <div class="funcBtn">
+                <button>帶入組合項目</button>
+            </div>
+            <div class="tab">
+                <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item5')">
+                  <img src="../img/ico_premium.svg"/ > 負責人固定扣款項目設定
+                </a>
+                <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item5_2')">
+                  <img src="../img/ico_records.svg"/ > 負責人異動歷程
+                </a>
+            </div>
+            <div id="item5" class="tabContent list lastAddbtn tab_BBlue left_last2 item5">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="8">固定扣款項目</th>
+                        </tr>
+                        <tr>
+                            <th>類別</th>
+                            <th>項目名稱</th>
+                            <th>代碼</th>
+                            <th>起始年月</th>
+                            <th>結束年月</th>
+                            <th>金額</th>
+                            <th>扣款備註</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr_BBlue create">
+                            <td>
+                                <select>
+                                    <option>壽佣</option>
+                                    <option>產佣</option>
+                                    <option>服津</option>
+                                    <option>年終</option>
+                                    <option>繼續率</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>應稅其他加扣款</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Z02</option>
+                                    <option>Z05</option>
+                                    <option>Z06</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td> <img src="../img/btn_add new benefit.svg"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">費率設定項目
+                                <t>(事業部免填)</t>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>代理費費率</th>
+                            <th>發票後費率</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>
+                                <input type="text" /> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="item5_2" class="tabContent list lastAddbtn">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>異動次別</th>
+                            <th>負責人身分證號</th>
+                            <th>負責人姓名</th>
+                            <th>異動生效日</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A12345678</td>
+                            <td>王筱方</td>
+                            <td>2016/04/13</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>-->
+    </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+    $('article').hide();
+    $(".basic_info").hide();
+    $(".tab_info").hide();
+    $('#edit').hide();
+    $('section select').show();
+    $('#add').show();
+
+    var num;
+
+    function changeOption(val) {
+        num = val.value;
+    }
+
+    function changeView() {
+
+        if (num == undefined)
+            num = 3;
+        $('article').show();
+        $(".item" + num).show();
+        $('#edit').show();
+        $('section select').hide();
+        $('section button').hide();
+        $('#add').hide();
+
+        if (num == undefined)
+            num = 4;
+        $('article').show();
+        $(".item" + num).show();
+        $('.item4 .tablinks').eq(0).addClass('active');
+        $('#edit').show();
+        $('section select').hide();
+        $('section button').hide();
+        $('#add').hide();
+
+        if (num == undefined)
+            num = 5;
+        $('article').show();
+        $(".item" + num).show();
+        $('.item5 .tablinks').eq(0).addClass('active');
+        $('#edit').show();
+        $('section select').hide();
+        $('section button').hide();
+        $('#add').hide();
+
+    }
+
+    function openTab(evt, name) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabContent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(name).style.display = "block";
+        evt.currentTarget.className += " active";
+
+        if(name == "item2") {
+            $('.tab_info .funcBtn button').hide();
+        } else {
+            $('.tab_info .funcBtn button').show();
+        }
+    };
+
+    document.getElementById("defaultOpen").click();
+
+    function linkDetailView() {
+        var link;
+        switch (num) {
+            case "1":
+                link = "item1_0201_detail.html";
+                break;
+            case "2":
+                link = "item1_0202_detail.html";
+                break;
+            default:
+                link = "item1_0204_detail.html";
+                break;
+            case "4":
+                link = "item1_0206_detail.html";
+                break;
+            case "5":
+                link = "item1_0207_detail.html";
+                break;
+        }
+        location.assign(link);
+    }
+</script>
+
+</html>

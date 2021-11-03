@@ -1,0 +1,1261 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <section>
+    <span>保單編號：</span>
+    <div>
+      <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item2_0501_detail.html'"/>
+      <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item2_0501_list.html'"/>
+    </div>
+  </section>
+
+  <article>
+    <div class="basic_info">
+      <p class="title"><img src="../img/ico_profile.svg"/>壽險保單基本資料</p>
+      <div>
+        <table>
+          <tr>
+            <td>保單號碼</td>
+            <td> <input type="text"> </td>
+            <td>通路別</td>
+            <td>
+              <select>
+                <option>業務件</option>
+                <option>電銷件</option>
+                <option>網路投保件</option>
+              </select>
+            </td>
+            <td>繳別</td>
+            <td>
+              <select>
+                <option>年繳</option>
+                <option>半年繳</option>
+                <option>季繳</option>
+                <option>月繳</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>保險公司</td>
+            <td colspan='3'>
+              <select>
+                <option>安達人壽</option>
+                <option>遠雄人壽</option>
+              </select>
+            </td>
+            <td>註銷</td>
+            <td>
+              <input type="checkbox">
+              <input type="text" class="date" style="width: calc(100% - 30px)">
+            </td>
+          </tr>
+          <tr>
+            <td>受理日</td>
+            <td> <input type="text" class="date"> </td>
+            <td>生效日</td>
+            <td> <input type="text" class="date"> </td>
+            <td>客戶簽收日</td>
+            <td> <input type="text" class="date"> </td>
+          </tr>
+          <tr>
+            <td>出單日</td>
+            <td> <input type="text" class="date"> </td>
+            <td>應簽回日</td>
+            <td> <input type="text" class="date"> </td>
+            <td>經手人繳回日</td>
+            <td> <input type="text" class="date"> </td>
+          </tr>
+          <tr>
+            <td>要保人<br/>身分證號</td>
+            <td>
+              <div class="input-group reload">
+                <input type="text" class="form-control" value="王小明">
+                <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+              </div>
+            </td>
+            <td>要保人姓名</td>
+            <td>
+              <div class="input-group reload">
+                <input type="text" class="form-control" value="王小明">
+                <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+              </div>
+            </td>
+            <td>要保人電話</td>
+            <td>
+              <input type="text" style="width: 48%">
+              <input type="text" style="width: 48%">
+            </td>
+          </tr>
+          <tr>
+            <td>主約被保人<br/>身分證號</td>
+            <td>
+              <div class="input-group reload" style="width: 65%">
+                <input type="text" class="form-control" value="王小明">
+                <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+              </div>
+              <button class="small-btn">同要保人</button>
+            </td>
+            <td>主約被保人<br/>姓名</td>
+            <td>
+              <div class="input-group reload">
+                <input type="text" class="form-control" value="王小明">
+                <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+              </div>
+            </td>
+            <td>主約被保人<br/>電話</td>
+            <td>
+              <input type="text" style="width: 48%">
+              <input type="text" style="width: 48%">
+            </td>
+          </tr>
+          <tr>
+            <td>送件業務中心</td>
+            <td>
+              <select>
+                <option>北區</option>
+                <option>中區</option>
+                <option>南區</option>
+              </select>
+            </td>
+            <td>首期繳費方式</td>
+            <td>
+              <select>
+                <option>金融機構轉帳</option>
+                <option>信用卡繳費</option>
+                <option>自行繳納</option>
+              </select>
+            </td>
+            <td>續期繳費方式</td>
+            <td>
+              <select>
+                <option>金融機構轉帳</option>
+                <option>自行繳納</option>
+                <option>信用卡繳費</option>
+                <option>壽險規劃師收取</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>保單通訊地址</td>
+            <td colspan="3" class="address">
+              <input type="text" style="width: 10%"/>
+              <input type="text" style="width: 89%"/>
+            </td>
+            <td>保單聯絡電話</td>
+            <td>
+              <input type="text" style="width: 48%">
+              <input type="text" style="width: 48%">
+            </td>
+          </tr>
+          <tr>
+            <td>原幣幣別</td>
+            <td>
+              <select>
+                <option>NTD</option>
+                <option>USD</option>
+                <option>AUD</option>
+                <option>RMB</option>
+                <option>NZD</option>
+                <option>ZAR</option>
+                <option>JYP</option>
+              </select>
+            </td>
+            <td>原幣保費</td>
+            <td> <input type="text" value="10,000"> </td>
+            <td>台幣合計保費</td>
+            <td> <span></span> </td>
+          </tr>
+          <tr>
+            <td>保險公司<br/>保單狀態</td>
+            <td>
+              <select>
+                <option>受理中</option>
+                <option>照會中</option>
+                <option>已出單</option>
+                <option>已結案</option>
+              </select>
+            </td>
+            <td>新契約狀態</td>
+            <td>
+              <select>
+                <option>受理中</option>
+                <option>照會中</option>
+                <option>已出單</option>
+                <option>已結案</option>
+              </select>
+            </td>
+            <td>非公勝件</td>
+            <td> <input type="checkbox"> </td>
+          </tr>
+          <tr>
+            <td>原始經手人1</td>
+            <td>
+              <div class="input-group reload" style="width: 65%">
+                <input type="text" class="form-control" value="王小明">
+                <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+              </div>
+              <input type="text" style="width: 33%">
+            </td>
+            <td>原始經手人2</td>
+            <td>
+              <div class="input-group reload" style="width: 65%">
+                <input type="text" class="form-control" value="王小明">
+                <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+              </div>
+              <input type="text" style="width: 33%">
+            </td>
+            <td>共招件確認</td>
+            <td> <input type="checkbox"> </td>
+          </tr>
+          <tr>
+            <td>備註說明</td>
+            <td colspan="3"> <input type="text"> </td>
+            <td>已發佣</td>
+            <td> <input type="checkbox"> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="3">
+              <input type="checkbox">新公勝個資
+              <input type="checkbox">分析報告
+              <input type="checkbox">公勝個資
+              <input type="checkbox">續保件
+              <input type="checkbox">電銷件
+              <input type="checkbox">O2O件
+            </td>
+            <td></td>
+            <td>
+              <button>送件</button>
+            </td>
+          </tr>
+          <tr class="line">
+            <td colspan="6">
+              <hr/>
+            </td>
+          </tr>
+        </table>
+        <table class="autoWidth">
+          <tr>
+            <td>建檔人員</td>
+            <td> <span>方芳芳</span> </td>
+            <td>建檔日期</td>
+            <td> <span>2015/01/12</span> </td>
+            <td>修改人員</td>
+            <td> <span>方芳芳</span> </td>
+            <td>修改日期</td>
+            <td> <span>2015/01/12</span> </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="tab_info">
+      <div class="tab">
+        <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_record.svg"/ > 保障內容1
+        </a>
+        <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item2')">
+          <img src="../img/ico_record.svg"/ > 保障內容2
+        </a>
+        <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item3')">
+          <img src="../img/ico_record.svg"/ > 保障內容3
+        </a>
+        <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item4')">
+          <img src="../img/ico_agent.svg"/ > 業務人員
+        </a>
+        <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item5')">
+          <img src="../img/ico_record.svg"/ > 檢附文件
+        </a>
+      </div>
+
+      <div id="item1" class="tabContent list lastAddbtn left_1 left_last2">
+        <table>
+          <thead>
+            <tr>
+              <th>商品名稱</th>
+              <th>年期</th>
+              <th>保額/單位<br/>保費</th>
+              <th>佣金率<br/>預估FYC</th>
+              <th>與要保人關係<br/>被保人姓名</th>
+              <th>被保人身分證號<br/>被保人生日</th>
+              <th>備註</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="item2" class="tabContent list lastAddbtn left_last2">
+        <table>
+          <thead>
+            <tr>
+              <th>商品名稱</th>
+              <th>年期</th>
+              <th>保額/單位<br/>保費</th>
+              <th>佣金率<br/>預估FYC</th>
+              <th>與要保人關係<br/>被保人姓名</th>
+              <th>被保人身分證號<br/>被保人生日</th>
+              <th>備註</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="item3" class="tabContent list lastAddbtn left_last2">
+        <table>
+          <thead>
+            <tr>
+              <th>商品名稱</th>
+              <th>年期</th>
+              <th>保額/單位<br/>保費</th>
+              <th>佣金率<br/>預估FYC</th>
+              <th>與要保人關係<br/>被保人姓名</th>
+              <th>被保人身分證號<br/>被保人生日</th>
+              <th>備註</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text" style="width: 48%;">
+                <select style="width: 48%;">
+                  <option></option>
+                </select>
+                <input type="text">
+              </td>
+              <td>
+                <input type="text">
+                <input type="text">
+              </td>
+              <td>
+                <select>
+                  <option>本人</option>
+                  <option>配偶</option>
+                  <option>子女</option>
+                  <option>父母</option>
+                </select>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <input type="text" class="date">
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="item4" class="tabContent list lastAddbtn left_last4">
+        <table>
+          <thead>
+            <tr>
+              <th>目前經手人</th>
+              <th>姓名<br/>身分證號</th>
+              <th>比例<br/>職階</th>
+              <th>事業部<br/>業務中心</th>
+              <th>世襲</th>
+              <th>備註</th>
+              <th>註銷</th>
+              <th>修改人員<br/>修改日期</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr_BBlue create">
+              <td><input type="text"/></td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <input type="text">
+                <div>　</div>
+              </td>
+              <td>
+                <select>
+                  <option></option>
+                </select>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td> <input type="checkbox"> </td>
+              <td class="textarea"> <textarea></textarea> </td>
+              <td> <input type="checkbox"> </td>
+              <td>
+                <div>方芳芳</div>
+                <div>2015/01/12</div>
+              </td>
+              <td> <img src="../img/btn_add new benefit.svg"> </td>
+            </tr>
+            <tr>
+              <td>經手人2</td>
+              <td>
+                <div>葉悟原</div>
+                <div>A123456789</div>
+              </td>
+              <td>
+                <div>75%</div>
+                <div>壽險顧問</div>
+              </td>
+              <td>
+                <div>TP台北</div>
+                <div>001北區一</div>
+              </td>
+              <td><i class="fa fa-check text_Black"></i></td>
+              <td class="textarea">備著文字備著文字備著文字備著文字備著文字備著文字備著文字</td>
+              <td><i class="fa fa-check text_Black"></i></td>
+              <td>
+                <div>方芳芳</div>
+                <div>2015/01/12</div>
+              </td>
+              <td><i class="fa fa-pencil"></i></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th>服務人員<br/>姓名</th>
+              <th>身分證號<br/>職階</th>
+              <th>事業部<br/>業務中心</th>
+              <th>備註</th>
+              <th>註銷</th>
+              <th>修改人員<br/>修改日期</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr_BBlue create">
+              <td>
+                <input type="text"/>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+              </td>
+              <td>
+                <div class="input-group reload">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon">
+                    <img src="../img/ico_member.svg" />
+                  </span>
+                </div>
+                <div>　</div>
+              </td>
+              <td>
+                <select>
+                  <option></option>
+                </select>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+              <td class="textarea"> <textarea></textarea> </td>
+              <td> <input type="checkbox"> </td>
+              <td>
+                <div>方芳芳</div>
+                <div>2015/01/12</div>
+              </td>
+              <td> <img src="../img/btn_add new benefit.svg"> </td>
+            </tr>
+            <tr>
+              <td>
+                <div>服務人員2</div>
+                <div>葉悟原</div></td>
+              <td>
+                <div>A123456789</div>
+                <div>壽險顧問</div>
+              </td>
+              <td>
+                <div>TP台北</div>
+                <div>001北區一</div>
+              </td>
+              <td class="textarea">備著文字備著文字備著文字備著文字備著文字備著文字備著文字</td>
+              <td><i class="fa fa-check text_Black"></i></td>
+              <td>
+                <div>方芳芳</div>
+                <div>2015/01/12</div>
+              </td>
+              <td><i class="fa fa-pencil"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="item5" class="tabContent list lastAddbtn tab_BBlue left_last3">
+        <table>
+          <button>新增附件</button>
+          <thead>
+            <tr>
+              <th>檔案類別</th>
+              <th>檔案名稱</th>
+              <th>上傳日期</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3" class="text_Red">無資料</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </article>
+
+
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+  function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+  };
+  document.getElementById("defaultOpen").click();
+</script>
+</html>

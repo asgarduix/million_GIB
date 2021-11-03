@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span id="edit1">送件編號：00138278</span>
+            <span id="edit2">照會編號：00138278</span>
+            <span id="add">新增類別：</span>
+            <select onChange="changeOption(this)">
+                <option></option>
+                <option value="1">新契約</option>
+                <option value="2">保服件</option>
+                <option value="3">非送件照會</option>
+            </select>
+            <button class="inline-btn" onclick="changeView()">確定</button>
+            <div>
+                <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item3_0101_detail.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item3_0101_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info item1 item2 item3">
+                <p class="title"><img src="../img/ico_profile.svg" />送件資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>類別</td>
+                            <td> <span>新契約送件</span> </td>
+                            <td></td>
+                            <td></td>
+                            <td>非公勝件</td>
+                            <td>
+                                <input type="checkbox" /> </td>
+                        </tr>
+                        <tr>
+                            <td>服務內容</td>
+                            <td colspan="3">
+                                <input type="text" /> </td>
+                            <td>送件日期</td>
+                            <td> <span>2017/10/12</span> </td>
+                        </tr>
+                        <tr>
+                            <td>保單號碼</td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>保險公司</td>
+                            <td>
+                                <select>
+                                    <option>全球人壽</option>
+                                    <option>新光人壽</option>
+                                    <option>康健人壽</option>
+                                </select>
+                            </td>
+                            <td>承辦業務中心</td>
+                            <td>
+                                <select>
+                                    <option>台北</option>
+                                    <option>台中</option>
+                                    <option>高雄</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>要保人
+                                <br/>姓名證號</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+                                </div>
+                            </td>
+                            <td>主被保人
+                                <br/>姓名證號</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+                                </div>
+                            </td>
+                            <td>送件人</td>
+                            <td>
+                                <input type="text" /> </td>
+                        </tr>
+                        <tr>
+                            <td>經手人1</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+                                </div>
+                            </td>
+                            <td>經手人2</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>備註</td>
+                            <td colspan="3">
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>結案金額</td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>結案備註</td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>結案/結案日</td>
+                            <td>
+                                <input type="checkbox" />
+                                <span>尚未結案</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="basic_info item4 item5 item6">
+                <p class="title"><img src="../img/ico_profile.svg" />照會資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>類別</td>
+                            <td> <span>照會新契約</span> </td>
+                            <td>
+                                <label>
+                                    <input type="radio" /> 照會回覆</label>
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="radio" /> 照會通知</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>保單號碼</td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>保險公司</td>
+                            <td>
+                                <select>
+                                    <option>全球人壽</option>
+                                    <option>新光人壽</option>
+                                    <option>康健人壽</option>
+                                </select>
+                            </td>
+                            <td>送件日期</td>
+                            <td> <span>2017/10/12</span> </td>
+                        </tr>
+                        <tr>
+                            <td>要保人
+                                <br/>姓名證號</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+                                </div>
+                            </td>
+                            <td>主被保人
+                                <br/>姓名證號</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                  <img src="../img/ico_member.svg" />
+                </span>
+                                </div>
+                            </td>
+                            <td>承辦業務中心</td>
+                            <td>
+                                <select>
+                                    <option>台北</option>
+                                    <option>台中</option>
+                                    <option>高雄</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>照會類別一</td>
+                            <td>
+                                <select>
+                                    <option>新契約</option>
+                                    <option>契變</option>
+                                    <option>理賠</option>
+                                </select>
+                            </td>
+                            <td>照會類別二</td>
+                            <td>
+                                <select>
+                                    <option></option>
+                                </select>
+                            </td>
+                            <td>送件人員</td>
+                            <td>
+                                <input type="text" /> </td>
+                        </tr>
+                        <tr>
+                            <td>照會主旨</td>
+                            <td colspan="3">
+                                <input type="text" />
+                            </td>
+                            <td>應回覆日</td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                        </tr>
+                        <tr>
+                            <td>文件上傳</td>
+                            <td colspan="2">
+                                <input type="text" class="subBig" disabled="disabled" />
+                                <i class="fa"><span>瀏覽</span></i>
+                            </td>
+                            <td colspan="2">
+                                <input type="text" class="subBig" />
+                                <img src="../img/ico_addone.svg" />
+                            </td>
+                        </tr>
+                        <tr class="textarea">
+                            <td>上傳紀錄</td>
+                            <td colspan="3">
+                                <ul>
+                                    <li>20170311陳莉莉上傳：<a href="#">個人權益說明.amr</a>-20170308錄音-備註文字說明。<img src="../img/btn_clear.svg" /></li>
+                                    <li>20170311陳莉莉上傳：<a href="#">個人權益說明.amr</a>-20170308錄音-備註文字說明。<img src="../img/btn_clear.svg" /></li>
+                                    <li>20170311陳莉莉上傳：<a href="#">個人權益說明.amr</a>-20170308錄音-備註文字說明。<img src="../img/btn_clear.svg" /></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>備註</td>
+                            <td colspan="3">
+                                <input type="text" />
+                            </td>
+                            <td>結案日期</td>
+                            <td>
+                                <span class="text_Gray" style="vertical-align:sub;">尚未結案</span>
+                                <button class="small-btn" style="float:right;">結案</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+$('article').hide();
+$(".basic_info").hide();
+$(".tab_info").hide();
+$('#edit1').hide();
+$('#edit2').hide();
+$('section select').show();
+$('#add').show();
+
+var num;
+
+function changeOption(val) {
+    num = val.value;
+}
+
+function changeView() {
+    $('article').show();
+    $(".item" + num).show();
+    if (num <= 3)
+        $('#edit1').show();
+    else
+        $('#edit2').show();
+    $('section select').hide();
+    $('section button').hide();
+    $('#add').hide();
+}
+</script>
+
+</html>

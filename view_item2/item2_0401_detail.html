@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <section>
+    <span>客戶編號：103923483</span>
+    <div>
+      <img src="../img/btn_edit_big.svg" onclick="javascript:location.href='item2_0401_edit.html'"/>
+      <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item2_0401_list.html'"/>
+    </div>
+  </section>
+
+  <article>
+    <div class="basic_info">
+      <p class="title"><img src="../img/ico_profile.svg"/>客戶基本資料</p>
+      <div>
+        <table>
+          <tr>
+            <td>身分證/統編</td>
+            <td> <span>A123456789</span> </td>
+            <td>姓名/公司名</td>
+            <td> <span>方琪文</span> </td>
+            <td>英文名稱</td>
+            <td colspan="3"> <span></span> </td>
+          </tr>
+          <tr>
+            <td>生日/成立日</td>
+            <td> <span>1984/3/5</span> </td>
+            <td>國籍</td>
+            <td> <span>台灣</span> </td>
+            <td>性別</td>
+            <td> <span>女性</span> </td>
+            <td>洗錢分類等級</td>
+            <td> <span>女性</span> </td>
+          </tr>
+          <tr>
+            <td>婚姻狀況</td>
+            <td> <span>未婚</span> </td>
+            <td>最高學歷</td>
+            <td> <span>碩士</span> </td>
+            <td>風險值</td>
+            <td> <span>1</span> </td>
+            <td>觀察名單</td>
+            <td> <span></span> </td>
+          </tr>
+          <tr>
+            <td>客戶類型</td>
+            <td> <span></span> </td>
+            <td>行業別</td>
+            <td> <span>政府機構</span> </td>
+          </tr>
+          <tr class="bold">
+            <td>法人資料</td>
+            <td colspan="7"><hr/></td>
+          </tr>
+          <tr>
+            <td>負責人</td>
+            <td> <span>李筱惠</span> </td>
+            <td>聯絡人</td>
+            <td> <span>李筱惠</span> </td>
+            <td>行業別</td>
+            <td> <span></span> </td>
+          </tr>
+          <tr class="bold">
+            <td>通訊資訊</td>
+            <td colspan="7"><hr/></td>
+          </tr>
+          <tr>
+            <td>戶籍地址</td>
+            <td colspan="3"> <span>237 新北市中和區新民街11弄166號3樓</span> </td>
+            <td>戶籍電話</td>
+            <td> <span>29847890</span> </td>
+            <td>手機號碼</td>
+            <td> <span>0912345678</span> </td>
+          </tr>
+          <tr>
+            <td>通訊地址</td>
+            <td colspan="3"> <span>237 新北市中和區新民街11弄166號3樓</span> </td>
+            <td>聯絡電話</td>
+            <td> <span>29847890</span> </td>
+            <td>Email</td>
+            <td> <span>a1234@gmail.com</span> </td>
+          </tr>
+          <tr>
+            <td>公司地址</td>
+            <td colspan="3"> <span>237 新北市中和區新民街11弄166號3樓</span> </td>
+            <td>公司電話</td>
+            <td> <span>29847890</span> </td>
+            <td>傳真號碼</td>
+            <td> <span>0247493494</span> </td>
+          </tr>
+          <tr>
+            <td>客戶資料備註</td>
+            <td colspan="5"> <span>備註備註備註備註備註備註備註備註</span> </td>
+            <td>通訊軟體ID</td>
+            <td> <span>momo103002344</span> </td>
+          </tr>
+          <tr class="textarea">
+            <td>系統備註</td>
+            <td colspan="5"> <span>備註備註備註備註備註備註備註備註</span> </td>
+            <td class="text_Gray">客戶密碼</td>
+            <td> <span>******</span> </td>
+          </tr>
+          <tr class="textarea">
+            <td>客戶備用<br/>通訊資料</td>
+            <td colspan="5">
+              <ul style="font-size: 13px; color: #0070CD">
+                <li>業務員A123456789葉戊源-100 台北市中正區博愛路166號3樓</li>
+                <li>業務員B123456789葉戊源-100 台北市中正區博愛路166號3樓</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="tab_info">
+      <div class="tab">
+        <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_relative.svg"/ > 客戶關係人
+        </a>
+<!--         <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item2')">
+          <img src="../img/ico_company.svg"/ > 服務單位
+        </a> -->
+        <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item3')">
+          <img src="../img/ico_profile.svg"/ > 保單資料
+        </a>
+<!--         <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item4')">
+          <img src="../img/ico_record.svg"/ > 異動紀錄
+        </a> -->
+      </div>
+
+      <div id="item1" class="tabContent list left_last3">
+        <table>
+          <thead>
+            <tr>
+              <th>關係別</th>
+              <th>姓名</th>
+              <th>身分證號</th>
+              <th>性別</th>
+              <th>生日</th>
+              <th>關係備註</th>
+              <th>設定人</th>
+              <th>設定日</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>配偶</td>
+              <td>陳寧</td>
+              <td>F12345678</td>
+              <td>女</td>
+              <td>1988/12/1</td>
+              <td>備註備註備註備註</td>
+              <td>方芳芳</td>
+              <td>2017/10/10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+<!--       <div id="item2" class="tabContent list left_last3 left_last4">
+        <table>
+          <thead>
+            <tr>
+              <th>職業類別</th>
+              <th>服務單位</th>
+              <th>職稱</th>
+              <th>電話</th>
+              <th>傳真</th>
+              <th>工作內容</th>
+              <th>地址</th>
+              <th>設定人</th>
+              <th>設定日</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>內勤人員</td>
+              <td>台灣積體電路</td>
+              <td>高級工程師</td>
+              <td>0229887011</td>
+              <td>0229887022</td>
+              <td>說明說明說明說明說明說明</td>
+              <td>新竹市東區力行六路8號A棟11樓</td>
+              <td>方芳芳</td>
+              <td>2017/10/10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+
+      <div id="item3" class="tabContent list left_4">
+        <table>
+          <thead>
+            <tr>
+              <th>生效日</th>
+              <th>保險公司</th>
+              <th>保單號碼</th>
+              <th>商品名稱</th>
+              <th>要保人<br/>被保人</th>
+              <th>經手人1<br/>經手人2</th>
+              <th>幣別<br/>總保費</th>
+              <th>註銷</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2016/12/1</td>
+              <td>華南產險</td>
+              <td>
+                <div class="underline">123456789012</div>
+              </td>
+              <td>華南福氣多多六年期健康醫療XXX</td>
+              <td>
+                <div>陳筱方[123]</div>
+                <div>陳筱方[123]</div>
+              </td>
+              <td>
+                <div>潘嘉哲[456]</div>
+                <div>徐宇琦[567]</div>
+              </td>
+              <td>
+                <div>台幣</div>
+                <div>10,888</div>
+              </td>
+              <td>否</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+<!--       <div id="item4" class="tabContent list">
+        <table>
+          <thead>
+            <tr>
+              <th>異動項目</th>
+              <th>異動人員</th>
+              <th>異動日期</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>客戶基本資料</td>
+              <td>王大明</td>
+              <td>2017/1/12  09:12:08</td>
+            </tr>
+            <tr>
+              <td>身分證/統編</td>
+              <td>王大明</td>
+              <td>2017/1/12  08:50:01</td>
+            </tr>
+            <tr>
+              <td>服務單位</td>
+              <td>王大明</td>
+              <td>2017/1/10  09:19:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+    </div>
+  </article>
+
+  <div id="selectUser" class="popup selectUser">
+    <img src="../img/btn_clear.svg" class="close" onclick="openPopup('selectUser')"/>
+    <span>
+      請挑選職業代碼
+      <hr/>
+    </span>
+
+    <div class="search">
+      <select>
+        <option>代號大分類</option>
+      </select>
+      <input type="text" placeholder="請輸入名稱"/>
+      <button>查詢</button>
+    </div>
+
+    <div class="pager">
+      共 56 筆　每頁筆數
+      <select>
+        <option>10筆</option>
+        <option>20筆</option>
+        <option>30筆</option>
+        <option>40筆</option>
+        <option>50筆</option>
+      </select>
+      <input type="text" value="6"/>
+      /12
+      <i class="glyphicon glyphicon-chevron-left "></i>
+      <i class="glyphicon glyphicon-chevron-right disable"></i>
+    </div>
+
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>職業代號</th>
+            <th>大分類</th>
+            <th>中分類</th>
+            <th>小分類</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="clicked">
+            <td>001001</td>
+            <td>一般職業</td>
+            <td>機關團體公司行號</td>
+            <td>內勤人員</td>
+          </tr>
+          <tr>
+            <td>001002</td>
+            <td>一般職業</td>
+            <td>機關團體公司行號</td>
+            <td>外勤人員</td>
+          </tr>
+          <tr>
+            <td>001003</td>
+            <td>一般職業</td>
+            <td>機關團體公司行號</td>
+            <td>民意代表</td>
+          </tr>
+          <tr>
+            <td>001004</td>
+            <td>一般職業</td>
+            <td>機關團體公司行號</td>
+            <td>負責人,廠長(不親自作業)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <button class="disable" onclick="openPopup('selectUser')">取消</button>
+      <button onclick="openPopup('selectUser')">確認</button>
+    </div>
+  </div>
+  <div id="bg"></div>
+
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+  function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+  };
+  document.getElementById("defaultOpen").click();
+
+  var isPopup = false;
+  function openPopup(name) {
+    var popup = document.getElementById(name);
+    var modal = document.getElementById('bg');
+    if(isPopup == true) {
+      popup.style.display = "none";
+      modal.style.display = "none";
+    } else {
+      popup.style.display = "block";
+      modal.style.display = "block";
+    }
+    isPopup = !isPopup;
+  };
+</script>
+</html>

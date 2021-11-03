@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <section>
+    <span>客戶編號：103923483</span>
+    <div>
+      <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item2_0401_detail.html'"/>
+      <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item2_0401_list.html'"/>
+    </div>
+  </section>
+
+  <article>
+    <div class="basic_info">
+      <p class="title"><img src="../img/ico_profile.svg"/>客戶基本資料</p>
+      <div>
+        <table>
+          <tr>
+            <td>身分證/統編</td>
+            <td>
+              <div class="input-group reload">
+                <input type="text" class="form-control" value="">
+                <span class="input-group-addon" onclick="openPopup('selectUser')">
+                  <img src="../img/ico_member.svg" />
+                </span>
+              </div>
+            </td>
+            <td>姓名/公司名</td>
+            <td> <input type="text"> </td>
+            <td>英文名稱</td>
+            <td colspan="3"> <input type="text"> </td>
+          </tr>
+          <tr>
+            <td>生日/成立日</td>
+            <td> <input type="text" class="date"> </td>
+            <td>國籍</td>
+            <td> <input type="text"> </td>
+            <td>性別</td>
+            <td>
+              <select>
+                <option>男性</option>
+                <option>女性</option>
+                <option>其他</option>
+              </select>
+            </td>
+            <td>洗錢分類等級</td>
+            <td> <input type="text"> </td>
+          </tr>
+          <tr>
+            <td>婚姻狀況</td>
+            <td>
+              <select>
+                <option>未婚</option>
+                <option>已婚</option>
+              </select>
+            </td>
+            <td>最高學歷</td>
+            <td>
+              <select>
+                <option>國小</option>
+                <option>國中</option>
+                <option>高中</option>
+                <option>專科</option>
+                <option>大學</option>
+                <option>碩士</option>
+                <option>博士</option>
+              </select>
+            </td>
+            <td>風險值</td>
+            <td> <input type="text"> </td>
+            <td>觀察名單</td>
+            <td> <input type="text"> </td>
+          </tr>
+          <tr>
+            <td>客戶類型</td>
+            <td>
+              <select>
+                <option>請選擇</option>
+              </select>
+            </td>
+            <td>行業別</td>
+            <td>
+              <select>
+                <option>請選擇</option>
+                <option>政府機構</option>
+                <option>教育</option>
+                <option>公共/運輸</option>
+                <option>醫療</option>
+                <option>專業性事務所</option>
+                <option>金融機構</option>
+                <option>製造/營建業</option>
+                <option>配銷/零售</option>
+                <option>服務業</option>
+                <option>飯店/餐館</option>
+                <option>廣宣/傳播</option>
+                <option>休閒</option>
+                <option>非營利性法人組織</option>
+                <option>其他</option>
+                <option>農林漁牧</option>
+                <option>礦業及土石採取業</option>
+                <option>電力及燃氣供應業</option>
+              </select>
+            </td>
+          </tr>
+          <tr class="bold">
+            <td>法人資料</td>
+            <td colspan="7"><hr/></td>
+          </tr>
+          <tr>
+            <td>負責人</td>
+            <td> <input type="text"> </td>
+            <td>聯絡人</td>
+            <td> <input type="text"> </td>
+            <td>行業別</td>
+            <td>
+              <select>
+                <option>請選擇</option>
+                <option>政府機構</option>
+                <option>教育</option>
+                <option>公共/運輸</option>
+                <option>醫療</option>
+                <option>專業性事務所</option>
+                <option>金融機構</option>
+                <option>製造/營建業</option>
+                <option>配銷/零售</option>
+                <option>服務業</option>
+                <option>飯店/餐館</option>
+                <option>廣宣/傳播</option>
+                <option>休閒</option>
+                <option>非營利性法人組織</option>
+                <option>其他</option>
+                <option>農林漁牧</option>
+                <option>礦業及土石採取業</option>
+                <option>電力及燃氣供應業</option>
+              </select>
+            </td>
+          </tr>
+          <tr class="bold">
+            <td>通訊資訊</td>
+            <td colspan="7"><hr/></td>
+          </tr>
+          <tr>
+            <td>戶籍地址</td>
+            <td colspan="5" class="address tel">
+              <input type="text" style="width: 10%"/>
+              <input type="text" style="width: 58.5%"/>
+              <input type="text" placeholder="戶籍電話"/>
+            </td>
+            <td>手機號碼</td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td>通訊地址</td>
+            <td colspan="5" class="address tel">
+              <input type="text" style="width: 10%"/>
+              <input type="text" style="width: 58.5%"/>
+              <input type="text" placeholder="聯絡電話"/>
+            </td>
+            <td>Email</td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td>公司地址</td>
+            <td colspan="5" class="address tel">
+              <input type="text" style="width: 10%"/>
+              <input type="text" style="width: 58.5%"/>
+              <input type="text" placeholder="公司電話"/>
+            </td>
+            <td>傳真號碼</td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr>
+            <td>客戶資料備註</td>
+            <td colspan="5">
+              <textarea></textarea>
+            </td>
+            <td>通訊軟體ID</td>
+            <td> <input type="text"/> </td>
+          </tr>
+          <tr class="textarea">
+            <td>系統備註</td>
+            <td colspan="5">
+              <textarea></textarea>
+            </td>
+            <td class="text_Gray verTop">客戶密碼</td>
+            <td class="verTop"> <input type="password"> </td>
+          </tr>
+          <tr class="textarea">
+            <td>客戶備用<br/>通訊資料</td>
+            <td colspan="5">
+              <ul style="font-size: 13px; color: #0070CD">
+                <li>業務員A123456789葉戊源-100 台北市中正區博愛路166號3樓</li>
+                <li>業務員B123456789葉戊源-100 台北市中正區博愛路166號3樓</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="tab_info">
+      <div class="tab">
+        <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_relative.svg"/ > 客戶關係人
+        </a>
+        <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item3')">
+          <img src="../img/ico_profile.svg"/ > 保單資料
+        </a>
+      </div>
+
+      <div id="item1" class="tabContent list left_last3">
+        <table>
+          <thead>
+            <tr>
+              <th>關係別</th>
+              <th>姓名</th>
+              <th>身分證號</th>
+              <th>性別</th>
+              <th>生日</th>
+              <th>關係備註</th>
+              <th>設定人</th>
+              <th>設定日</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>配偶</td>
+              <td>陳寧</td>
+              <td>F12345678</td>
+              <td>女</td>
+              <td>1988/12/1</td>
+              <td>備註備註備註備註</td>
+              <td>方芳芳</td>
+              <td>2017/10/10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="item3" class="tabContent list left_4">
+        <table>
+          <thead>
+            <tr>
+              <th>生效日</th>
+              <th>保險公司</th>
+              <th>保單號碼</th>
+              <th>商品名稱</th>
+              <th>要保人<br/>被保人</th>
+              <th>經手人1<br/>經手人2</th>
+              <th>幣別<br/>總保費</th>
+              <th>註銷</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2016/12/1</td>
+              <td>華南產險</td>
+              <td>
+                <div class="underline">123456789012</div>
+              </td>
+              <td>華南福氣多多六年期健康醫療XXX</td>
+              <td>
+                <div>陳筱方[123]</div>
+                <div>陳筱方[123]</div>
+              </td>
+              <td>
+                <div>潘嘉哲[456]</div>
+                <div>徐宇琦[567]</div>
+              </td>
+              <td>
+                <div>台幣</div>
+                <div>10,888</div>
+              </td>
+              <td>否</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </article>
+
+  <div id="selectUser" class="popup selectUser">
+    <img src="../img/btn_clear.svg" class="close" onclick="openPopup('selectUser')"/>
+    <span>
+      請挑選職業代碼
+      <hr/>
+    </span>
+
+    <div class="search">
+      <select>
+        <option>代號大分類</option>
+      </select>
+      <input type="text" placeholder="請輸入名稱"/>
+      <button>查詢</button>
+    </div>
+
+    <div class="pager">
+      共 56 筆　每頁筆數
+      <select>
+        <option>10筆</option>
+        <option>20筆</option>
+        <option>30筆</option>
+        <option>40筆</option>
+        <option>50筆</option>
+      </select>
+      <input type="text" value="6"/>
+      /12
+      <i class="glyphicon glyphicon-chevron-left "></i>
+      <i class="glyphicon glyphicon-chevron-right disable"></i>
+    </div>
+
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>職業代號</th>
+            <th>大分類</th>
+            <th>中分類</th>
+            <th>小分類</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="clicked">
+            <td>001001</td>
+            <td>一般職業</td>
+            <td>機關團體公司行號</td>
+            <td>內勤人員</td>
+          </tr>
+          <tr>
+            <td>001002</td>
+            <td>一般職業</td>
+            <td>機關團體公司行號</td>
+            <td>外勤人員</td>
+          </tr>
+          <tr>
+            <td>001003</td>
+            <td>一般職業</td>
+            <td>機關團體公司行號</td>
+            <td>民意代表</td>
+          </tr>
+          <tr>
+            <td>001004</td>
+            <td>一般職業</td>
+            <td>機關團體公司行號</td>
+            <td>負責人,廠長(不親自作業)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <button class="disable" onclick="openPopup('selectUser')">取消</button>
+      <button onclick="openPopup('selectUser')">確認</button>
+    </div>
+  </div>
+  <div id="bg"></div>
+
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+  function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+  };
+  document.getElementById("defaultOpen").click();
+
+  var isPopup = false;
+  function openPopup(name) {
+    var popup = document.getElementById(name);
+    var modal = document.getElementById('bg');
+    if(isPopup == true) {
+      popup.style.display = "none";
+      modal.style.display = "none";
+    } else {
+      popup.style.display = "block";
+      modal.style.display = "block";
+    }
+    isPopup = !isPopup;
+  };
+</script>
+</html>

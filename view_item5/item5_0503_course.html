@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>各類課程年度出席率</span>
+            <div>
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item5_0502_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />課程類別基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>年度別</td>
+                            <td> <span>2017</span> </td>
+                            <td>課程類別一</td>
+                            <td> <span>早會課程(含線上)</span> </td>
+                            <td>年度出席率</td>
+                            <td> <span>0.82%</span> </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_records.svg"/ > 課程時數明細
+        </a>
+                </div>
+                <div id="item1" class="tabContent list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>課程日期</th>
+                                <th>課程名稱</th>
+                                <th>課程屬性</th>
+                                <th>出席率次數</th>
+                                <th>出席</th>
+                                <th>遲到</th>
+                                <th>請假</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2017/10/23</td>
+                                <td>保險證照</td>
+                                <td>法規要求</td>
+                                <td>23%</td>
+                                <td>33</td>
+                                <td>12</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

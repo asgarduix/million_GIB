@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <section>
+        <span>佣金率維護</span>
+        <div>
+            <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item4_0901_edit.html'">
+            <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item4_0901_list.html'" />
+        </div>
+    </section>
+    <article>
+        <div class="basic_info">
+            <p class="title"><img src="../img/ico_profile.svg" />商品檔之基本資料</p>
+            <div>
+                <table>
+                    <tr>
+                        <td>保險公司</td>
+                        <td> <span>安達人壽</span> </td>
+                    </tr>
+                    <tr>
+                        <td>商品代碼</td>
+                        <td> <span>ED01</span> </td>
+                        <td>商品中文名稱</td>
+                        <td> <span>蘇黎世六年定期年好XXXXXXX</span> </td>
+                        <td>商品銷售日</td>
+                        <td> <span>2018/3/31</span> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tab_info">
+            <div class="funcBtn">
+                <button>匯入</button>
+                <button class="icon_BBrown icon_download">匯出</button>
+            </div>
+            <div class="funcBtn" style="padding:3px 3px;margin-right:10px;">
+              <input type="checkbox"/> 依發佣佣率
+            </div>
+            <div class="funcBtn" style="padding:3px 3px;margin-right:10px;">
+              <input type="checkbox"/> 審核發布
+            </div>
+            <div class="tab">
+                <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+                  <img src="../img/ico_customer1.svg"/ > 總表
+                </a>
+            </div>
+            <div id="item1" class="tabContent list">
+                <table class="autoWidth">
+                    <thead>
+                        <tr>
+                            <th>年度</th>
+                            <th>年期</th>
+                            <th>年齡</th>
+                            <th>保額</th>
+                            <th>保費</th>
+                            <th>繳別</th>
+                            <th>代理佣率</th>
+                            <th>發佣佣率</th>
+                            <th>定額金額</th>
+                            <th>服務津貼</th>
+                            <th>審核發佈日</th>
+                            <th>佣率生效日</th>
+                            <th>佣率終止日</th>
+                            <th>繼續率獎金</th>
+                            <th>年終獎金</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1-1</td>
+                            <td>10-10</td>
+                            <td>0 ~</td>
+                            <td>~ 萬</td>
+                            <td>~</td>
+                            <td>不拘</td>
+                            <td>50.00</td>
+                            <td>50.00</td>
+                            <td>0</td>
+                            <td></td>
+                            <td>2017/03/28</td>
+                            <td>2017/06/28</td>
+                            <td>2017/06/28</td>
+                            <td><i class="fa fa-check text_Black"></i></td>
+                            <td><i class="fa fa-check text_Black"></i></td>
+                            <td>
+                                <img src="../img/btn delete.svg">
+                                <i class="fa fa-pencil"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>年度</th>
+                            <th>年期</th>
+                            <th>年齡</th>
+                            <th>保額</th>
+                            <th>保費</th>
+                            <th>繳別</th>
+                            <th>代理佣率</th>
+                            <th>發佣佣率</th>
+                            <th>定額金額</th>
+                            <th>服務津貼</th>
+                            <th>審核發佈日</th>
+                            <th>佣率生效日</th>
+                            <th>佣率終止日</th>
+                            <th>繼續率獎金</th>
+                            <th>年終獎金</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text" value="1-1">
+                            </td>
+                            <td>
+                                <input type="text" value="10-10">
+                            </td>
+                            <td>
+                                <input type="text" value="0 ~">
+                            </td>
+                            <td>
+                                <input type="text" value="~ 萬">
+                            </td>
+                            <td>
+                                <input type="text" value="~">
+                            </td>
+                            <td>
+                                <select>
+                                      <option>全部</option>
+                                      <option>躉繳</option>
+                                      <option>分期繳</option>
+                                      <option selected="">不拘</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" value="50.00">
+                            </td>
+                            <td>
+                                <input type="text" value="50.00">
+                            </td>
+                            <td>
+                                <input type="text" value="0">
+                            </td>
+                            <td>
+                                <input type="text" value="">
+                            </td>
+                            <td>
+                                <input type="text" class="date" value="2017/03/28">
+                            </td>
+                            <td>
+                                <input type="text" class="date" value="2017/06/28">
+                            </td>
+                            <td>
+                                <input type="text" class="date" value="2017/06/28">
+                            </td>
+                            <td>
+                                <input type="checkbox" checked>
+                            </td>
+                            <td>
+                                <input type="checkbox" checked>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

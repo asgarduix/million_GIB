@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="18px" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_relative</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-346.000000, -685.000000)" id="ico_relative" fill="#FFFFFF">
+            <g transform="translate(346.000000, 685.000000)">
+                <path d="M7.29792676,11.4944097 C7.92800854,11.6037861 12.0721061,12.2825048 13.5282856,11.4801135 C15.1060561,10.6107224 15.1060561,8.87194041 13.5282856,8.00254938 C12.9874889,7.70455686 12.0759652,7.61084421 11.1113904,7.61638296 C11.1180712,6.64583754 11.0249822,5.72714371 10.725326,5.18332785 C9.85593503,3.60555738 8.11715298,3.60555738 7.24776196,5.18332785 C6.4784067,6.57955347 7.07071151,10.4469192 7.21720372,11.318424 L7.21720372,11.4801135 C7.21720372,11.4801135 7.22709023,11.4819294 7.24611018,11.4853122 C7.24719697,11.4913337 7.24776196,11.4944097 7.24776196,11.4944097 L7.29792676,11.4944097 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

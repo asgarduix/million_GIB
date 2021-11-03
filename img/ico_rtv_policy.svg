@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_rtv_policy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-401.000000, -686.000000)" id="ico_rtv_policy" fill="#FFFFFF">
+            <g transform="translate(401.000000, 686.000000)">
+                <g id="heart" transform="translate(5.937500, 8.722222) scale(-1, 1) translate(-5.937500, -8.722222) translate(2.875000, 6.000000)">
+                    <path d="M4.91202885,2.42914411 C5.89813539,3.00873813 5.89813539,4.16792616 4.91202885,4.74752017 C3.92592231,5.32711418 0.967602681,4.74752017 0.967602681,4.74752017 L0.967602681,2.42914411 C0.967602681,2.42914411 3.92592231,1.8495501 4.91202885,2.42914411 Z" id="Rectangle-5"></path>
+                    <path d="M0.831841308,0.739579907 C1.41143532,-0.246526636 2.57062335,-0.246526636 3.15021737,0.739579907 C3.72981138,1.72568645 3.15021737,4.68400608 3.15021737,4.68400608 L0.831841308,4.68400608 C0.831841308,4.68400608 0.252247294,1.72568645 0.831841308,0.739579907 Z" id="Rectangle-5"></path>
+                </g>
+                <path d="M12.5,11 L12.5,12.5 L5.5,12.5 L5.5,11 L4.5,11 L4.5,14.5 L13.5,14.5 L13.5,3.5 L4.5,3.5 L4.5,7 L5.5,6 L5.5,4.5 L12.5,4.5 L12.5,10 L9,10 L9,11 L12.5,11 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

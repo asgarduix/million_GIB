@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <section>
+        <span>法定扣款設定</span>
+        <div>
+            <img src="../img/btn_edit_big.svg" onclick="javascript:location.href='item8_0201_edit.html'" />
+            <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item8_0201_list.html'" />
+        </div>
+    </section>
+    <article>
+        <div class="basic_info">
+            <p class="title"><img src="../img/ico_profile.svg" />扣款人基本資料</p>
+            <div>
+                <table>
+                    <tr>
+                        <td>身分證號</td>
+                        <td><span>A12345678</span></td>
+                        <td>姓名</td>
+                        <td> <span>安恩在</span> </td>
+                        <td>扣薪比例</td>
+                        <td><span>10%</span></td>
+                    </tr>
+                    <tr>
+                        <td>職階</td>
+                        <td><span>71 事業部負責人</span></td>
+                        <td>業務中心</td>
+                        <td><span>台北</span></td>
+                        <td>事業部</td>
+                        <td><span>群英</span></td>
+                    </tr>
+                    <tr class="textarea">
+                        <td>備註</td>
+                        <td colspan="3"><pre>備註備註備註備註備註</pre></td>
+                    </tr>
+                    <tr class="line">
+                        <td colspan="6">
+                            <hr/>
+                        </td>
+                    </tr>
+                </table>
+                <table class="autoWidth">
+                    <tr>
+                        <td>建檔人員</td>
+                        <td> <span>方芳芳</span> </td>
+                        <td>建檔日期</td>
+                        <td> <span>2015/01/12</span> </td>
+                        <td>修改人員</td>
+                        <td> <span>方芳芳</span> </td>
+                        <td>修改日期</td>
+                        <td> <span>2015/01/12</span> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tab_info">
+            <div class="tab">
+                <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+                  <img src="../img/ico_customer1.svg"/ > 債權人設定
+                </a>
+            </div>
+            <div id="item1" class="tabContent list left_last1">
+                <table class="autoWidth">
+                    <thead>
+                        <tr>
+                            <th>序號</th>
+                            <th>債務人姓名<br/>身分證號</th>
+                            <th>應還總額<br/>已還總額</th>
+                            <th>待還總額</th>
+                            <th>扣款起始年月<br/>扣款結束年月</th>
+                            <th>銀行名稱<br/>銀行代號</th>
+                            <th>分行名稱<br/>分行代號</th>
+                            <th>銀行帳號<br/>戶名</th>
+                            <th>案號</th>
+                            <th>附件</th>
+                            <th>實際還清年月</th>
+                            <th>備註</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div>陳怡君</div>
+                                <div>A12345678</div>
+                            </td>
+                            <td>
+                                <div>500,000</div>
+                                <div>200,000</div>
+                            </td>
+                            <td>300,000</td>
+                            <td>
+                                <div>201501</div>
+                                <div>201603</div>
+                            </td>
+                            <td>
+                                <div>花旗</div>
+                                <div>021</div>
+                            </td>
+                            <td>
+                                <div>三重</div>
+                                <div>067</div>
+                            </td>
+                            <td>
+                                <div>12345678</div>
+                                <div>陳怡君</div>
+                            </td>
+                            <td>A3265</td>
+                            <td><img src="../img/doc_attach.svg" onclick="openPopup('import')"></td>
+                            <td></td>
+                            <td>注意事項注意事項</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <div>吳佩怡</div>
+                                <div>A12345678</div>
+                            </td>
+                            <td>
+                                <div>200,000</div>
+                                <div>100,000</div>
+                            </td>
+                            <td>100,000</td>
+                            <td>
+                                <div>201501</div>
+                                <div>201603</div>
+                            </td>
+                            <td>
+                                <div>花旗</div>
+                                <div>021</div>
+                            </td>
+                            <td>
+                                <div>敦化</div>
+                                <div>067</div>
+                            </td>
+                            <td>
+                                <div>12345678</div>
+                                <div>吳佩怡</div>
+                            </td>
+                            <td>A3411</td>
+                            <td><img src="../img/doc_attach.svg" onclick="openPopup('import')"></td>
+                            <td></td>
+                            <td>注意事項注意事項</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+    <div id="import" class="popup import">
+        <img src="../img/btn_clear.svg" class="close" onclick="openPopup('import')" />
+        <section>
+            上傳附件
+        </section>
+        <div>
+            <table>
+                <tbody>
+                    <tr class="textarea">
+                        <td width="17%">上傳紀錄</td>
+                        <td>
+                            <ul>
+                                <li><a href="#">附件1.pdf</a></li>
+                                <li><a href="#">附件2.pdf</a></li>
+                                <li><a href="#">附件3.pdf</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="bg"></div>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+
+var tempPopup;
+var isPopup = false;
+
+function openPopup(name) {
+    isPopup = !isPopup;
+    if (tempPopup != undefined && name != tempPopup) {
+        var popup = document.getElementById(tempPopup);
+        var modal = document.getElementById('bg');
+        var modal2 = document.getElementById('bg2');
+        var popup1 = document.getElementById(name);
+        var modal1 = document.getElementById('bg1');
+        popup.style.display = "none";
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        popup1.style.display = "block";
+        modal1.style.display = "block";
+    } else if (tempPopup != undefined && name == 'alert') {
+        var popup = document.getElementById(tempPopup);
+        var modal = document.getElementById('bg1');
+        var modal2 = document.getElementById('bg2');
+        var popup1 = document.getElementById(name);
+        var modal1 = document.getElementById('bg2');
+        popup.style.display = "block";
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        popup1.style.display = "block";
+        modal1.style.display = "block";
+    } else {
+        var popup = document.getElementById(name);
+        var modal = document.getElementById('bg');
+        var modal1 = document.getElementById('bg1');
+        var modal2 = document.getElementById('bg2');
+        if (isPopup == false) {
+            popup.style.display = "none";
+            modal.style.display = "none";
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+        } else {
+            popup.style.display = "block";
+            modal.style.display = "block";
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+        }
+    }
+    tempPopup = name;
+};
+
+$(document).ready(function() {
+    $("#bg").click(function() {
+        var popup = document.getElementById(tempPopup);
+        var modal = document.getElementById('bg');
+        popup.style.display = "none";
+        modal.style.display = "none";
+    });
+});
+</script>
+
+</html>

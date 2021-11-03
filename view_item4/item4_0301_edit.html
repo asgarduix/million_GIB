@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>　</span>
+            <div>
+                <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item4_0301_detail.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item4_0301_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />保單整批變更設定</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>類別</td>
+                            <td>
+                                <select>
+                                    <option>壽險</option>
+                                    <option>產險</option>
+                                </select>
+                            </td>
+                            <td>生效年月<span class="point"></span></td>
+                            <td>
+                                <input type="text" value="" class="date" /> </td>
+                            <td>變更執行</td>
+                            <td>
+                                <input type="checkbox" />
+                                <input type="text" class="date optionB" disabled="disabled" style="width: calc(100% - 30px)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>保單生效起始日</td>
+                            <td>
+                                <input type="text" value="" class="date" /> </td>
+                            <td>保單生效結束日</td>
+                            <td>
+                                <input type="text" value="" class="date" /> </td>
+                            <td>變更復原</td>
+                            <td>
+                                <input type="checkbox" />
+                                <input type="text" class="date optionB" disabled="disabled" style="width: calc(100% - 30px)">
+                            </td>
+                        </tr>
+                        <tr class="bold">
+                            <td>變更前經手人</td>
+                            <td colspan="5">
+                                <hr> </td>
+                        </tr>
+                        <tr>
+                            <td>身分證號</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>姓名</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>事業部</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                        </tr>
+                        <tr class="bold">
+                            <td>變更後經手人</td>
+                            <td colspan="5">
+                                <hr> </td>
+                        </tr>
+                        <tr>
+                            <td>身分證號</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>姓名</td>
+                            <td>
+                                <input type="text" value="" /> </td>
+                            <td>事業部</td>
+                            <td>
+                                <input type="text" value="" class="date" /> </td>
+                        </tr>
+                        <tr class="textarea">
+                            <td>備註</td>
+                            <td colspan="3">
+                                <textarea></textarea>
+                            </td>
+                            <td>註銷</td>
+                            <td>
+                                <label><input type="checkbox">　</label>
+                            </td>
+                        </tr>
+                        <tr class="line">
+                            <td colspan="6">
+                                <hr>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="autoWidth">
+                        <tbody>
+                            <tr>
+                                <td>建檔人員</td>
+                                <td> <span>方芳芳</span> </td>
+                                <td>建檔日期</td>
+                                <td> <span>2015/01/12</span> </td>
+                                <td>修改人員</td>
+                                <td> <span>方芳芳</span> </td>
+                                <td>修改日期</td>
+                                <td> <span>2015/01/12</span> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

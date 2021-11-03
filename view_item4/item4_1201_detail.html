@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <section>
+    <span>發佣明細</span>
+  </section>
+
+  <article>
+
+    <div class="tab_info">
+
+      <div class="tabContent list">
+        <table>
+          <thead>
+            <tr>
+              <th>保險公司</th>
+              <th>保單號碼</th>
+              <th>保單生效日期</th>
+              <th>獎金中文名稱</th>
+              <th>事業部中文名稱</th>
+              <th>姓名</th>
+              <th>保費</th>
+              <th>代理費</th>
+              <th>發放率%</th>
+              <th>佣金</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>值</td>
+              <td>值</td>
+              <td>值</td>
+              <td>值</td>
+              <td>值</td>
+              <td>值</td>
+              <td>值</td>
+              <td>值</td>
+              <td>值</td>
+              <td>值</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </article>
+
+
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+  function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+  };
+  document.getElementById("defaultOpen").click();
+</script>
+</html>

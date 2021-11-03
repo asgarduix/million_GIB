@@ -1,0 +1,1494 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>系統編號：</span>
+            <div>
+                <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item1_0101_detail.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item1_0101_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />人事基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>姓名<span class="point"></span></td>
+                            <td>
+                                <input type="text"> </td>
+                            <td>身分證號<span class="point"></span></td>
+                            <td>
+                                <input type="text"> </td>
+                            <td>大頭照</td>
+                            <td rowspan="8">
+                                <div class="photo">
+                                    <img src="../img/photo.jpg" />
+                                    <p>變更圖片</p>
+                                </div>
+                                <input type="checkbox">業務系統顯示相片
+                                <button style="margin-left:0;">下載</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>性別<span class="point"></span></td>
+                            <td>
+                                <select>
+                                    <option>男性</option>
+                                    <option>女性</option>
+                                    <option>其他</option>
+                                </select>
+                            </td>
+                            <td>生日<span class="point"></span></td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>國籍</td>
+                            <td>
+                                <input type="text" value="台灣"> </td>
+                            <td>學歷</td>
+                            <td>
+                                <select>
+                                    <option>請選擇</option>
+                                    <option>國中</option>
+                                    <option>高中</option>
+                                    <option>專科</option>
+                                    <option>大學</option>
+                                    <option>研究所</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>身份別</td>
+                            <td>
+                                <select>
+                                    <option>業務員</option>
+                                    <option>事業部負責人</option>
+                                    <option>事務所負責人</option>
+                                    <option>策盟負責人</option>
+                                    <option>法人事業部</option>
+                                    <option>世襲</option>
+                                    <option>內勤</option>
+                                </select>
+                            </td>
+                            <td>暱稱</td>
+                            <td>
+                                <input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td>系統角色</td>
+                            <td>
+                                <label>
+                                    <input type="checkbox">業務員　</label>
+                                <label>
+                                    <input type="checkbox">僅查佣　</label>
+                                <label>
+                                    <input type="checkbox">無權限　</label>
+                                <label>
+                                    <input type="checkbox">業務中心主管（行政職）　</label>
+                                <label>
+                                    <input type="checkbox">區部主管（行政職）　</label>
+                                <label>
+                                    <input type="checkbox">總公司　</label>
+                            </td>
+                            <td>密碼</td>
+                            <td>
+                                <input type="password"> <label>
+                                    <input type="checkbox">密碼鎖定　</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>業務中心</td>
+                            <td>
+                                <select style="width: 75%">
+                                    <option>台北</option>
+                                    <option>台中</option>
+                                    <option>台南</option>
+                                </select>
+                                /
+                                <span>北區</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="inline-btn small-btn" style="width: 48%;margin: 0;">重發邀請函</button>
+                                <button class="inline-btn small-btn" style="width: 48%;margin: 0;">解除密碼鎖定</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>事業部</td>
+                            <td>
+                                <select>
+                                    <option>AK 愛加倍</option>
+                                    <option>AP 多佳</option>
+                                    <option>BD 曙光</option>
+                                    <option>GD 祥韻</option>
+                                </select>
+                            </td>
+                            <td>實註單位</td>
+                            <td><span>台北</span></td>
+                        </tr>
+                        <tr>
+                            <td>職稱</td>
+                            <td>
+                                <select>
+                                    <option>51襄理</option>
+                                </select>
+                            </td>
+                            <td>認證職稱</td>
+                            <td>
+                                <input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td>報聘日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>離職日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>離職原因</td>
+                            <td>
+                                <select>
+                                    <option></option>
+                                </select>
+                            </td>
+                            <td>專業形象照</td>
+                            <td rowspan="8">
+                                <div class="photo">
+                                    <img src="../img/photo.jpg" />
+                                </div>
+                                <input type="checkbox">業務系統顯示相片
+                                <button style="margin-left:0;">下載</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>壽險登錄日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>產險登錄日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>壽險註銷日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>產險註銷日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>輔導人</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                      <img src="../img/ico_member.svg" />
+                                    </span>
+                                </div>
+                            </td>
+                            <td>介紹人</td>
+                            <td>
+                                <div class="input-group reload">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                      <img src="../img/ico_member.svg" />
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>戶籍地址</td>
+                            <td class="address">
+                                <input type="text" style="width: 10%" />
+                                <input type="text" style="width: 88%" />
+                            </td>
+                            <td>市話</td>
+                            <td>
+                                <input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td>通訊地址</td>
+                            <td class="address">
+                                <input type="text" style="width: 10%" />
+                                <input type="text" style="width: 88%" />
+                            </td>
+                            <td>手機號碼1</td>
+                            <td>
+                                <input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td>住家地址</td>
+                            <td class="address">
+                                <input type="text" style="width: 10%" />
+                                <input type="text" style="width: 88%" />
+                            </td>
+                            <td>手機號碼2</td>
+                            <td>
+                                <input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>內設座位別</td>
+                            <td>
+                                <select>
+                                    <option>無座位</option>
+                                    <option>負責人座位</option>
+                                    <option>業務員座位</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行政備註</td>
+                            <td colspan="3">
+                                <input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td>一般備註</td>
+                            <td colspan="3">
+                                <input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="5">
+                                <label>
+                                    <input type="checkbox">停佣　</label>
+                                <label>
+                                    <input type="checkbox">身故　</label>
+                                <label>
+                                    <input type="checkbox">世襲　</label>
+                                <label>
+                                    <input type="checkbox">永不錄用　</label>
+                                <label>
+                                    <input type="checkbox">兼職　</label>
+                                <label>
+                                    <input type="checkbox">審核　</label>
+                            </td>
+                        </tr>
+                        <tr class="line">
+                            <td colspan="6">
+                                <hr/>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="autoWidth">
+                        <tr>
+                            <td>建檔人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>建檔日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                            <td>修改人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>修改日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_premium.svg"/ > 銀行帳號
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item2')">
+          <img src="../img/ico_agent.svg"/ > 個人稅額
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item3')">
+          <img src="../img/ico_profile.svg"/ > 固定扣款
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item4')">
+          <img src="../img/ico_records.svg"/ > 獎懲紀錄
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item5')">
+          <img src="../img/ico_customer1.svg"/ > 介紹人/輔導人
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item6')">
+          <img src="../img/ico_agent.svg"/ > 實駐單位
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item7')">
+          <img src="../img/ico_verify.svg"/ > 異動紀錄
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item8')">
+          <img src="../img/ico_record.svg"/ > 停佣作業
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item9')">
+          <img src="../img/ico_verify.svg"/ > 登錄狀況
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item10')">
+          <img src="../img/ico_record.svg"/ > 檢附文件
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item11')">
+          <img src="../img/ico_records.svg"/ > 進出紀錄
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item12')">
+          <img src="../img/ico_records.svg"/ > 異動生養事業部
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item13')">
+          <img src="../img/ico_relative.svg"/ > 得獎紀錄
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item14')">
+          <img src="../img/ico_record.svg"/ > 每月組織
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item15')">
+          <img src="../img/ico_record.svg"/ > 工作經歷
+        </a>
+                </div>
+                <div id="item1" class="tabContent list lastAddbtn tab_BWhite">
+                    <div style="padding: 0.5em 1em;">
+                        <table>
+                            <tr>
+                                <td>佣金類別</td>
+                                <td>
+                                    <select>
+                                        <option>產險</option>
+                                        <option>壽險</option>
+                                    </select>
+                                </td>
+                                <td>出帳類別</td>
+                                <td>
+                                    <select>
+                                        <option>執行業務所得</option>
+                                    </select>
+                                </td>
+                                <td>建立日期</td>
+                                <td> <span>2015/01/12</span> </td>
+                            </tr>
+                            <tr>
+                                <td>銀行名稱</td>
+                                <td>
+                                    <select>
+                                        <option>中國信託</option>
+                                        <option>合作金庫</option>
+                                    </select>
+                                </td>
+                                <td>分行名稱</td>
+                                <td>
+                                    <input type="text" /> </td>
+                                <td>分行代號</td>
+                                <td>
+                                    <input type="text" /> </td>
+                            </tr>
+                            <tr>
+                                <td>銀行帳號</td>
+                                <td>
+                                    <input type="text" /> </td>
+                                <td>戶名</td>
+                                <td>
+                                    <input type="text" /> </td>
+                                <td>手續費自付</td>
+                                <td>
+                                    <input type="checkbox"> </td>
+                            </tr>
+                            <tr>
+                                <td>起始年月</td>
+                                <td>
+                                    <input type="text" class="date" /> </td>
+                                <td>結束年月</td>
+                                <td>
+                                    <input type="text" class="date" /> </td>
+                                <td colspan="2">
+                                    <button class="small-btn btn_BGray" style="margin:0">取消</button>
+                                    <button class="small-btn" style="margin:0">確定</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class="autoWidth">
+                        <thead>
+                            <tr>
+                                <th colspan="9">啟用歷程</th>
+                            </tr>
+                            <tr>
+                                <th>佣金類別
+                                    <br/>出帳類別</th>
+                                <th>銀行名稱
+                                    <br/>分行代號/名稱</th>
+                                <th>銀行帳號</th>
+                                <th>銀行戶名
+                                    <br/>戶名身分證號</th>
+                                <th>手續費自付</th>
+                                <th>起始年月
+                                    <br/>結束年月</th>
+                                <th>註銷</th>
+                                <th>修改日期
+                                    <br/>修改人員</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="9" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item2" class="tabContent block tab_BBlue">
+                    <table>
+                        <tr>
+                            <td>是否為本人</td>
+                            <td>
+                                <input type="checkbox" /> </td>
+                            <td>所得人姓名</td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>所得人身分證號</td>
+                            <td>
+                                <input type="text" /> </td>
+                        </tr>
+                        <tr>
+                            <td>稅務身份別</td>
+                            <td>
+                                <select>
+                                    <option>01 其他-9A</option>
+                                    <option>02 其他-50</option>
+                                    <option>03 總公司</option>
+                                    <option>04 事務所合約</option>
+                                </select>
+                            </td>
+                            <td>所得類別</td>
+                            <td>
+                                <select>
+                                    <option>9A 執行業務 ProFessional</option>
+                                    <option>50 薪資 Salary</option>
+                                </select>
+                            </td>
+                            <td>所得名稱</td>
+                            <td><span>執行業務 ProFessional</span></td>
+                        </tr>
+                        <tr>
+                            <td>項目代碼</td>
+                            <td>
+                                <select>
+                                    <option>76 一般經紀人</option>
+                                    <option>71 保險經紀人</option>
+                                </select>
+                            </td>
+                            <td>項目名稱</td>
+                            <td colspan="3"> <span>一般經紀人</span> </td>
+                        </tr>
+                        <tr>
+                            <td>起始年月</td>
+                            <td> <span>201506</span> </td>
+                            <td>稅率</td>
+                            <td> <span>10%</span> </td>
+                            <td>扣稅基準</td>
+                            <td> <span>0</span> </td>
+                        </tr>
+                        <tr>
+                            <td>代扣二代健保費</td>
+                            <td>
+                                <input type="checkbox" checked="" /> </td>
+                            <td>健保扣除基準</td>
+                            <td> <span>20000</span> </td>
+                            <td>健保扣除率</td>
+                            <td> <span>1.91%</span> </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="item3" class="tabContent list lastAddbtn left_last3">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>佣金類別</th>
+                                <th>項目名稱</th>
+                                <th>代碼</th>
+                                <th>起始年月</th>
+                                <th>結束年月</th>
+                                <th>金額</th>
+                                <th>扣款</th>
+                                <th>扣款備註</th>
+                                <th>註銷</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr_BBlue create">
+                                <td>
+                                    <select>
+                                        <option>請選擇</option>
+                                        <option>壽險</option>
+                                        <option>產險</option>
+                                        <option>服務津貼</option>
+                                        <option>年終獎金</option>
+                                        <option>繼續率獎金</option>
+                                        <option>全部</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text"> </td>
+                                <td>
+                                    <input type="text"> </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                                <td>
+                                    <input type="text"> </td>
+                                <td>
+                                    <input type="checkbox" checked=""> </td>
+                                <td class="textarea">
+                                    <input type="text"> </td>
+                                <td>
+                                    <input type="checkbox"> </td>
+                                <td> <img src="../img/btn_add new benefit.svg"> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item4" class="tabContent list lastAddbtn tab_BWhite">
+                    <div style="padding: 0.5em 1em;">
+                        <table class="eightTD">
+                            <tr>
+                                <td>建立日</td>
+                                <td> <span>2017/3/22</span> </td>
+                                <td>發生日</td>
+                                <td>
+                                    <input type="text" class="date" /> </td>
+                                <td>類別</td>
+                                <td>
+                                    <select>
+                                        <option>獎勵</option>
+                                        <option>懲處</option>
+                                    </select>
+                                </td>
+                                <td>公文號碼</td>
+                                <td>
+                                    <input type="text" /> </td>
+                            </tr>
+                            <tr>
+                                <td>紀錄</td>
+                                <td colspan="3">
+                                    <select>
+                                        <option>撤銷登錄1年</option>
+                                        <option>撤銷登錄3年</option>
+                                    </select>
+                                </td>
+                                <td>起始日</td>
+                                <td>
+                                    <input type="text" class="date" /> </td>
+                                <td>終止日</td>
+                                <td>
+                                    <input type="text" class="date" /> </td>
+                            </tr>
+                            <tr>
+                                <td>原因</td>
+                                <td colspan="3">
+                                    <select>
+                                        <option>未換證</option>
+                                        <option>招攬行為</option>
+                                        <option>未完成年度教育訓練</option>
+                                        <option>其他</option>
+                                    </select>
+                                </td>
+                                <td>附件</td>
+                                <td colspan="3" class="left">
+                                    <input type="text" class="subBig" disabled="disabled" />
+                                    <i class="fa"><span class="text_White">瀏覽</span></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>備註說明</td>
+                                <td colspan="3">
+                                    <input type="text" /> </td>
+                                <td>計點</td>
+                                <td>
+                                    <input type="text" /> </td>
+                                <td colspan="2">
+                                    <button class="small-btn btn_BGray" style="margin:0">取消</button>
+                                    <button class="small-btn" style="margin:0">確定</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class="autoWidth left_last3 left_last6">
+                        <thead>
+                            <tr>
+                                <th>建立日
+                                    <br/>發生日</th>
+                                <th>類別</th>
+                                <th>紀錄
+                                    <br/>原因</th>
+                                <th>起始日
+                                    <br/>終止日</th>
+                                <th>公文號碼</th>
+                                <th class="textarea">備註</th>
+                                <th>附件</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="8" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item5" class="tabContent list lastAddbtn">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="9">介紹人資料</th>
+                            </tr>
+                            <tr>
+                                <th>姓名</th>
+                                <th>職稱</th>
+                                <th>事業部</th>
+                                <th>業務中心</th>
+                                <th>停用</th>
+                                <th>介紹人生效年月</th>
+                                <th>介紹人結束年月</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr_BBlue create">
+                                <td>
+                                    <div class="input-group reload">
+                                        <input type="text" class="form-control" value="王小明[123]">
+                                        <span class="input-group-addon">
+                                            <img src="../img/ico_member.svg" />
+                                        </span>
+                                    </div>
+                                </td>
+                                <td> <span>31 區經理</span> </td>
+                                <td>
+                                    <select>
+                                        <option>AK 愛加倍</option>
+                                        <option>AP 多佳</option>
+                                        <option>BD 曙光</option>
+                                        <option>GD 祥韻</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option>北區</option>
+                                        <option>中區</option>
+                                        <option>南區</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox"> </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="9">輔導人異動紀錄</th>
+                            </tr>
+                            <tr>
+                                <th>姓名</th>
+                                <th>職稱</th>
+                                <th>事業部</th>
+                                <th>業務中心</th>
+                                <th>生效日</th>
+                                <th>異動備註</th>
+                                <th>修改日期</th>
+                                <th>修改人員</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="9" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item6" class="tabContent list lastAddbtn left_last5">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>實駐單位</th>
+                                <th>起始日</th>
+                                <th>結束日</th>
+                                <th>備註</th>
+                                <th>註銷</th>
+                                <th>修改日期</th>
+                                <th>修改人員</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr_BBlue create">
+                                <td>
+                                    <select>
+                                        <option>台北一</option>
+                                        <option>台北二</option>
+                                        <option>台中一</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                                <td class="textarea">
+                                    <input type="text"> </td>
+                                <td>
+                                    <input type="checkbox"> </td>
+                                <td></td>
+                                <td></td>
+                                <td> <img src="../img/btn_add new benefit.svg"> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="8" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item7" class="tabContent list left_last3">
+                    <table class="autoWidth">
+                        <thead>
+                            <tr>
+                                <th>異動狀態</th>
+                                <th>異動生效日</th>
+                                <th>異動前職階</th>
+                                <th>異動後職階</th>
+                                <th>異動前事業部</th>
+                                <th>異動後事業部</th>
+                                <th>異動備註</th>
+                                <th>修改日期</th>
+                                <th>修改人員</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="9" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item8" class="tabContent list lastAddbtn left_last5">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>停佣事業部</th>
+                                <th>停佣啟用年月</th>
+                                <th>停佣結束年月</th>
+                                <th>備註</th>
+                                <th>註銷</th>
+                                <th>修改日期</th>
+                                <th>修改人員</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr_BBlue create">
+                                <td>
+                                    <select>
+                                        <option>AK 愛加倍</option>
+                                        <option>AP 多佳</option>
+                                        <option>BD 曙光</option>
+                                        <option>GD 祥韻</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                                <td class="textarea">
+                                    <input type="text"> </td>
+                                <td>
+                                    <input type="checkbox"> </td>
+                                <td></td>
+                                <td></td>
+                                <td> <img src="../img/btn_add new benefit.svg"> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="8" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item9" class="tabContent threeTable">
+                    <table>
+                        <tr class="bold">
+                            <td>壽險資料</td>
+                            <td colspan="3">
+                                <hr/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>登錄字號</td>
+                            <td>
+                                <input type="text"> </td>
+                            <td>合格證號</td>
+                            <td>
+                                <input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td>登錄日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>初登日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>五年換證起日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>五年換證訖日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>登錄失敗因素</td>
+                            <td colspan="3">
+                                <select>
+                                    <option></option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>註銷日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>第一年</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>第二年</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>第三年</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>第四年</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>第五年</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>壽險公會學歷</td>
+                            <td>
+                                <select>
+                                    <option>國小</option>
+                                    <option>國中</option>
+                                    <option>高中</option>
+                                    <option>大學</option>
+                                    <option>研究所</option>
+                                    <option>博士</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>備註</td>
+                            <td colspan="5">
+                                <input type="text"> </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr class="bold">
+                            <td>產險資料</td>
+                            <td colspan="3">
+                                <hr/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>產登第四類</td>
+                            <td colspan="3">
+                                <input type="checkbox">僅限銷售健康險及傷害險</td>
+                        </tr>
+                        <tr>
+                            <td>登錄字號</td>
+                            <td>
+                                <input type="text"> </td>
+                            <td>合格證號</td>
+                            <td>
+                                <input type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td>登錄日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>初登日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>五年換證起日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>五年換證迄日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>登錄失敗因素</td>
+                            <td colspan="3">
+                                <select>
+                                    <option></option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>註銷日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>標準日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>第一年</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>第二年</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>第三年</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>第四年</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>第五年</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>產險公會學歷</td>
+                            <td>
+                                <select>
+                                    <option>國小</option>
+                                    <option>國中</option>
+                                    <option>高中</option>
+                                    <option>大學</option>
+                                    <option>研究所</option>
+                                    <option>博士</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>備註</td>
+                            <td colspan="5">
+                                <input type="text"> </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr class="bold">
+                            <td>其他資料</td>
+                            <td colspan="7">
+                                <hr/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>投資型合格證號</td>
+                            <td>
+                                <input type="text"> </td>
+                            <td>投資型登錄日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>投資型上課日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>外幣非投資型
+                                <br/>合格證號</td>
+                            <td>
+                                <input type="text"> </td>
+                            <td>外幣登錄日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>外幣上課日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                        <tr>
+                            <td>年金資格日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                            <td>傳統年金</td>
+                            <td>
+                                <input type="checkbox"> </td>
+                            <td>利率年金</td>
+                            <td>
+                                <input type="checkbox"> </td>
+                        </tr>
+                        <tr>
+                            <td>初級考試
+                                <br/>合格證號</td>
+                            <td>
+                                <input type="text"> </td>
+                            <td>中級考試
+                                <br/>合格證號</td>
+                            <td>
+                                <input type="text"> </td>
+                            <td>共同項目
+                                <br/>合格證照</td>
+                            <td>
+                                <input type="text"> </td>
+                            <td>共同項目
+                                <br/>合格日</td>
+                            <td>
+                                <input type="text" class="date"> </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="item10" class="tabContent list lastAddbtn tab_BBlue left_last3">
+                    <table>
+                        <button>新增附件</button>
+                        <thead>
+                            <tr>
+                                <th>檔案名稱</th>
+                                <th>上傳日期</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item11" class="tabContent list lastAddbtn tab_BBlue">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>系統編號</th>
+                                <th>原報聘日期</th>
+                                <th>原離職日期</th>
+                                <th>離職事業部</th>
+                                <th>離職輔導人</th>
+                                <th>修改日期</th>
+                                <th>修改人員</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="7" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item12" class="tabContent list tab_BBlue lastAddbtn left_last4">
+                    <div class="center">
+                        <div class="categoryArea">
+                            <label>
+                                <input type="radio" name="a" /> 無　</label>
+                            <label>
+                                <input type="radio" name="a" /> 生養制度　</label>
+                            <label>
+                                <input type="radio" name="a" /> 異動事業部條款　</label>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="8">生(異動前)輔導人</th>
+                            </tr>
+                            <tr>
+                                <th>比例設定(%)</th>
+                                <th>輔導人</th>
+                                <th>事業部
+                                    <br/>業務中心</th>
+                                <th>開始年月
+                                    <br/>結束年月</th>
+                                <th>異動備註</th>
+                                <th>註銷
+                                    <br/>停佣</th>
+                                <th>修改日期
+                                    <br/>修改人員</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr_BBlue create">
+                                <td>
+                                    <input type="text">
+                                </td>
+                                <td>
+                                    <input type="text"> </td>
+                                <td>
+                                    <select>
+                                        <option>AK 愛加倍</option>
+                                        <option>AP 多佳</option>
+                                        <option>BD 曙光</option>
+                                        <option>GD 祥韻</option>
+                                    </select>
+                                    <select>
+                                        <option>台北</option>
+                                        <option>台中</option>
+                                        <option>高雄</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="date">
+                                    <input type="text" class="date">
+                                </td>
+                                <td class="textarea">
+                                    <input type="text"> </td>
+                                <td>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td> <img src="../img/btn_add new benefit.svg"> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="8" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="8">養(異動後)輔導人</th>
+                            </tr>
+                            <tr>
+                                <th>比例設定(%)</th>
+                                <th>輔導人</th>
+                                <th>事業部
+                                    <br/>業務中心</th>
+                                <th>開始年月
+                                    <br/>結束年月</th>
+                                <th>異動備註</th>
+                                <th>修改日期
+                                    <br/>修改人員</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="8" class="text_Red">無資料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item13" class="tabContent list lastAddbtn left_last5">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>得獎紀錄</th>
+                                <th>紀錄日期</th>
+                                <th>修改日期</th>
+                                <th>修改人員</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr_BBlue create">
+                                <td>
+                                    <input type="text"> </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                                <td></td>
+                                <td></td>
+                                <td> <img src="../img/btn_add new benefit.svg"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item15" class="tabContent list lastAddbtn left_last5">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>行業類別</th>
+                                <th>公司名稱</th>
+                                <th>起始年月</th>
+                                <th>任職期間<br>終止年月</th>
+                                <th>在職年月</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr_BBlue create">
+                                <td>
+                                    <select>
+                                        <option>請選擇</option>
+                                        <option>保險公司</option>
+                                        <option>經代公司</option>
+                                        <option>金融業</option>
+                                        <option>其它</option>
+                                    </select>
+                                </td>
+                                <td class="textarea">
+                                    <input type="text"> </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                                <td>
+                                    <input type="text" class="date"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+        <div id="account" class="popup reward account">
+            <img src="../img/btn_clear.svg" class="close" onclick="openPopup('account')" />
+            <section>
+                銀行帳號維護
+            </section>
+            <div>
+                <table>
+                    <tr>
+                        <td>佣金類別</td>
+                        <td>
+                            <select>
+                                <option>產險</option>
+                                <option>壽險</option>
+                            </select>
+                        </td>
+                        <td>建立日期</td>
+                        <td> <span>2015/01/12</span> </td>
+                    </tr>
+                    <tr>
+                        <td>出帳類別</td>
+                        <td>
+                            <select>
+                                <option>執行業務所得</option>
+                            </select>
+                        </td>
+                        <td>銀行名稱</td>
+                        <td>
+                            <select>
+                                <option>中國信託</option>
+                                <option>合作金庫</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <td>分行名稱</td>
+                    <td>
+                        <input type="text" /> </td>
+                    <td>分行代號</td>
+                    <td>
+                        <input type="text" /> </td>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td>銀行帳號</td>
+                        <td>
+                            <input type="text" /> </td>
+                        <td>銀行戶名</td>
+                        <td>
+                            <input type="text" /> </td>
+                    </tr>
+                    <tr>
+                        <td>起始年月</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>結束年月</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                    </tr>
+                    <tr>
+                        <td>手續費自付</td>
+                        <td>
+                            <input type="checkbox"> </td>
+                        <td>註銷</td>
+                        <td>
+                            <input type="checkbox"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="center">
+                            <button class="inline-btn btn_BGray">取消</button>
+                            <button class="inline-btn">確定</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="punish" class="popup reward">
+            <img src="../img/btn_clear.svg" class="close" onclick="openPopup('punish')" />
+            <section>
+                獎懲紀錄
+            </section>
+            <div>
+                <table>
+                    <tr>
+                        <td>發生日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>公文號碼</td>
+                        <td>
+                            <input type="text" /> </td>
+                    </tr>
+                    <tr>
+                        <td>類別</td>
+                        <td colspan="3">
+                            <select>
+                                <option>獎勵</option>
+                                <option>懲處</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>獎懲原因</td>
+                        <td colspan="3">
+                            <input type="text" /> </td>
+                    </tr>
+                    <tr>
+                        <td>附件</td>
+                        <td colspan="3">
+                            <input type="text" class="subBig" disabled="disabled" />
+                            <i class="fa"><span class="text_White">瀏覽</span></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>懲處起日</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>懲處終日</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                    </tr>
+                    <tr>
+                        <td>備註說明</td>
+                        <td colspan="3">
+                            <input type="text" /> </td>
+                    </tr>
+                    <tr>
+                        <td>建立日期</td>
+                        <td colspan="3"> <span>2017/5/31</span> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="center">
+                            <button class="inline-btn btn_BGray">取消</button>
+                            <button class="inline-btn">確定</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="reward" class="popup reward">
+            <img src="../img/btn_clear.svg" class="close" onclick="openPopup('reward')" />
+            <section>
+                獎懲紀錄
+            </section>
+            <div>
+                <table>
+                    <tr>
+                        <td>發生日期</td>
+                        <td>
+                            <input type="text" class="date" /> </td>
+                        <td>公文號碼</td>
+                        <td>
+                            <input type="text" /> </td>
+                    </tr>
+                    <tr>
+                        <td>類別</td>
+                        <td colspan="3">
+                            <select>
+                                <option>獎勵</option>
+                                <option>懲處</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>獎懲原因</td>
+                        <td colspan="3">
+                            <input type="text" /> </td>
+                    </tr>
+                    <tr>
+                        <td>附件</td>
+                        <td colspan="3">
+                            <input type="text" class="subBig" disabled="disabled" />
+                            <i class="fa"><span class="text_White">瀏覽</span></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>備註說明</td>
+                        <td colspan="3">
+                            <input type="text" /> </td>
+                    </tr>
+                    <tr>
+                        <td>建立日期</td>
+                        <td colspan="3"> <span>2017/5/31</span> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="center">
+                            <button class="inline-btn btn_BGray">取消</button>
+                            <button class="inline-btn">確定</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="bg"></div>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+
+var tempPopup;
+var isPopup = false;
+
+function openPopup(name) {
+    if (tempPopup != undefined && name != tempPopup) {
+        var popup = document.getElementById(tempPopup);
+        var popup1 = document.getElementById(name);
+        var modal1 = document.getElementById('bg');
+        popup.style.display = "none";
+        popup1.style.display = "block";
+        modal1.style.display = "block";
+    } else {
+        var popup = document.getElementById(name);
+        var modal = document.getElementById('bg');
+        if (isPopup == true) {
+            popup.style.display = "none";
+            modal.style.display = "none";
+        } else {
+            popup.style.display = "block";
+            modal.style.display = "block";
+        }
+        isPopup = !isPopup;
+    }
+    tempPopup = name;
+};
+</script>
+
+</html>

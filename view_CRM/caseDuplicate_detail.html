@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>案件名稱：華南產險-王小明-王小明-20170320</span>
+            <div>
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='caseDuplicate_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />案件基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>案件來源</td>
+                            <td> <span>網路表單</span> </td>
+                            <td>案件類別</td>
+                            <td> <span>新契約</span> </td>
+                            <td>案件編號</td>
+                            <td> <span>017022501001</span> </td>
+                        </tr>
+                        <tr>
+                            <td>新契約階段</td>
+                            <td> <span>新案件(未聯絡)</span> </td>
+                            <td>O2O派員階段</td>
+                            <td> <span></span> </td>
+                            <td>重要程度</td>
+                            <td> <span>高</span> </td>
+                        </tr>
+                        <tr>
+                            <td>商品名稱</td>
+                            <td colspan="3"> <span>華南產險</span> </td>
+                            <td>客服人員</td>
+                            <td> <span>李筱惠</span> </td>
+                        </tr>
+                        <tr>
+                            <td>客戶身分證號</td>
+                            <td> <span>A123456789</span> </td>
+                            <td>客戶姓名</td>
+                            <td> <span>王小明</span> </td>
+                            <td>客戶性別</td>
+                            <td> <span>男性</span> </td>
+                        </tr>
+                        <tr>
+                            <td>客戶生日</td>
+                            <td> <span>1978-12-10</span></td>
+                            <td>聯絡電話</td>
+                            <td> <span>0913338000</span> </td>
+                            <td>手機號碼</td>
+                            <td> <span>0913338000</span> </td>
+                        </tr>
+                        <tr>
+                            <td>聯絡地址</td>
+                            <td colspan="3" class="address">
+                                <span>241 新北市蘆洲區新民街11弄166號3樓</span>
+                            </td>
+                            <td>聯絡Line</td>
+                            <td> <span>moonmoonmoon</span> </td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td colspan="3"> <span>moonmoonmoon</span></td>
+                            <td>續保要保書
+                                <br/>寄送日期</td>
+                            <td> <span>1978-12-10</span> </td>
+                        </tr>
+                        <tr>
+                            <td>希望聯絡時間</td>
+                            <td colspan="3">
+                                <span>11:00~13:00、15:00~17:00</span>
+                            </td>
+                            <td>下次聯絡日</td>
+                            <td>
+                                <span style="width: 60%">1978-12-10</span>
+                                <span style="width:38%;display:inline-block;text-align:right;">已聯絡</span>
+                            </td>
+                        </tr>
+                        <tr class="textarea">
+                            <td>其他聯絡事項</td>
+                            <td colspan="4">
+                                <span></span>
+                            </td>
+                            <td>
+                                <button onclick="openPopup('userInput')"><img src="../img/ico_search.svg" /> 客戶網路表單檢視</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="funcBtn">
+                    <button onclick="openPopup('alert1')">轉入指定客戶</button>
+                    <button onclick="openPopup('alert2')">建立新客戶</button>
+                </div>
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_customer1.svg"/ > 疑似重複客戶案件清單
+        </a>
+                </div>
+                <div id="item1" class="tabContent list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>選擇</th>
+                                <th>客戶姓名</th>
+                                <th>性別</th>
+                                <th>身分證號</th>
+                                <th>客戶生日</th>
+                                <th>聯絡人</th>
+                                <th>建立日期</th>
+                                <th>修改日期</th>
+                                <th>修改人員</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="customer" /> </td>
+                                <td>王大明</td>
+                                <td>男</td>
+                                <td></td>
+                                <td>1990/10/13</td>
+                                <td>王大明</td>
+                                <td>2017/1/12</td>
+                                <td>2017/1/12</td>
+                                <td>張小雯</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="customer" /> </td>
+                                <td>王大明</td>
+                                <td>男</td>
+                                <td>A123456789</td>
+                                <td>1990/10/13</td>
+                                <td>王大明</td>
+                                <td>2017/1/12</td>
+                                <td>2017/1/12</td>
+                                <td>張小雯</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="customer" /> </td>
+                                <td>王大明</td>
+                                <td>男</td>
+                                <td></td>
+                                <td>1990/10/13</td>
+                                <td>黃洋</td>
+                                <td>2017/1/12</td>
+                                <td></td>
+                                <td>張小雯</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+        <div id="userInput" class="popup userInput">
+            <img src="../img/btn_clear.svg" class="close" onclick="openPopup('userInput')" />
+            <section>
+                案件名稱：華南產險-王小明-王小明-20170310
+            </section>
+            <div>
+                <ul>
+                    <li>申請資格：</li>
+                    <li>您是否「年滿20足歲」？<span>是</span></li>
+                    <li>您是否「本人」申請投保？<span>是</span></li>
+                    <li>您是否具有中華民國國民身分證？<span>是</span></li>
+                    <li>您是否領有「身心障礙手冊或證明」？<span>是</span></li>
+                </ul>
+                <ul>
+                    <li>投保須知：</li>
+                    <li>您是否已閱讀「華南產險-投保須知」？<span>是</span></li>
+                    <li>您是否已閱讀「產險業旅行個資法告知義務」？<span>是</span></li>
+                    <li>您是否已閱讀「公勝保經履行個人資料保護法告知書」？<span>是</span></li>
+                    <li>請選擇支付「保險書」的方式？<span>本人信用卡</span></li>
+                </ul>
+                <ul>
+                    <li>告知事項：</li>
+                    <li>請問您申請投保「目的」是？<span>子女教育基金</span></li>
+                    <li>請問您的「個人年收入」大約多少？<span>90~100萬</span></li>
+                    <li>......</li>
+                </ul>
+                <ul>
+                    <li>投保須知：</li>
+                    <li>您是否已閱讀「華南產險-投保須知」？<span>是</span></li>
+                    <li>您是否已閱讀「產險業旅行個資法告知義務」？<span>是</span></li>
+                    <li>您是否已閱讀「公勝保經履行個人資料保護法告知書」？<span>是</span></li>
+                    <li>請選擇支付「保險書」的方式？<span>本人信用卡</span></li>
+                </ul>
+                <ul>
+                    <li>告知事項：</li>
+                    <li>請問您申請投保「目的」是？<span>子女教育基金</span></li>
+                    <li>請問您的「個人年收入」大約多少？<span>90~100萬</span></li>
+                    <li>......</li>
+                </ul>
+            </div>
+        </div>
+        <div id="alert1" class="popup">
+            <img src="../img/btn_saved.svg" />已轉入指定客戶!
+        </div>
+        <div id="alert2" class="popup">
+            <img src="../img/btn_saved.svg" />已建立新客戶!
+        </div>
+        <div id="bg"></div>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+
+var tempPopup;
+var isPopup = false;
+
+function openPopup(name) {
+    var popup = document.getElementById(name);
+    var modal = document.getElementById('bg');
+    if (isPopup == true) {
+        popup.style.display = "none";
+        modal.style.display = "none";
+    } else {
+        popup.style.display = "block";
+        modal.style.display = "block";
+    }
+    isPopup = !isPopup;
+    tempPopup = name;
+};
+
+$(document).ready(function() {
+    $("#bg").click(function() {
+        var popup = document.getElementById(tempPopup);
+        var modal = document.getElementById('bg');
+        popup.style.display = "none";
+        modal.style.display = "none";
+    });
+});
+</script>
+
+</html>

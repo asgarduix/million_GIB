@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            累計時數明細
+            <div>
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item5_0301_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />業務員基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>業務中心</td>
+                            <td> <span>北區</span> </td>
+                            <td>事業部</td>
+                            <td> <span>威英</span> </td>
+                            <td>年度別</td>
+                            <td> <span>2017</span> </td>
+                        </tr>
+                        <tr>
+                            <td>業務員姓名</td>
+                            <td> <span>安恩在</span> </td>
+                            <td>業務員身分證號</td>
+                            <td> <span>A123456789</span> </td>
+                            <td>職階</td>
+                            <td> <span>11</span> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_records.svg"/ > 累計時數明細
+        </a>
+                </div>
+                <div id="item1" class="tabContent list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>課程編號</th>
+                                <th>課程名稱</th>
+                                <th>課程開始日</th>
+                                <th>講師時數</th>
+                                <th>課程認列年月</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="underline">PE1184048935</div>
+                                </td>
+                                <td>總公司早課</td>
+                                <td>2017/1/10</td>
+                                <td>10</td>
+                                <td>2017/3</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="underline">PE1184048935</div>
+                                </td>
+                                <td>總公司早課</td>
+                                <td>2017/1/10</td>
+                                <td>10</td>
+                                <td>2017/2</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="underline">PE1184048935</div>
+                                </td>
+                                <td>總公司早課</td>
+                                <td>2017/1/10</td>
+                                <td>10</td>
+                                <td>2017/1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

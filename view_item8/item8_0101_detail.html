@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>人事扣款設定</span>
+            <div>
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item8_0101_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />扣款人基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>姓名</td>
+                            <td> <span>安恩在</span> </td>
+                            <td>身分證號</td>
+                            <td> <span>A123456789</span> </td>
+                            <td>離職日</td>
+                            <td> <span>0000/00/00</span> </td>
+                        </tr>
+                        <tr>
+                            <td>扣款組合</td>
+                            <td> <span>個人扣款</span> </td>
+                            <td>扣款週期</td>
+                            <td> <span>月</span> </td>
+                            <td>扣款稅制</td>
+                            <td> <span>應稅</span> </td>
+                        </tr>
+                        <tr class="line">
+                            <td colspan="6">
+                                <hr/>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="autoWidth">
+                        <tr>
+                            <td>建檔人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>建檔日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                            <td>修改人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>修改日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_customer1.svg"/ > 扣款項目設定
+        </a>
+                </div>
+                <div id="item1" class="tabContent list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>項目</th>
+                                <th>獎金名稱</th>
+                                <th>起始月份</th>
+                                <th>結束月份</th>
+                                <th>扣款</th>
+                                <th>金額</th>
+                                <th>備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> <span>辦公室租金</span> </td>
+                                <td class="left"> <span></span> </td>
+                                <td> <span>201612</span> </td>
+                                <td> <span>201612</span> </td>
+                                <td> <span>是</span> </td>
+                                <td> <span>300</span> </td>
+                                <td class="left"> <span></span> </td>
+                            </tr>
+                            <tr>
+                                <td> <span>App維護費</span> </td>
+                                <td class="left"> <span></span> </td>
+                                <td> <span>201612</span> </td>
+                                <td> <span>201612</span> </td>
+                                <td> <span>是</span> </td>
+                                <td> <span>300</span> </td>
+                                <td class="left"> <span></span> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

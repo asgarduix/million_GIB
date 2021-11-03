@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            S4857293423
+            <div>
+                <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item5_0202_detail.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item5_0101_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info tableList">
+                <p class="title"><img src="../img/ico_profile.svg" />課程設定</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>課程類別一</td>
+                            <td>
+                                <select>
+                                    <option>線上課程</option>
+                                </select>
+                            </td>
+                            <td>課程類別二</td>
+                            <td>
+                                <select>
+                                    <option>通識課程</option>
+                                </select>
+                            </td>
+                            <td>課程收費</td>
+                            <td>
+                                <label style="width: 28%">
+                                    <input type="radio" name="pay" /> 否　</label>
+                                <label style="width: 70%">
+                                    <input type="radio" name="pay" /> 是
+                                    <input type="text" style="width: 55%" />　</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>課程名稱</td>
+                            <td colspan="3">
+                                <input type="text" /> </td>
+                            <td>繳費期限</td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                        </tr>
+                        <tr class="textarea">
+                            <td>課程說明介紹</td>
+                            <td colspan="3">
+                                <textarea></textarea>
+                            </td>
+                            <td class="verTop">加碼/百分比</td>
+                            <td class="verTop">
+                                <!-- 兩者連動顯示，當沒勾選時 input為disabled -->
+                                <input type="checkbox" checked/>
+                                <input type="text" style="width: calc(100% - 30px)" placeholder="請輸入百分比數值" value="0" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>同實體課程</td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="a" /> 否　</label>
+                                <label>
+                                    <input type="radio" name="a" /> 是　</label>
+                            </td>
+                            <td>實體課程名稱</td>
+                            <td>
+                                <select>
+                                    <option></option>
+                                </select>
+                            </td>
+                            <td>計入出席率</td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="b" /> 否　</label>
+                                <label>
+                                    <input type="radio" name="b" /> 是　</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>可觀看限制</td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="c" /> 不限制　</label>
+                                <label>
+                                    <input type="radio" name="c" /> 已出席學員　</label>
+                            </td>
+                            <td>公會時數</td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>公會時數類別</td>
+                            <td>
+                                <label>
+                                    <input type="checkbox" /> 產險　</label>
+                                <label>
+                                    <input type="checkbox" /> 壽險　</label>
+                                <br/>
+                                <label>
+                                    <input type="checkbox" /> 投資型　</label>
+                                <label>
+                                    <input type="checkbox" /> 洗錢防治　</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="verTop">附件上傳</td>
+                            <td class="verTop" colspan="3">
+                                <img src="../img/doc_attach.svg" />
+                                <ul style="display:inline-block;vertical-align:top">
+                                    <li><a>螢幕快照 2017-04-26 上午11.32.02.png</a><img src="../img/btn_clear.svg" /></li>
+                                    <li><a>螢幕快照 2017-04-26 上午11.32.02.png</a><img src="../img/btn_clear.svg" /></li>
+                                    <li><a>螢幕快照 2017-04-26 上午11.32.02.png</a><img src="../img/btn_clear.svg" /></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>線上測驗</td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="d" checked/> 是　</label>
+                                <label>
+                                    <input type="radio" name="d" /> 否　</label>
+                            </td>
+                            <td>測驗起日</td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>測驗迄日</td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                        </tr>
+                        <tr>
+                            <td>觀看影片</td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="e" /> 是　</label>
+                                <label>
+                                    <input type="radio" name="e" /> 否　</label>
+                            </td>
+                            <td>需答對題數</td>
+                            <td>
+                                <input type="text" /> </td>
+                            <td>可做次數</td>
+                            <td>
+                                <input type="text" /> </td>
+                        </tr>
+                        <tr class="verTop">
+                            <td>設定影片URL</td>
+                            <td colspan="5">
+                                <table class="list autoWidthCentent lastAddbtn left_last2" style="display: inline-block;vertical-align: top;margin:0;width:100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>URL</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="create">
+                                            <td>
+                                                <input type="text"> </td>
+                                            <td> <img src="../img/btn_add new benefit.svg" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://www.youtube.com/watch?v=-8QXniqOXDM">https://www.youtube.com/watch?v=-8QXniqOXDM</a></td>
+                                            <td><img src="../img/btn delete.svg" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="verTop">
+                            <td>設定測驗問題</td>
+                            <td colspan="5">
+                                <table class="list question lastAddbtn" style="display: inline-block;vertical-align: top;margin:0;width:100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>題目</th>
+                                            <th>選項A</th>
+                                            <th>選項B</th>
+                                            <th>選項C</th>
+                                            <th>選項D</th>
+                                            <th>答案</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="create">
+                                            <td>
+                                                <input type="text"> </td>
+                                            <td>
+                                                <input type="text"> </td>
+                                            <td>
+                                                <input type="text"> </td>
+                                            <td>
+                                                <input type="text"> </td>
+                                            <td>
+                                                <input type="text"> </td>
+                                            <td>
+                                                <input type="text"> </td>
+                                            <td> <img src="../img/btn_add new benefit.svg" /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>下列何者屬靜態風險？</td>
+                                            <td>因社會變動而產生之風險</td>
+                                            <td>地震</td>
+                                            <td>影響個人及社會</td>
+                                            <td>原則上屬投機風險</td>
+                                            <td>B</td>
+                                            <td><img src="../img/btn delete.svg" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <input type="checkbox" /><span>發布課程</span>
+                                <input type="checkbox" /><span>註銷課程</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript"></script>
+
+</html>

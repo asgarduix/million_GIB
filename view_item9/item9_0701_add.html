@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>　</span>
+            <div>
+                <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item9_0701_list.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item9_0701_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />匯率時間</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>匯率年月日</td>
+                            <td>
+                                <span>2018/07/01</span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="line">
+                            <td colspan="6">
+                                <hr/>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="autoWidth">
+                        <tr>
+                            <td>建檔人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>建檔日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                            <td>修改人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>修改日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_records.svg"/ > 匯率設定
+        </a>
+                </div>
+                <div id="item1" class="tabContent list lastAddbtn">
+                    <table class="autoWidth">
+                        <thead>
+                            <tr>
+                                <th>幣別</th>
+                                <th>匯率</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr_BBlue create">
+                                <td>NTD 台幣</td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr class="tr_BBlue create">
+                                <td>USD 美元</td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr class="tr_BBlue create">
+                                <td>AUD 澳幣</td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

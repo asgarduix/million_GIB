@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>btn_logout</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-160.000000, -776.000000)" id="logout">
+            <g transform="translate(161.000000, 777.000000)">
+                <path d="M10.0150376,2 L10.0150376,4 L7.95989975,4 C7.95989975,4 4,4 4,11 C4,11 4.05012531,9 8.01002506,9 L10.0150376,9 L10.0150376,11 L16,6.48 L10.0150376,2 L10.0150376,2 Z" id="Shape" fill="#880063"></path>
+                <polyline id="Path-2" stroke="#880063" stroke-width="2" points="8 3 8 0 0 9.79717439e-16 0 13 8 13 8 10"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>設定編號：</span>
+            <div>
+                <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item5_0401_detail.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item5_0401_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />課程基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>課程編號</td>
+                            <td> <span>PE1184048935</span> </td>
+                            <td>課程類別一</td>
+                            <td> <span>新人訓練</span> </td>
+                            <td>課程類別二</td>
+                            <td> <span>證照考照</span> </td>
+                        </tr>
+                        <tr>
+                            <td>課程名稱</td>
+                            <td colspan="3"> <span>保戶權益相關重要法律及法規介紹</span> </td>
+                            <td>課程屬性</td>
+                            <td> <span>法規要求</span> </td>
+                        </tr>
+                        <tr>
+                            <td>課程日期</td>
+                            <td colspan="3">
+                                <span>2017/10/12 - 2017/10/13</span>
+                            </td>
+                            <td>公會時數</td>
+                            <td> <span>4</span> </td>
+                        </tr>
+                        <tr>
+                            <td>開放起日</td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>開放迄日</td>
+                            <td>
+                                <input type="text" class="date" /> </td>
+                            <td>報名截止日</td>
+                            <td> <span>2017/10/1</span> </td>
+                        </tr>
+                        <tr class="line">
+                            <td colspan="6">
+                                <hr/>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="autoWidth">
+                        <tr>
+                            <td>建檔人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>建檔日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                            <td>修改人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>修改日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_records.svg"/ > 設定人員名單
+        </a>
+                </div>
+                <div id="item1" class="tabContent list lastAddbtn">
+                    <table class="autoWidth">
+                        <thead>
+                            <tr>
+                                <th>業務中心</th>
+                                <th>事業部</th>
+                                <th>姓名</th>
+                                <th>身分證號</th>
+                                <th>職階</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr_BBlue create">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="input-group reload">
+                                        <input type="text" class="form-control" value="">
+                                        <span class="input-group-addon">
+                  <img src="../img/ico_reload.svg" />
+                </span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td> <img src="../img/btn_add new benefit.svg"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

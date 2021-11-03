@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>事業部派員設定</span>
+            <div>
+                <img src="../img/btn_unsave.svg" onclick="javascript:location.href='assign_detail.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='assignSetting_detail.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />事業部基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>名稱</td>
+                            <td> <span>群英</span> </td>
+                            <td>代碼</td>
+                            <td> <span>Keiro</span> </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="textarea">
+                            <td>備註</td>
+                            <td colspan="5">
+                                <span>備註備註備註備註備註備註備註備註備註</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_relative.svg"/ > 服務地區
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item2')">
+          <img src="../img/ico_agent.svg"/ > 業務員設定
+        </a>
+                </div>
+                <div id="item1" class="tabContent list lastAddbtn">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>縣市地區</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr_BBlue create">
+                                <td>
+                                    <select style="width: 49%">
+                                        <option>台北市</option>
+                                        <option>新北市</option>
+                                    </select>
+                                    <select style="width: 49%">
+                                        <option>中山區</option>
+                                        <option>中正區</option>
+                                        <option>大安區</option>
+                                    </select>
+                                </td>
+                                <td><img src="../img/btn_add new benefit.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>台北市信義區</td>
+                                <td><img src="../img/btn delete.svg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item2" class="tabContent list lastAddbtn left_5">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>優先順序</th>
+                                <th>身分證號</th>
+                                <th>姓名</th>
+                                <th>電話</th>
+                                <th>Email</th>
+                                <th>最後已派人員</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr_BBlue create">
+                                <td></td>
+                                <td>
+                                    <div class="input-group reload">
+                                        <input type="text" class="form-control" value="">
+                                        <span class="input-group-addon">
+                    <img src="../img/ico_reload.svg" onclick="openPopup('selectclerk')"/>
+                  </span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <input type="radio" name="a" />
+                                </td>
+                                <td><img src="../img/btn_add new benefit.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>A123456789</td>
+                                <td>張雯淇</td>
+                                <td>29864739</td>
+                                <td>moommoom@gmail.com</td>
+                                <td>
+                                    <input type="radio" name="a" checked/>
+                                </td>
+                                <td><img src="../img/btn delete.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>B123456789</td>
+                                <td>方芳芳</td>
+                                <td>29864744</td>
+                                <td>maammaam@gmail.com</td>
+                                <td>
+                                    <input type="radio" name="a" />
+                                </td>
+                                <td><img src="../img/btn delete.svg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+        <div id="selectclerk" class="popup selectUser">
+            <img src="../img/btn_clear.svg" class="close" onclick="openPopup('selectclerk')" />
+            <span>
+      請挑選業務員
+      <hr/>
+    </span>
+            <div class="search">
+                <select>
+                    <option>姓名</option>
+                    <option>身分證號</option>
+                    <option>電話</option>
+                </select>
+                <input type="text" placeholder="請輸入姓名" />
+                <button>查詢</button>
+            </div>
+            <div class="pager">
+                共 56 筆　每頁筆數
+                <select>
+                    <option>10筆</option>
+                    <option>20筆</option>
+                    <option>30筆</option>
+                    <option>40筆</option>
+                    <option>50筆</option>
+                </select>
+                <input type="text" value="6" /> /12
+                <i class="glyphicon glyphicon-chevron-left "></i>
+                <i class="glyphicon glyphicon-chevron-right disable"></i>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>身分證號</th>
+                            <th>電話</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="clicked">
+                            <td>安恩在</td>
+                            <td>A12345678</td>
+                            <td>0912345678</td>
+                        </tr>
+                        <tr>
+                            <td>陳芳語</td>
+                            <td>B12345678</td>
+                            <td>0912345678</td>
+                        </tr>
+                        <tr>
+                            <td>林立雯</td>
+                            <td>C12345678</td>
+                            <td>0912345678</td>
+                        </tr>
+                        <tr>
+                            <td>蔡小雨</td>
+                            <td>D12345678</td>
+                            <td>0912345678</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <button class="disable" onclick="openPopup('selectclerk')">取消</button>
+                <button onclick="openPopup('selectclerk')">確認</button>
+            </div>
+        </div>
+        <div id="bg"></div>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+
+
+var isPopup = false;
+
+function openPopup(name) {
+    var popup = document.getElementById(name);
+    var modal = document.getElementById('bg');
+    if (isPopup == true) {
+        popup.style.display = "none";
+        modal.style.display = "none";
+    } else {
+        popup.style.display = "block";
+        modal.style.display = "block";
+    }
+    isPopup = !isPopup;
+};
+</script>
+
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <body>
+
+    <section>
+    <span>總出席率</span>
+    <div>
+      <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item5_0502_list.html'"/>
+    </div>
+  </section>
+
+  <article>
+    <div class="basic_info">
+      <p class="title"><img src="../img/ico_profile.svg"/>業務員基本資料</p>
+      <div>
+        <table>
+          <tr>
+            <td>業務中心</td>
+            <td> <span>北區</span> </td>
+            <td>事業部</td>
+            <td> <span>威英 </span> </td>
+            <td>年度別</td>
+            <td> <span>2017</span> </td>
+          </tr>
+          <tr>
+            <td>業務員姓名</td>
+            <td> <span>安恩在</span> </td>
+            <td>總出席率</td>
+            <td> <span>2.89%</span> </td>
+          </tr>
+          <tr>
+            <td>應到</td>
+            <td> <span>49</span> </td>
+            <td>實到(含線上)</td>
+            <td> <span>43</span> </td>
+            <td>實到</td>
+            <td> <span>33</span> </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="tab_info">
+      <div class="tab">
+        <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_records.svg"/ > 總出席率明細
+        </a>
+      </div>
+
+      <div id="item1" class="tabContent list report">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th><a href="#" class="clicked">一月</a></th>
+              <th><a href="#">二月</a></th>
+              <th><a href="#">三月</a></th>
+              <th><a href="#">四月</a></th>
+              <th><a href="#">五月</a></th>
+              <th><a href="#">六月</a></th>
+              <th><a href="#">七月</a></th>
+              <th><a href="#">八月</a></th>
+              <th><a href="#">九月</a></th>
+              <th><a href="#">十月</a></th>
+              <th><a href="#">十一月</a></th>
+              <th><a href="#">十二月</a></th>
+              <th>合計</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>應到</td>
+              <td>10.0</td>
+              <td>9.0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>10.0</td>
+              <td>11.0</td>
+              <td>1.0</td>
+              <td>2.0</td>
+              <td>0</td>
+              <td>3.0</td>
+              <td>4.0</td>
+              <td>2.0</td>
+              <td>49</td>
+            </tr>
+            <tr>
+              <td>實到(含線上)</td>
+              <td>10.0</td>
+              <td>9.0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>10.0</td>
+              <td>11.0</td>
+              <td>1.0</td>
+              <td>2.0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4.0</td>
+              <td>2.0</td>
+              <td>43</td>
+            </tr>
+            <tr>
+              <td>實到</td>
+              <td>10.0</td>
+              <td>9.0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>11.0</td>
+              <td>1.0</td>
+              <td>2.0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4.0</td>
+              <td>2.0</td>
+              <td>33</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div>
+          <table class="autoWidth left_last7">
+            <thead>
+              <tr>
+                <th colspan="10">應出席課程狀態</th>
+              </tr>
+              <tr>
+                <th>課程類別</th>
+                <th>課程編號</th>
+                <th>課程名稱</th>
+                <th>課程開始日</th>
+                <th>上課地點</th>
+                <th>課程屬性</th>
+                <th>出席率</th>
+                <th>時數類別</th>
+                <th>公會時數</th>
+                <th>出席</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>早會</td>
+                <td>123456750</td>
+                <td>壽險從業人員公民與道德概論二</td>
+                <td>2017/4/23</td>
+                <td>台北訓練中心</td>
+                <td>法規要求</td>
+                <td>Y</td>
+                <td>洗錢防治</td>
+                <td>2</td>
+                <td>出席</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+  function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+  };
+  document.getElementById("defaultOpen").click();
+</script>
+</html>

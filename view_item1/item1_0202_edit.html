@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            組織人事資料維護
+            <div>
+                <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item1_0202_detail.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item1_0201_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />體系基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>體系名稱</td>
+                            <td>
+                                <input type="text" value="RD2" /> </td>
+                        </tr>
+                        <tr>
+                            <td>體系主管
+                                <br/>事業部</td>
+                            <td>
+                                <select>
+                                    <option>AK 愛加倍</option>
+                                    <option>AP 多佳</option>
+                                    <option>BD 曙光</option>
+                                    <option>GD 祥韻</option>
+                                </select>
+                            </td>
+                            <td>體系主管</td>
+                            <td> <span>陳有利</span> </td>
+                            <td>體系主管職稱</td>
+                            <td> <span>71 負責人</span> </td>
+                        </tr>
+                        <tr>
+                            <td>成立日期</td>
+                            <td>
+                                <input type="text" class="date" value="2016/4/12" /> </td>
+                            <td>結束日期</td>
+                            <td>
+                                <input type="text" class="date" value="2017/4/15" /> </td>
+                            <td>註銷</td>
+                            <td>
+                                <input type="checkbox"> </td>
+                        </tr>
+                        <tr>
+                            <td>備註說明</td>
+                            <td colspan="3">
+                                <input type="text" value="備註備註備註備註備註備註備註備註" />
+                            </td>
+                        </tr>
+                        <tr class="line">
+                            <td colspan="6">
+                                <hr/>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="autoWidth">
+                        <tr>
+                            <td>建檔人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>建檔日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                            <td>修改人員</td>
+                            <td> <span>方芳芳</span> </td>
+                            <td>修改日期</td>
+                            <td> <span>2015/01/12</span> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>

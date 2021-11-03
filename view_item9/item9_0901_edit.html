@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+
+<style>
+/***************** CSS Table 雙向列表切換 *****************/
+.transform_box{width:95%;margin:30px auto;}
+.transform_box table{min-width:100%;padding:0;border-spacing:0;border-collapse:separate;border:0;}
+.transform_box thead,
+.transform_box tbody,
+.transform_box tfoot,
+.transform_box tr{padding:0;border:0;}
+.transform_box th{padding:0;text-align:center;}
+.transform_box th{font-weight:bold;background:#b6a08e;color:#fff;}
+.transform_box tbody tr th:nth-child(1),
+.transform_box tbody tr td:nth-child(1),
+.transform_box tbody tr th:nth-child(3),
+.transform_box tbody tr td:nth-child(3){width:40% !important;}
+.transform_box tbody tr th:nth-child(2),
+.transform_box tbody tr td:nth-child(2){width:20% !important;}
+.transform_box p{padding:2px;cursor:pointer;}
+.transform_box p.selected{color:#f4f4f4;background:#888;}
+.transform_box .transform_left_list,
+.transform_box .transform_content,
+.transform_box .transform_right_list{height:260px;overflow-x:hidden;overflow-y:auto;}
+.transform_box .transform_content{padding-top:50px;}
+.transform_box .button{margin:10px 10px;padding:5px 20px;cursor:pointer;background-color:#07C5ED;color:#fff;border:1px solid #d8d8d8;padding:4px 16px;font-size:12px;}
+</style>
+
+</head>
+<body>
+
+    <section>
+    <span>系統代碼：100010</span>
+    <div>
+      <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item9_0901_list.html'"/>
+      <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item9_0901_list.html'"/>
+    </div>
+  </section>
+
+  <article>
+    <div class="basic_info tableList">
+      <p class="title"><img src="../img/ico_profile.svg"/>群組管理設定</p>
+      <div>
+        <table>
+          <tr>
+            <td>群組名稱</td>
+            <td> <input type="text" value="人事行政A"/> </td>
+            <td>群組說明</td>
+            <td> <input type="text" value=""/> </td>
+            <td>功能權限設定</td>
+            <td>
+              <label>
+                <input type="checkbox"> 查詢
+                <input type="checkbox"> 新增
+                <input type="checkbox"> 編輯
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>使用狀態</td>
+            <td>
+              <select>
+                <option>啟用</option>
+                <option>停用</option>
+              </select>
+            </td>
+            <td>群組設定日期</td>
+            <td><span>2018/08/10</span></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+            <div class="transform_box">
+              <table class="list">
+                <tbody>
+                  <tr>
+                    <th>可選擇的功能</th>
+                    <th>操作</th>
+                    <th>已選擇之功能</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="transform_left_list">
+                        <p><span>左側功能選單_1</span></p>
+                        <p><span>左側功能選單_2</span></p>
+                        <p><span>左側功能選單_3</span></p>
+                        <p><span>左側功能選單_4</span></p>
+                        <p><span>左側功能選單_5</span></p>
+                        <p><span>左側功能選單_6</span></p>
+                        <p><span>左側功能選單_7</span></p>
+                        <p><span>左側功能選單_8</span></p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="transform_content">
+                        <div class="all_to_right button">全部選取 &#8594</div>
+                        <div class="to_right button">選取 &#8594</div>
+                        <div class="to_left button">&#8592 移除</div>
+                        <div class="all_to_left button">&#8592 全部移除</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="transform_right_list">
+                        <p><span>右側為被選取的項目_1</span></p>
+                        <p><span>右側為被選取的項目_2</span></p>
+                        <p><span>右側為被選取的項目_3</span></p>
+                        <p><span>右側為被選取的項目_4</span></p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+        <table class="list autoWidth">
+          <tr>
+            <th>使用者ID</th>
+            <th>使用者姓名</th>
+            <th>生效日</th>
+            <th>到期日</th>
+            <th>修改日期</th>
+            <th>修改人員</th>
+            <th>最後登入時間</th>
+            <th>啟用</th>
+          </tr>
+          <tr>
+            <td>123</td>
+            <td>張大文</td>
+            <td>2018/08/10</td>
+            <td>2019/08/10</td>
+            <td>2018/08/12 12:34:56</td>
+            <td>張小文</td>
+            <td>2018/08/12 12:34:56</td>
+            <td><input type="checkbox" checked></td>
+          </tr>
+          <tr>
+            <td>456</td>
+            <td>張文文</td>
+            <td>2018/08/10</td>
+            <td>2019/08/10</td>
+            <td>2018/08/12 12:34:56</td>
+            <td>張小文</td>
+            <td>2018/08/12 12:34:56</td>
+            <td><input type="checkbox" checked></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </article>
+
+
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+
+  //雙向列表切換
+  threeTableSwitch();
+  function threeTableSwitch() {
+
+    //雙向列表切換 左側腳本
+    $(".transform_left_list").delegate("p", "click", function() {
+      var classname = this.className;
+      if (classname == "selected") {
+        this.className = "";
+      } else {
+        this.className = "selected";
+      }
+    })
+
+    //雙向列表切換 右側腳本
+    $(".transform_right_list").delegate("p", "click", function() {
+      var classname = this.className;
+      if (classname == "selected") {
+        this.className = "";
+      } else {
+        this.className = "selected";
+      }
+    })
+
+    //雙向列表切換 全部加入右欄
+    var all_to_right = [];
+    $(".all_to_right").click(function(){
+      $(".transform_left_list p").addClass("selected");
+      $(".transform_left_list .selected").each(function() {
+        all_to_right.push($(this).children("span").text());
+        $(this).remove();
+        var html = "";
+        $.each(all_to_right, function(i, v) {
+          html += "<p><span>" + v + "</span></p>";
+        });
+        $(".transform_right_list").append(html);
+        all_to_right = [];
+      })
+    });
+
+    //雙向列表切換 全部加入左欄
+    var all_to_left = [];
+    $(".all_to_left").click(function(){
+      $(".transform_right_list p").addClass("selected");
+      $(".transform_right_list .selected").each(function() {
+        all_to_left.push($(this).children("span").text());
+        $(this).remove();
+        var html = "";
+        $.each(all_to_left, function(i, v) {
+          html += "<p><span>" + v + "</span></p>";
+        });
+        $(".transform_left_list").append(html);
+        all_to_left = [];
+      })
+    });
+
+    //雙向列表切換 點擊右鍵頭
+    var to_right = [];
+    $(".to_right").click(function() {
+      $(".transform_left_list .selected").each(function() {
+        to_right.push($(this).children("span").text());
+        $(this).remove();
+        var html = "";
+        $.each(to_right, function(i, v) {
+          html += "<p><span>" + v + "</span></p>";
+        });
+        $(".transform_right_list").append(html);
+        to_right = [];
+      })
+    })
+
+    //雙向列表切換 點擊左鍵頭
+    var to_left = [];
+    $(".to_left").click(function() {
+      $(".transform_right_list .selected").each(function() {
+        to_left.push($(this).children("span").text());
+        $(this).remove();
+        var html = "";
+        $.each(to_left, function(i, v) {
+          html += "<p><span>" + v + "</span></p>";
+        });
+        $(".transform_left_list").append(html);
+        to_left = [];
+      })
+    })
+  }
+
+});
+</script>
+
+</script>
+</html>

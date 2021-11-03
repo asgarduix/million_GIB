@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span>事業部派員設定</span>
+            <div>
+                <img src="../img/btn_edit_big.svg" onclick="javascript:location.href='assign_edit.html'" />
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='assignSetting_detail.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="basic_info">
+                <p class="title"><img src="../img/ico_profile.svg" />事業部基本資料</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>名稱</td>
+                            <td> <span>群英</span> </td>
+                            <td>代碼</td>
+                            <td> <span>Keiro</span> </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="textarea">
+                            <td>備註</td>
+                            <td colspan="5">
+                                <span>備註備註備註備註備註備註備註備註備註</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_relative.svg"/ > 服務地區
+        </a>
+                    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'item2')">
+          <img src="../img/ico_agent.svg"/ > 業務員設定
+        </a>
+                </div>
+                <div id="item1" class="tabContent list lastAddbtn">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>縣市地區</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>台北市信義區</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="item2" class="tabContent list lastAddbtn left_5">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>優先順序</th>
+                                <th>身分證號</th>
+                                <th>姓名</th>
+                                <th>電話</th>
+                                <th>Email</th>
+                                <th>最後已派人員</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>A123456789</td>
+                                <td>張雯淇</td>
+                                <td>29864739</td>
+                                <td>moommoom@gmail.com</td>
+                                <td><i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>B123456789</td>
+                                <td>方方方</td>
+                                <td>29864744</td>
+                                <td>maammaam@gmail.com</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+
+
+var isPopup = false;
+
+function openPopup(name) {
+    var popup = document.getElementById(name);
+    var modal = document.getElementById('bg');
+    if (isPopup == true) {
+        popup.style.display = "none";
+        modal.style.display = "none";
+    } else {
+        popup.style.display = "block";
+        modal.style.display = "block";
+    }
+    isPopup = !isPopup;
+};
+</script>
+
+</html>

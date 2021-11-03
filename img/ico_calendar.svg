@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-289.000000, -787.000000)" id="ico_calendar" fill="#07C5ED">
+            <path d="M297.2,796.8 L295.6,796.8 L295.6,795.2 L298.8,795.2 L298.8,800 L297.2,800 L297.2,796.8 Z M291.6,802.4 L304.4,802.4 L304.4,792.8 L291.6,792.8 L291.6,802.4 Z M304.4,789.6 L304.4,788 L302.8,788 L302.8,789.6 L298.8,789.6 L298.8,788 L297.2,788 L297.2,789.6 L293.2,789.6 L293.2,788 L291.6,788 L291.6,789.6 L290,789.6 L290,804 L306,804 L306,789.6 L304.4,789.6 Z"></path>
+        </g>
+    </g>
+</svg>

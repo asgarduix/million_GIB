@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <section>
+    <span>新增保險公司</span>
+    <div>
+      <img src="../img/btn_unsave.svg" onclick="javascript:location.href='item2_0101_detail.html'"/>
+      <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item2_0101_list.html'"/>
+    </div>
+  </section>
+
+  <article>
+    <div class="basic_info tableList">
+      <p class="title"><img src="../img/ico_profile.svg"/>保險公司基本資料</p>
+      <div>
+        <table>
+          <tr>
+            <td>類別</td>
+            <td>
+              <select>
+                <option>產險</option>
+                <option>壽險</option>
+              </select>
+            </td>
+            <td>合作註記</td>
+            <td>
+              <select>
+                <option>是</option>
+                <option>否</option>
+              </select>
+            </td>
+            <td>註銷</td>
+            <td> <input type="checkbox"> </td>
+          </tr>
+          <tr>
+            <td>公司代碼</td>
+            <td> <input type="text"> </td>
+            <td>公司名稱</td>
+            <td> <input type="text"> </td>
+            <td>公司簡稱</td>
+            <td> <input type="text"> </td>
+          </tr>
+          <tr>
+            <td>公司LOGO</td>
+            <td colspan="3">
+              <input type="text" class="subBig" style="width: 61% !important;">
+              <i class="fa"><span>瀏覽</span></i>
+              <img src="../img/ico_addone.svg" />
+              <span style="margin-left: 8em;">logo.png</span>
+            </td>
+            <td>公司統編</td>
+            <td> <input type="text"> </td>
+          </tr>
+          <tr>
+            <td>公司官網</td>
+            <td colspan="3"> <input type="text" class="subBig"> </td>
+            <td>公勝經代代碼</td>
+            <td> <input type="text"> </td>
+          </tr>
+          <tr>
+            <td>公司地址</td>
+            <td colspan="3" class="address">
+              <select>
+                <option>台北市</option>
+                <option>新北市</option>
+                <option>高雄市</option>
+              </select>
+              <select>
+                <option>中和區</option>
+                <option>蘆洲區</option>
+                <option>三重區</option>
+              </select>
+              <input type="text" value="新民街11弄166號3樓"/>
+            </td>
+            <td>顯示順序</td>
+            <td> <input type="text"> </td>
+          </tr>
+          <tr>
+            <td>發票地址</td>
+            <td colspan="3" class="address">
+              <select>
+                <option>台北市</option>
+                <option>新北市</option>
+                <option>高雄市</option>
+              </select>
+              <select>
+                <option>中和區</option>
+                <option>蘆洲區</option>
+                <option>三重區</option>
+              </select>
+              <input type="text" value="新民街11弄166號3樓"/>
+            </td>
+          </tr>
+          <tr>
+            <td>備註</td>
+            <td colspan="3"> <input type="text" class="subBig"> </td>
+          </tr>
+          <tr class="bold">
+            <td>主要聯絡人</td>
+            <td colspan="5"><hr/></td>
+          </tr>
+          <tr>
+            <td>聯絡人姓名</td>
+            <td> <input type="text"> </td>
+            <td>手機號碼</td>
+            <td> <input type="text"> </td>
+            <td>公司電話</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>聯絡人地址</td>
+            <td colspan="3" class="address">
+              <select>
+                <option>台北市</option>
+                <option>新北市</option>
+                <option>高雄市</option>
+              </select>
+              <select>
+                <option>中和區</option>
+                <option>蘆洲區</option>
+                <option>三重區</option>
+              </select>
+              <input type="text" value="新民街11弄166號3樓"/>
+            </td>
+            <td>傳真號碼</td>
+            <td> <input type="text"> </td>
+          </tr>
+          <tr class="line">
+            <td colspan="6">
+              <hr/>
+            </td>
+          </tr>
+        </table>
+        <table class="autoWidth">
+          <tr>
+            <td>建檔人員</td>
+            <td> <span>方芳芳</span> </td>
+            <td>建檔日期</td>
+            <td> <span>2015/01/12</span> </td>
+            <td>修改人員</td>
+            <td> <span>方芳芳</span> </td>
+            <td>修改日期</td>
+            <td> <span>2015/01/12</span> </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="tab_info">
+      <div class="tab">
+        <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_customer1.svg"/ > 聯絡清單
+        </a>
+        <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item2')">
+          <img src="../img/ico_record.svg"/ > 經代專區設定
+        </a>
+        <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item3')">
+          <img src="../img/ico_agent.svg"/ > 送件代號
+        </a>
+      </div>
+
+      <div id="item1" class="tabContent list lastAddbtn left_4 left_5">
+        <table>
+          <thead>
+            <tr>
+              <th>業務中心<br/>保險公司部門</th>
+              <th>保險公司聯絡人<br/>聯絡電話</th>
+              <th>手機號碼<br/>傳真號碼</th>
+              <th>Email<br/>聯絡地址</th>
+              <th>備註</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr_BBlue create">
+              <td>
+                <select>
+                  <option>台北</option>
+                  <option>台中</option>
+                  <option>高雄</option>
+                </select>
+                <select>
+                  <option>經代</option>
+                  <option>業推</option>
+                  <option>核保</option>
+                  <option>保全</option>
+                  <option>理賠</option>
+                  <option>收費</option>
+                  <option>團保</option>
+                  <option>其他</option>
+                </select>
+              </td>
+              <td>
+                <input type="text"/>
+                <input type="text"/>
+              </td>
+              <td>
+                <input type="text"/>
+                <input type="text"/>
+              </td>
+              <td class="textarea">
+                <input type="text"/>
+                <input type="text"/>
+              </td>
+              <td class="textarea">
+                <textarea></textarea>
+              </td>
+              <td>  <img src="../img/btn_add new benefit.svg">  </td>
+            </tr>
+            <tr>
+              <td>
+                <div>台北</div>
+                <div>經代</div>
+              </td>
+              <td>
+                <div>方芳芳</div>
+                <div>29475483#442</div>
+              </td>
+              <td>
+                <div>0912345678</div>
+                <div>29475484</div>
+              </td>
+              <td>
+                <div>amei_Chen@pcalife.com.tw</div>
+                <div>新竹市東區力行六路8號A棟11樓</div>
+              </td>
+              <td>備註備註備註備註XXXXX</td>
+              <td>
+                <img src="../img/btn delete.svg"/>
+                <i class="fa fa-pencil"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="item2" class="tabContent list lastAddbtn left_last5 left_last4 left_last3">
+        <table>
+          <thead>
+            <tr>
+              <th>專區名稱</th>
+              <th>專區網址</th>
+              <th>文字說明</th>
+              <th>附加檔案</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr_BBlue create">
+              <td>
+                <input type="text"/>
+              </td>
+              <td>
+                <input type="text"/>
+              </td>
+              <td>
+                <input type="text"/>
+              </td>
+              <td>
+                <img src="../img/doc_attach.svg"/>
+              </td>
+              <td>  <img src="../img/btn_add new benefit.svg">  </td>
+            </tr>
+            <tr>
+              <td>經代專區</td>
+              <td>…doc/hn/9981792</td>
+              <td>說明文字文字文字</td>
+              <td>
+                <img src="../img/doc_attach.svg"/>
+                <div class="underline" style="display: inline-block">logo.png</div>
+              </td>
+              <td>
+                <img src="../img/btn delete.svg"/>
+                <i class="fa fa-pencil"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="item3" class="tabContent list left_3">
+        <table>
+          <thead>
+            <tr>
+              <th>業務中心</th>
+              <th>送件代號</th>
+              <th>備註</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>台北</td>
+              <td>A123456</td>
+              <td>備註備註備註備註XXXXX</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </article>
+
+
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+  function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+  };
+  document.getElementById("defaultOpen").click();
+</script>
+</html>

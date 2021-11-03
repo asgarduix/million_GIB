@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>btn home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-291.000000, -742.000000)" id="btn-home" fill="#FFFFFF">
+            <path d="M297.4,752.282228 L308.6,752.282228 L308.6,760.303448 L297.4,760.303448 L297.4,752.282228 Z M300.866667,756.292838 L300.866667,760.303448 L305.133333,760.303448 L305.133333,756.292838 C305.133333,756.292838 304.6,755.223342 303,755.223342 C301.4,755.223342 300.866667,756.292838 300.866667,756.292838 Z M303,746.4 L308.6,751.212732 L297.4,751.212732 L303,746.4 Z"></path>
+        </g>
+    </g>
+</svg>

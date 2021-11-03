@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+        <section>
+            <span id="edit">選擇欲設定課程</span>
+            <span id="add">選擇課程年/月：</span>
+            <input type="text" class="date" style="width: 15%" />
+            <button class="inline-btn" onclick="changeView()">確定</button>
+            <div>
+                <img src="../img/btn_cancel_big.svg" onclick="javascript:location.href='item5_0401_list.html'" />
+            </div>
+        </section>
+        <article>
+            <div class="tab_info">
+                <div class="tab">
+                    <a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openTab(event, 'item1')">
+          <img src="../img/ico_records.svg"/ > 課程清單
+        </a>
+                </div>
+                <div id="item1" class="tabContent list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>課程編號</th>
+                                <th>課程名稱</th>
+                                <th>課程開始日期</th>
+                                <th>課程結束日期</th>
+                                <th>報名截止日</th>
+                                <th>時數類別</th>
+                                <th>公會時數</th>
+                                <th>發佈狀態</th>
+                                <th>設定</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td onclick="window.open('item5_0201_detail.html')">
+                                    <div class="underline">PE1184048935</div>
+                                </td>
+                                <td>保險證照</td>
+                                <td>2017/3/1</td>
+                                <td>2017/3/12</td>
+                                <td>2017/2/20</td>
+                                <td>洗錢防治</td>
+                                <td>4</td>
+                                <td>已發佈</td>
+                                <td>
+                                    <button class="small-btn" onclick="window.open('item5_0401_add.html')">設定</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+</body>
+<script src="../js/jquery1.11.1.js"></script>
+<script type="text/javascript">
+$('article').hide();
+$('#edit').hide();
+$('section input').show();
+$('#add').show();
+
+function openTab(evt, name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+};
+document.getElementById("defaultOpen").click();
+
+function changeView() {
+    $('article').show();
+    $('#edit').show();
+    $('section input').hide();
+    $('section button').hide();
+    $('#add').hide();
+}
+</script>
+
+</html>
